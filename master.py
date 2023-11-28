@@ -11,8 +11,10 @@ product_database.make_product_database()
 
 # Example usage for vendors
 vendor_query = "mcDonalds hamburger meal take-out fries"
-top_vendor = search.query_classification(vendor_query, 5, search.vendor_classifier)
+top_vendor = search.query_classification(vendor_query, 5, "vendor")
 
 # Example usage for products
 product_query = "organic apples"
-top_product = search.query_classification(product_query, 10, search.product_classifier)
+top_product = search.query_classification(product_query, 10, "product")
+
+print(top_product,top_vendor,sep="\n")
