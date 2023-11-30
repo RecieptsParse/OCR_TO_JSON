@@ -2,6 +2,8 @@ import vendor_database
 import product_database
 import search
 
+receipt_folder = "" #relative folder path that contains receipt text files
+
 '''
 saves faiss index and mapping to directory 
 model for embeddings & descriptions can be updated in config.py
