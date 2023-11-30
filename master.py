@@ -12,7 +12,7 @@ openai_api_key="INSERT_OPENAI_API_KEY_HERE"
 receiptParser = make_receiptParser()
 fewshot_prompt = make_fewshot_prompt(receiptParser)
 model = make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
-chain = make_chain (fewshot_prompt, model, recieptParser)
+chain = make_chain(fewshot_prompt, model, recieptParser)
 
 '''
 saves faiss index and mapping to directory 
