@@ -225,24 +225,10 @@ product_categories = {
         
     ],
     "Cleaning Supplies": [
-        "Cleaning Products",
-        "LYSOL",
-        "WINDEX",
-        "WONDER MOP",
-        "DUSTPAN",
-        "CLOROX  BLCH",
-        "GAIN 2X",
-        "TIDE LQ PODS",
-        "OXICLEAN Stain Remover",
-        "GLAD Trash Bags",
-        "MR. CLEAN Magic Eraser",
-        "SWIFFER",
-        "Surface Cleaners",
-        "Disinfectants",
-        "Floor Cleaners",
-        "Laundry Detergents",
-        "Dishwashing Supplies",
-        "Cleaning Tools"
+        "Cleaning Products LYSOL WINDEX CLOROX  BLCH GAIN 2X TIDE LQ PODS Disinfectants",
+        "GLAD Trash Bags MR. CLEAN Magic Eraser SWIFFER Surface Cleaners OXICLEAN Stain Remover Floor Cleaners",
+        "Laundry Detergents Dishwashing Supplies Hand soap wash sanitizer",
+        "Cleaning Tools cloth towels broom WONDER MOP dustpan"
     ],
     "Gifts And Miscellaneous": [
         "Gifts",
