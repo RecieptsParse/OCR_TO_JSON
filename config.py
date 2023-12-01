@@ -144,7 +144,7 @@ product_categories = {
     "Health And Beauty": [
         "Cosmetics Velvet Matte Lipstick Eyeshadow Palette Volumizing Mascara Makeup Remover Sephora",
         "Facecare products Revitalizing Vitamin C Serum Mineral Sunscreen SPF 50 Bamboo Charcoal Detoxifying Face Mask",
-        "Skincare Products Anti-Aging Moisturizing Cream Essential Oil Hydrating Aloe Vera Body Lotion",
+        "Skincare Products Anti-Aging Moisturizing Cream Essential Oil Hydrating Aloe Vera Body Lotion Dial Dove",
         "Haircare Products Curl Defining Mousse Heat Protectant Spray Volume-Boosting Dry Shampoo Scalp Scrub Conditioner",
         "Fragrance Cologne Spray Lotus Blossom Scented Perfume Rose Body Mist",
         "Oral Care Colgate CREST 3D WHT LISTERIN Mouthwash ORAL-B TOOTHBRUSH Whitening Toothpaste Floss Waterpik",
@@ -209,6 +209,7 @@ product_categories = {
         "Medications Supplements Chewable Tablets Pain Relief Tablets Vitamins Omega-3 Fish Oil Capsules Probiotic",
         "First Aid Supplies Band-Aids Antiseptic Wipes Sterile Gauze Pads Cold Packs Compress Hand Sanitizer",
         "DayQuil Severe Cold & Flu Relief Robitussin Maximum Strength Cough and Chest Congestion Kleenex Halls Cough Drops",
+        
         "Medical Equipment Blood Pressure Monitor Digital Thermometer Crutches Folding Walker Medical Scale"
     ],
     "Pet Supplies": [
@@ -219,27 +220,26 @@ product_categories = {
         "Pet Accessories DOG COLLAR Leash Pet ID Tag"
     ],
     "Baby Products": [
-        "Baby Care Items Monitor Baby Wipes HUGGIES BABY FORMULA Diaper Rash Cream Bottles BBY Swaddle BLANKET NURSERY CRIB",
-        "INF CAR SEAT STROLLER Carrier baby carraige",
-        "Baby Toys Plush Rattle Teething Rings"
+        "Baby Care Items Monitor Baby Wipes HUGGIES Pampers BABY FORMULA Diaper Rash Cream Bottles Sippy Cup",
+        "INF CAR SEAT infant STROLLER Carrier baby High Chair Changing Pad Booster Seat NURSERY CRIB",
+        "Baby Toys Plush Rattle Teething Rings BBY Swaddle BLANKET Play Mat Rolly Cars Pacifier"
         
     ],
     "Cleaning Supplies": [
-        "Cleaning Products LYSOL WINDEX CLOROX  BLCH GAIN 2X TIDE LQ PODS Disinfectants",
+        "Cleaning Products LYSOL Wipes WINDEX Spray CLOROX BLCH GAIN 2X TIDE LQ PODS Disinfectants",
         "GLAD Trash Bags MR. CLEAN Magic Eraser SWIFFER Surface Cleaners OXICLEAN Stain Remover Floor Cleaners",
-        "Laundry Detergents Dishwashing Supplies Hand soap wash sanitizer",
-        "Cleaning Tools cloth towels broom WONDER MOP dustpan"
+        "Laundry Detergents Dishwashing Supplies DAWN sponge Hand soap dispenser wash sanitizer",
+        "Cleaning Tools cloth paper towels broom WONDER MOP dustpan Odor Eliminator air freshener glade"
     ],
     "Gifts And Miscellaneous": [
-        "Gifts Wrapping Paper Gift Bags",
-        "Greeting Cards HLMRK Hallmark Seasonal Items Christmas Ornaments",
-        "Souvenirs key chain"
+        "Gifts Wrapping Paper Gift Bags cardboard Boxes ribbons tape",
+        "Greeting Cards Envelopes HLMRK Hallmark Seasonal Items Christmas Ornaments Scented Candles",
+        "Souvenirs keychain snowglobe magnet postcard stamps"
     ],
     "Event Tickets": [
-        "Movie Tickets",
-        "Aquarium Tickets",
-        "Season Pass",
-        "Amusement Park Tickets",
-        "Event Tickets"
+        "Movie Tickets Cinema Theatre Regal Consolidated Film Festival General Admission",
+        "Honolulu Aquarium Tickets Zoo Museum Art Exhibition Planetarium Sports game",
+        "Amusement Park Tickets Wet n Wild Season Pass Carnival Cirus Comedy Night",
+        "Event Tickets Blaisdell Symphony Concert Hall Ballet Dance Performance Opera Live music Band"
     ]
 }
