@@ -107,6 +107,7 @@ vendor_categories  = {
         "Consolidated Theatres",
         "Regal Cinemas",
         "Card Shop",
+        "Toys Board Games",
         "Amusement Parks",
         "Zoo or Aquarium or Musuem",
         "Craft art supply stores.",
@@ -194,21 +195,15 @@ product_categories = {
         "Creative Jigsaw Puzzle Building Blocks Rubik's cube strategy chess set Jenga Dominos",
     ],
     "Sporting Goods": [
-        "Sports Equipment",
-        "Baseball Bat",
-        "Soccer Ball",
-        "Fitness Gear"
+        "Sports Equipment Tennis Racket Baseball Bat Golf Club Kayak Paddle Rollerblades Archery Bow",
+        "Nike Dri-FIT Running Shoes Under Armour Compression Leggings Speedo Swim Goggles Knee Pads Boxing Gloves",
+        "Fitness Gear Climbing Harness Resistance Band Cardio Jump Rope Cycling Helmet Yoga Mat Dumbbell",
+        "Weight Bench Medicine Ball Training Cone Set Basket Ball Hoop Volleyball Net Indoor Table Tennis Table"
     ],
     "Books And Stationery": [
-        "Books",
-        "Sketchbook Top Spiral",
-        "Magazines",
-        "Hardcover Journal",
-        "Stationery Items",
-        "Mechanical Pencils",
-        "Paint",
-        "Sticky Notes",
-        "Art Supplies"
+        "Books Magazines Hardcover Journal Poetry Classic Novels Literature Fantasy Sci-fi Romance Mystery Memoir",
+        "Stationery Items Mechanical Pencils Sticky Notes Pencil Case Fountain Pen Flashcards Origami Kit Markers Weekly Planner",
+        "Paint Art Supplies Coloring Book Watercolor Sketchbook Top Spiral Oil Pastels Canvas Pad"
     ],
     "Pharmacy And Health Products": [
         "Medications",
