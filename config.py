@@ -231,13 +231,9 @@ product_categories = {
         "Cleaning Tools cloth towels broom WONDER MOP dustpan"
     ],
     "Gifts And Miscellaneous": [
-        "Gifts",
-        "Wrapping Paper",
-        "Gift Bags",
-        "Greeting Cards",
-        "HLMRK",
-        "Seasonal Items",
-        "Souvenirs"
+        "Gifts Wrapping Paper Gift Bags",
+        "Greeting Cards HLMRK Hallmark Seasonal Items Christmas Ornaments",
+        "Souvenirs key chain"
     ],
     "Event Tickets": [
         "Movie Tickets",
