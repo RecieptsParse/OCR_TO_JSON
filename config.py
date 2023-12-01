@@ -172,14 +172,14 @@ product_categories = {
         "Queen-sized memory foam mattress comforter Bedding throw blanket body pillow cover area rug",
         "Dining Ware Kitchenware Stainless Steel kitchen knife porcelain dinner plate china set fork chopsticks ZIPLOC",
         "Home appliances blender stove microwave lamp refrigerator air fryer toaster air conditioner TV Cable Wifi",
-        "Home Office printer paper stapler printer paper desk monitor stand folders Office Depot",
+        "Home Office printer paper stapler printer paper desk monitor stand folders Office Depot"
     ],
     "Outdoor Goods": [
         "Gardening Tools Watering Can Garden Gloves hose nozzle rake wheelbarrow shovel pruning shears",
         "Plants potting soil flower pots compost bin hanging fern fertilizer seedlings mulch",
         "Outdoor Furniture patio lounge chair picnic table fire pit swing hammock bench garden shed",
         "Outdoor Decor wind chime garden gnome birdhouse bird feeder fairy LED lights",
-        "Outdoor appliances BBQ Grill lawn mower lantern mosquito zapper sprinklers",
+        "Outdoor appliances BBQ Grill lawn mower lantern mosquito zapper sprinklers"
     ],
     "Automotive": [
         "Car Parts Windsheild Wipers Break Pads engine oil fuel injector Car Wax Oil Gas",
@@ -192,7 +192,7 @@ product_categories = {
         "Board Games MONOPOLY Scrabble Battleship naval combat Catan Risk Clue",
         "stuffed animal cuddly plush toy Teddy Bear Pillow Pet Squishmallow Webkinz TY Beanie",
         "Card Games Pokemon trading Yugi-oh deck Uno magic exploding kittens cards against humanity",
-        "Creative Jigsaw Puzzle Building Blocks Rubik's cube strategy chess set Jenga Dominos",
+        "Creative Jigsaw Puzzle Building Blocks Rubik's cube strategy chess set Jenga Dominos"
     ],
     "Sporting Goods": [
         "Sports Equipment Tennis Racket Baseball Bat Golf Club Kayak Paddle Rollerblades Archery Bow",
@@ -209,7 +209,6 @@ product_categories = {
         "Medications Supplements Chewable Tablets Pain Relief Tablets Vitamins Omega-3 Fish Oil Capsules Probiotic",
         "First Aid Supplies Band-Aids Antiseptic Wipes Sterile Gauze Pads Cold Packs Compress Hand Sanitizer",
         "DayQuil Severe Cold & Flu Relief Robitussin Maximum Strength Cough and Chest Congestion Kleenex Halls Cough Drops",
-        
         "Medical Equipment Blood Pressure Monitor Digital Thermometer Crutches Folding Walker Medical Scale"
     ],
     "Pet Supplies": [
@@ -223,7 +222,6 @@ product_categories = {
         "Baby Care Items Monitor Baby Wipes HUGGIES Pampers BABY FORMULA Diaper Rash Cream Bottles Sippy Cup",
         "INF CAR SEAT infant STROLLER Carrier baby High Chair Changing Pad Booster Seat NURSERY CRIB",
         "Baby Toys Plush Rattle Teething Rings BBY Swaddle BLANKET Play Mat Rolly Cars Pacifier"
-        
     ],
     "Cleaning Supplies": [
         "Cleaning Products LYSOL Wipes WINDEX Spray CLOROX BLCH GAIN 2X TIDE LQ PODS Disinfectants",
