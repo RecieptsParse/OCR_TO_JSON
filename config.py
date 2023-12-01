@@ -201,48 +201,28 @@ product_categories = {
         "Weight Bench Medicine Ball Training Cone Set Basket Ball Hoop Volleyball Net Indoor Table Tennis Table"
     ],
     "Books And Stationery": [
-        "Books Magazines Hardcover Journal Poetry Classic Novels Literature Fantasy Sci-fi Romance Mystery Memoir",
+        "Books Magazines Hardcover Journal Poetry Classic Novels Literature Fantasy Sci-fi Romance Mystery Memoir Barnes & Noble",
         "Stationery Items Mechanical Pencils Sticky Notes Pencil Case Fountain Pen Flashcards Origami Kit Markers Weekly Planner",
         "Paint Art Supplies Coloring Book Watercolor Sketchbook Top Spiral Oil Pastels Canvas Pad"
     ],
     "Pharmacy And Health Products": [
-        "Medications",
-        "Supplements",
-        "First Aid Supplies",
-        "Medical Equipment",
-        "Blood Pressure Monitor",
-        "Chewable Tablets",
-        "Digital Thermometer",
-        "Band-Aids",
-        "Pain Relief Tablets",
-        "Vitamins"
+        "Medications Supplements Chewable Tablets Pain Relief Tablets Vitamins Omega-3 Fish Oil Capsules Probiotic",
+        "First Aid Supplies Band-Aids Antiseptic Wipes Sterile Gauze Pads Cold Packs Compress Hand Sanitizer",
+        "DayQuil Severe Cold & Flu Relief Robitussin Maximum Strength Cough and Chest Congestion Kleenex Halls Cough Drops",
+        "Medical Equipment Blood Pressure Monitor Digital Thermometer Crutches Folding Walker Medical Scale"
     ],
     "Pet Supplies": [
-        "Pet Food",
-        "Treats",
-        "Pet Toys",
-        "Pet Grooming Products",
-        "DOG COLLAR NYLON LRG",
-        "FISH TANK",
-        "CHEW STICKS",
-        "DOG FOOD",
-        "HAMSTER CAGE",
-        "CAT LITTER",
-        "REPTILE HEAT LAMP",
-        "Pet Accessories",
-        "Pet Enclosures"
+        "Pet Food Treats Dry dog canned food CHEW STICKS Puppy Formula",
+        "Pet Toys Squeaky Plush Chew Toy Rubber Ball Fetch Frisbee Teething Ring",
+        "Pet Grooming Products Flea and Tick Shampoo Deodorizing Pet Wipes Brush Clippers",
+        "Pet Enclosures FISH TANK HAMSTER CAGE CAT LITTER REPTILE HEAT LAMP Scratching Posts Perches Pet Bed Bowl",
+        "Pet Accessories DOG COLLAR Leash Pet ID Tag"
     ],
     "Baby Products": [
-        "Baby Wipes",
-        "HUGGIES",
-        "BBY BLANKET",
-        "INF CAR SEAT",
-        "NURSERY CRIB",
-        "STROLLER",
-        "BABY FORMULA",
-        "Baby Toys",
-        "Diapers",
-        "Baby Care Items"
+        "Baby Care Items Monitor Baby Wipes HUGGIES BABY FORMULA Diaper Rash Cream Bottles BBY Swaddle BLANKET NURSERY CRIB",
+        "INF CAR SEAT STROLLER Carrier baby carraige",
+        "Baby Toys Plush Rattle Teething Rings"
+        
     ],
     "Cleaning Supplies": [
         "Cleaning Products",
