@@ -12,13 +12,13 @@ import openai
 # local prompt_examples module
 from prompt_examples import get_prompt_examples
 
-'''
-Defining a subitem to be used for the includedItems category in the Item object.
-The includedItems fields consists of a list of SubItems and can be empty.
-For example, a 'cheesburger' Item might have includedItems:['bun', 'patty', 'cheese']
-'''
-class SubItem(BaseModel):
-    description: str
+# '''
+# Defining a subitem to be used for the includedItems category in the Item object.
+# The includedItems fields consists of a list of SubItems and can be empty.
+# For example, a 'cheesburger' Item might have includedItems:['bun', 'patty', 'cheese']
+# '''
+# class SubItem(BaseModel):
+#     description: str
 
 '''
 An enumeration of the types of payment methods for the paymentType category in the ReceiptInfo object.
@@ -35,7 +35,7 @@ This object represents a single item (good/service) that was purchased in the re
 class Item(BaseModel):
     description: str=Field(description="item name")
     unabbreviatedDescription: str=Field(default="", description="unabbreviated name of field:description")
-    includedItems: List[SubItem]=Field(default_factory=list)
+    includedItems: List[str]=Field(default_factory=list)
     quantity: int=Field(description="number of items")
     unitPrice: float=Field(description="cost per unit")
     totalPrice: float=Field(description="total cost of unit(s) purchased")
@@ -61,12 +61,22 @@ class ReceiptInfo(BaseModel):
     tax: float=Field(description="tax amount")
     total: float=Field(description="total amount paid")
     ITEMS: List[Item]
+    
+    @field_validator('paymentType', mode="before")
+    def validate_paymentType(cls, paymentType: str) -> PaymentType:
+        string = paymentType.lower()
+        returnValue = PaymentType.CASH
+        if 'credit' in string:
+            returnValue = PaymentType.CREDIT
+        elif 'debit' in string:
+            returnValue = PaymentType.DEBIT
+        return returnValue
 
 def make_receiptParser():
     return PydanticOutputParser(pydantic_object=ReceiptInfo)
 
 def get_prompt_prefix():
-    return '''You are a capable large language model. Your task is to extract data from a given receipt and format it into the JSON schema below. Use the default values if you're not sure. Try to infer a value for the field: unabbreviatedDescription. The values for the fields: description and unnabbreviatedDescription can not be the same. Text can be used for multiple fields.
+    return '''You are a capable large language model. Your task is to extract data from a given receipt and format it into the JSON schema below. Use the default values if you're not sure. Try to infer a value for the field: unabbreviatedDescription. The values for the fields: description and unnabbreviatedDescription can not be the same. Text can be used for multiple fields. Please use double-quotes for all string values.
     
     {format_instructions}
     
@@ -89,7 +99,7 @@ def make_fewshot_prompt(receiptParser):
     suffix = get_suffix(),
     ))
 
-def make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key="INSERT OPENAI API KEY"):
+def make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key="INSERT_OPENAI_API KEY"):
     return ChatOpenAIChatOpenAI(model=model, temperature=temperature, openai_api_key=openai_api_key)
 
 def make_chain(fewshot_prompt, model, receiptParser):
