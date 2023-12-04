@@ -8,12 +8,12 @@ import os
 FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
 This code has not been tested yet.
 '''
-receipts_folder = "receipts/text" # the receipt folder should have two subfolders of images and text
+receipts_folder = "data/receipts/text" # the receipt folder should have two subfolders of images and text
 
-openai_api_key="INSERT_OPENAI_API_KEY_HERE"
+openai_api_key="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"
+
 
 receiptParser = convert.make_receiptParser()
-print(receiptParser.get_format_instructions())
 fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
 model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
 chain = convert.make_chain(fewshot_prompt, model, receiptParser)
