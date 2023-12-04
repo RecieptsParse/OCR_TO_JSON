@@ -125,13 +125,14 @@ Product categories for making product database in product_database.py
 
 product_categories = {
     "Food Products": [
-        "Fresh Apple slices Bananas Carrot Watermelon Lettuce Tomato Cucumber Foodland", 
-        "Poultry chicken lamb beef shrimp bacon hamburger spam fish salmon ahi poke steak ribs",
-        "Grain cereal rice wheat millet potato granola oatmeal bread crackers",
+        "Fresh Apple slices Bananas Carrot Watermelon cantalope grapes Cucumber Foodland", 
+        "Poultry chicken lamb beef shrimp bacon hamburger spam fish salmon ahi poke steak ribs oyster",
+        "Grain cereal rice wheat millet potato granola oatmeal sweet bread loaf crackers eggs",
+        "salt vinegar mayonase ketchup pepper mustard pickels lettuce tomato",
         "ORG – Organic VG – Vegetable PK – Pack GF - gluten free SF - sugar freeWhole Foods", 
         "GRK YGRT SNCK CKN BRST RSTD PNUT BTTR SR CRM OR CCNUT",
         "ice cream twix jolly rancher milky way gummy bears KitKat lillipop sour gummy peg bag chocolate See's Candy",
-        "Packaged Frozen Canned Foods Campbell's Soup Lunchables Microwaveable Instant Ramen Safeway",
+        "Packaged Frozen Canned Foods Campbell's Soup Lunchables Microwaveable Instant Ramen Safeway bento curry",
         "Samyang Hot Ramen Turtle Chips Kimchi Miso Matcha Pocky Soy Sauce H-mart Don Quijote"
     ],
     "Beverages": [
@@ -146,17 +147,18 @@ product_categories = {
         "Facecare products Revitalizing Vitamin C Serum Mineral Sunscreen SPF 50 Bamboo Charcoal Detoxifying Face Mask",
         "Skincare Products Anti-Aging Moisturizing Cream Essential Oil Hydrating Aloe Vera Body Lotion Dial Dove",
         "Haircare Products Curl Defining Mousse Heat Protectant Spray Volume-Boosting Dry Shampoo Scalp Scrub Conditioner",
-        "Fragrance Cologne Spray Lotus Blossom Scented Perfume Rose Body Mist",
+        "Fragrance Cologne Spray Lotus Blossom Scented Perfume Rose Body Mist deodorant",
         "Oral Care Colgate CREST 3D WHT LISTERIN Mouthwash ORAL-B TOOTHBRUSH Whitening Toothpaste Floss Waterpik",
         "Nail Care Clippers Cuticle Oil Polish Remover Manicure Spa"
     ],
     "Clothing And Accessories": [
         "Top Turtleneck ribbed knit long sleeve sweater Graphic print oversized tee V-neck striped cropped top ROSS",
         "Bottoms High-Waisted Skinny Jeans Cargo Pants Pleated Midi Skirt Denim Capris Leggings Old Navy",
-        "Dresses Floral Maxi Dress Sundress Strapless Slip Evening Gown Macys",
-        "Activewear Compression Joggers TechMesh Breathable Workout DriFit TankTop Sneaker cleats FootLocker",
-        "Headwear Knit Beanie Hat Baseball Cap Sun Visor Fedora Snapback",
-        "Accessories Eyewear Sunglasses Jewelry Rings Necklace Scarves Gloves Belts Watches Tie Leather Bag Claire's"
+        "Dresses Floral Maxi Dress Sundress Strapless Slip Evening Gown Macys robe pajamas apron",
+        "coat jacket jumper raincoat vest sweatshirt blazer",
+        "Activewear Compression Joggers TechMesh Breathable Workout DriFit TankTop Sneaker cleats FootLocker swimsuit",
+        "Headwear Knit Beanie Hat Baseball Cap Sun Visor Fedora Snapback party hat helmet crown hair-tie scrunchy",
+        "Accessories Eyewear Sunglasses Jewelry Rings Necklace pendant Scarves Gloves Belts Watches Tie Leather Bag Claire's"
     ],
     "Electronics": [
         "Mobile Devices SAMSUNG GALAXY S20 ULTRA 128GB COSMIC GRAY IPHONE 13 PRO NOKIA BLACKBERRY KEY3 64GB Bestbuy",
@@ -164,22 +166,22 @@ product_categories = {
         "Gaming Consoles NINTENDO SWITCH 3DS XL SONY PLAYSTATION 3 XBOX 360 SEGA GENESIS Gamecube controllers Gamestop",
         "Apple IPHONE AIRPODS PRO CHARGING CASE IPAD PRO MACBOOK AIR USB-C LIGHTNING CABLE",
         "Computers HP Pavilion Laptop Graphics Card Keyboard Mousepad C4000 Router Microsoft Surface Wifi",
-        "Appliances Coffee Maker Refrigerator Blu-ray Player Air Conditioner Microwave Batteries"
+        "Appliances Coffee Maker Refrigerator Blu-ray Player Air Conditioner Microwave Batteries lightbulb"
     ],
     "Home": [
-        "Furniture coffee table wooden chair vanity dresser nightstand sofa bookshelf plastic storage bins",
+        "Furniture coffee table wooden chair vanity dresser nightstand sofa bookshelf plastic storage bins fan",
         "Home Decor clock ceramic vase picture frame mirror curtains art wallpaper indoor succulent plants",
-        "Queen-sized memory foam mattress comforter Bedding throw blanket body pillow cover area rug",
-        "Dining Ware Kitchenware Stainless Steel kitchen knife porcelain dinner plate china set fork chopsticks ZIPLOC",
-        "Home appliances blender stove microwave lamp refrigerator air fryer toaster air conditioner TV Cable Wifi",
+        "Queen-sized memory foam mattress comforter Bedding throw blanket body pillow cover towel area rug table cloth",
+        "Dining Ware Kitchenware Stainless Steel kitchen knife pot pan porcelain dinner plate china set fork chopsticks ZIPLOC",
+        "Home appliances blender stove microwave lamp refrigerator air fryer toaster air conditioner TV Cable Wifi fire-extinguisher",
         "Home Office printer paper stapler printer paper desk monitor stand folders Office Depot"
     ],
     "Outdoor Goods": [
-        "Gardening Tools Watering Can Garden Gloves hose nozzle rake wheelbarrow shovel pruning shears",
+        "Gardening Tools Watering Can Garden Gloves hose nozzle rake wheelbarrow shovel pruning shears weeder",
         "Plants potting soil flower pots compost bin hanging fern fertilizer seedlings mulch concrete",
         "Outdoor Furniture patio lounge chair picnic table fire pit swing hammock bench garden shed",
         "Outdoor Decor wind chime garden gnome birdhouse bird feeder fairy LED lights",
-        "Outdoor appliances BBQ Grill lawn mower lantern mosquito zapper sprinklers"
+        "Outdoor appliances BBQ Grill lawn mower lantern mosquito zapper sprinklers rope"
     ],
     "Automotive": [
         "Car Parts Windsheild Wipers Break Pads engine oil fuel injector Car Wax Oil Gas",
@@ -188,14 +190,16 @@ product_categories = {
         "car battery jumper cables spark plugs headlight bulbs"
     ],
     "Toys And Games": [
-        "Children's Toys my little pony Barbie doll LEGO CITY TRANSFORMERS ACTION FIG NERF N-STRIKE ELITE BLASTER",
+        "Children's Toys my little pony Barbie doll LEGO CITY TRANSFORMERS ACTION FIG NERF N-STRIKE ELITE BLASTER dinosaur clown",
         "Board Games MONOPOLY Scrabble Battleship naval combat Catan Risk Clue",
         "stuffed animal cuddly plush toy Teddy Bear Pillow Pet Squishmallow Webkinz TY Beanie",
         "Card Games Pokemon trading Yugi-oh deck Uno magic exploding kittens cards against humanity",
+        "Costume wand sword knight princess magic broomstick unicorns goblins werewolves troll staff",
+        "lightsaber spaceship alien figure starwars",
         "Creative Jigsaw Puzzle Building Blocks Rubik's cube strategy chess set Jenga Dominos"
     ],
     "Sporting Goods": [
-        "Sports Equipment Tennis Racket Baseball Bat Golf Club Kayak Paddle Rollerblades Archery Bow",
+        "Sports Equipment Tennis Racket Baseball Bat Golf Club Kayak Paddle Rollerblades Archery Bow boat bike",
         "Nike Dri-FIT Running Shoes Under Armour Compression Leggings Speedo Swim Goggles Knee Pads Boxing Gloves",
         "Fitness Gear Climbing Harness Resistance Band Cardio Jump Rope Cycling Helmet Yoga Mat Dumbbell",
         "Weight Bench Medicine Ball Training Cone Set Basket Ball Hoop Volleyball Net Indoor Table Tennis Table"
@@ -210,7 +214,8 @@ product_categories = {
         "First Aid Supplies Band-Aids Antiseptic Wipes Sterile Gauze Pads Cold Packs Compress Hand Sanitizer",
         "DayQuil Severe Cold & Flu Relief Robitussin Maximum Strength Cough and Chest Congestion Kleenex Halls Cough Drops",
         "feminine hygiene products pads tampon menstrual cups plan-b birth-control morning after pills panty liners",
-        "Medical Equipment Blood Pressure Monitor Digital Thermometer Crutches Folding Walker Medical Scale"
+        "percription glasses contacts",
+        "Medical Equipment Blood Pressure Monitor Digital Thermometer Crutches Folding Walker Medical Scale wheelchair cane"
     ],
     "Pet Supplies": [
         "Pet Food Treats Dry dog canned food CHEW STICKS Puppy Formula",
@@ -232,10 +237,10 @@ product_categories = {
     ],
     "Gifts And Miscellaneous": [
         "Gifts Wrapping Paper Gift Bags cardboard Boxes ribbons tape sewing kit",
-        "Greeting Cards Envelopes HLMRK Hallmark Seasonal Items Christmas Ornaments Scented Candles",
+        "Greeting Cards Envelopes HLMRK Hallmark Seasonal Items Christmas Ornaments Scented Candles advent calendar",
         "Musical instruments acoustic guitar Fender piano violin sheet music trumpet drum bass microphone Yamaha",
         "DRIVER LICENSE permit state ID certificate notarized",
-        "Souvenirs keychain snowglobe magnet postcard stamps"
+        "Souvenirs keychain snowglobe magnet postcard stamps compass"
     ],
     "Event Tickets": [
         "Movie Tickets Cinema Theatre Regal Consolidated Film Festival General Admission Child",
