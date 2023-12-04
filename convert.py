@@ -72,6 +72,7 @@ class ReceiptInfo(BaseModel):
             returnValue = PaymentType.DEBIT
         return returnValue
 
+# <-- Break Point --> 
 def make_receiptParser():
     return PydanticOutputParser(pydantic_object=ReceiptInfo)
 
