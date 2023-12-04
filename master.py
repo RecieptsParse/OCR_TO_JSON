@@ -8,7 +8,8 @@ import os
 FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
 This code has not been tested yet.
 '''
-receipts_folder = "data/receipts/text" # the receipt folder should have two subfolders of images and text
+receipts_folder = "data/receipts/text_1" # the receipt folder should have two subfolders of images and text
+# ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
 
 openai_api_key="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"
 
@@ -18,20 +19,18 @@ fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructio
 model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
 chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
-
-json_objects = []
-receipts_folder = "data/receipts/text"
 for filename in os.listdir(receipts_folder):
     if filename.endswith('.txt'):
         with open(os.path.join(receipts_folder, filename)) as f:
             data = f.read()
+            # IF DEBUGGING IS NEEDED
+            # print()
+            # print(f'reading from {filename}')
+            # print(data)
             response = chain.invoke({"input": data})
-            json_objects.append(response.model_dump_json())
-
-with open('receipts_json.text', 'w') as fp:
-    for receipt in json_objects:
-        # write each receipt JSON on a new line
-        fp.write("%s\n" % receipt)
+            with open('receipts_json.text', 'w') as fp: # Write each JSON object as it gets parsed
+                    # write each receipt JSON on a new line
+                    fp.write(response.model_dump_json() + "\n")
     print('Done')
 
             
