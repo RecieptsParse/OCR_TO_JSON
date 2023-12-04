@@ -3,6 +3,8 @@ import product_database
 import search
 import convert
 import os
+import json
+import pandas as pd
 
 '''
 FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
@@ -20,7 +22,7 @@ model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_a
 chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
 for filename in os.listdir(receipts_folder):
-    if filename.endswith('.txt'):
+    if filename.endswith('.json'):
         with open(os.path.join(receipts_folder, filename)) as f:
             data = f.read()
             # IF DEBUGGING IS NEEDED
@@ -28,7 +30,7 @@ for filename in os.listdir(receipts_folder):
             # print(f'reading from {filename}')
             # print(data)
             response = chain.invoke({"input": data})
-            with open('receipts_json.text', 'w') as fp: # Write each JSON object as it gets parsed
+            with open('all_receipts_json.json', 'w') as fp: # Write each JSON object as it gets parsed
                     # write each receipt JSON on a new line
                     fp.write(response.model_dump_json() + "\n")
     print('Done')
@@ -45,6 +47,44 @@ product_database.make_product_database()
 """
 Get JSON and search for fields (Merchant, First Item, DiningOption, Second Itemm) -- Similar to Assignment 1
 """
+
+"""
+NEED TO TEST
+"""
+def read_json_receipts(file_path):
+    with open(file_path, 'r') as f:
+         lines = f.readlines()
+    json_objects = []
+    for line in lines:
+         json_object = json.loads(line)
+         json_objects.append(json_object)
+    return json_objects
+
+def read_one(json_object):
+    dataframe = pd.DataFrame()
+    for i in range(len(json_object)):
+        one_reciept = json_object[i]
+        merchant_name = one_reciept['merchant']
+        first_item = one_reciept['ITEMS'][0]['unabbreviatedDescription'] # need to read as JSON object
+        diining_option = one_reciept['DiningOption']
+        if (first_item['ITEMS'][1]['unabbreviatedDescription']):
+            second_item = first_item['ITEMS'][1]['unabbreviatedDescription']
+            string = f'{merchant_name} {first_item} {diining_option} {second_item}'
+        else:
+            string = f'{merchant_name} {first_item} {diining_option}'
+        
+        top_vendor = search.query_classification(string, 5, "vendor")
+        print(top_vendor)
+        items_for_receipt = one_reciept['ITEMS']
+        for i in range(one_reciept['ITEMS']):
+             product_query = items_for_receipt[i]['unabbreviatedDescription']
+             top_product = search.query_classification(product_query, 10, "product")
+             print(top_product)
+     
+    
+        
+          
+
 # {Merchant} {First Item} {diningOptions} {SecondItem}
 vendor_query = "mcDonalds hamburger meal take-out fries"
 top_vendor = search.query_classification(vendor_query, 5, "vendor")
