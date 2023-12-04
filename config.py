@@ -129,7 +129,7 @@ product_categories = {
         "Poultry chicken lamb beef shrimp bacon hamburger spam fish salmon ahi poke steak ribs",
         "Grain cereal rice wheat millet potato granola oatmeal bread crackers",
         "ORG – Organic VG – Vegetable PK – Pack GF - gluten free SF - sugar freeWhole Foods", 
-        "GRK YGRT SNCK CKN BRST RSTD PNUT BTTR SR CRM",
+        "GRK YGRT SNCK CKN BRST RSTD PNUT BTTR SR CRM OR CCNUT",
         "ice cream twix jolly rancher milky way gummy bears KitKat lillipop sour gummy peg bag chocolate See's Candy",
         "Packaged Frozen Canned Foods Campbell's Soup Lunchables Microwaveable Instant Ramen Safeway",
         "Samyang Hot Ramen Turtle Chips Kimchi Miso Matcha Pocky Soy Sauce H-mart Don Quijote"
@@ -164,7 +164,7 @@ product_categories = {
         "Gaming Consoles NINTENDO SWITCH 3DS XL SONY PLAYSTATION 3 XBOX 360 SEGA GENESIS Gamecube controllers Gamestop",
         "Apple IPHONE AIRPODS PRO CHARGING CASE IPAD PRO MACBOOK AIR USB-C LIGHTNING CABLE",
         "Computers HP Pavilion Laptop Graphics Card Keyboard Mousepad C4000 Router Microsoft Surface Wifi",
-        "Appliances Coffee Maker Refrigerator Blu-ray Player Air Conditioner Microwave"
+        "Appliances Coffee Maker Refrigerator Blu-ray Player Air Conditioner Microwave Batteries"
     ],
     "Home": [
         "Furniture coffee table wooden chair vanity dresser nightstand sofa bookshelf plastic storage bins",
@@ -176,7 +176,7 @@ product_categories = {
     ],
     "Outdoor Goods": [
         "Gardening Tools Watering Can Garden Gloves hose nozzle rake wheelbarrow shovel pruning shears",
-        "Plants potting soil flower pots compost bin hanging fern fertilizer seedlings mulch",
+        "Plants potting soil flower pots compost bin hanging fern fertilizer seedlings mulch concrete",
         "Outdoor Furniture patio lounge chair picnic table fire pit swing hammock bench garden shed",
         "Outdoor Decor wind chime garden gnome birdhouse bird feeder fairy LED lights",
         "Outdoor appliances BBQ Grill lawn mower lantern mosquito zapper sprinklers"
@@ -209,6 +209,7 @@ product_categories = {
         "Medications Supplements Chewable Tablets Pain Relief Tablets Vitamins Omega-3 Fish Oil Capsules Probiotic",
         "First Aid Supplies Band-Aids Antiseptic Wipes Sterile Gauze Pads Cold Packs Compress Hand Sanitizer",
         "DayQuil Severe Cold & Flu Relief Robitussin Maximum Strength Cough and Chest Congestion Kleenex Halls Cough Drops",
+        "feminine hygiene products pads tampon menstrual cups plan-b birth-control morning after pills panty liners",
         "Medical Equipment Blood Pressure Monitor Digital Thermometer Crutches Folding Walker Medical Scale"
     ],
     "Pet Supplies": [
@@ -230,12 +231,14 @@ product_categories = {
         "Cleaning Tools cloth paper towels broom WONDER MOP dustpan Odor Eliminator air freshener glade"
     ],
     "Gifts And Miscellaneous": [
-        "Gifts Wrapping Paper Gift Bags cardboard Boxes ribbons tape",
+        "Gifts Wrapping Paper Gift Bags cardboard Boxes ribbons tape sewing kit",
         "Greeting Cards Envelopes HLMRK Hallmark Seasonal Items Christmas Ornaments Scented Candles",
+        "Musical instruments acoustic guitar Fender piano violin sheet music trumpet drum bass microphone Yamaha",
+        "DRIVER LICENSE permit state ID certificate notarized",
         "Souvenirs keychain snowglobe magnet postcard stamps"
     ],
     "Event Tickets": [
-        "Movie Tickets Cinema Theatre Regal Consolidated Film Festival General Admission",
+        "Movie Tickets Cinema Theatre Regal Consolidated Film Festival General Admission Child",
         "Honolulu Aquarium Tickets Zoo Museum Art Exhibition Planetarium Sports game",
         "Amusement Park Tickets Wet n Wild Season Pass Carnival Cirus Comedy Night",
         "Event Tickets Blaisdell Symphony Concert Hall Ballet Dance Performance Opera Live music Band"
