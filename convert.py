@@ -92,8 +92,8 @@ def make_fewshot_prompt(format_instructions):
     ))
 
 def make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key="INSERT_OPENAI_API KEY"):
-    return ChatOpenAIChatOpenAI(model=model, temperature=temperature, openai_api_key=openai_api_key)
+    return ChatOpenAI(model=model, temperature=temperature, openai_api_key=openai_api_key)
 
 def make_chain(fewshot_prompt, model, receiptParser):
-    chain = execute_fewshot_prompt | model | receiptParser
+    chain = fewshot_prompt | model | receiptParser
     return chain
