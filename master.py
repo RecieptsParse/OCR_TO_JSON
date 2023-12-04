@@ -80,6 +80,14 @@ def read_one(json_object):
              product_query = items_for_receipt[i]['unabbreviatedDescription']
              top_product = search.query_classification(product_query, 10, "product")
              print(top_product)
+
+"""
+Proposed: Data Structure
+
+|      | Vendor Category | Item1_Product category | Item2_Product Category | Item2_ Product Category |  
+|   1  |                 |                        |                        |                         | 
+|   2  |                 |                        |                        |                         |
+"""
      
     
         
