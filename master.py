@@ -42,11 +42,18 @@ model for embeddings & descriptions can be updated in config.py
 vendor_database.make_vendor_database()
 product_database.make_product_database()
 
-# Example usage for vendors
+
+"""
+Get JSON and search for fields (Merchant, First Item, DiningOption, Second Itemm) -- Similar to Assignment 1
+"""
+# {Merchant} {First Item} {diningOptions} {SecondItem}
 vendor_query = "mcDonalds hamburger meal take-out fries"
 top_vendor = search.query_classification(vendor_query, 5, "vendor")
 
-# Example usage for products
+"""
+Get JSON and search for items (iterate through all items) -- Simlilar to Assignmnet 1
+"""
+# Items in JSON 
 product_query = "organic apples"
 top_product = search.query_classification(product_query, 10, "product")
 
