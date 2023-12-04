@@ -65,7 +65,7 @@ store. please call customer service.
 00008100202812307152017
 <UNKNOWN> Thank You and Please Come Again **'''
 
-example_1_output='''{{"merchant": "H MART","address": "458 Keawe st","city": "Honolulu","state": "<UNKNOWN>","phoneNumber": "<UNKNOWN>","tax": "2.00","total": "44.45","receiptDate": "07/15/23","receiptTime": "08:16pm",“totalItems”:"5",“paymentType”:”Credit”,“DiningOptions”:”<UNKNOWN>”,“creditCardType”:”Discover”,“totalDiscount”:”0.00”,"ITEMS":[{{"description": "SY RAMEN HOT MULTI","unabbreviatedDescription": "Sy Ramen Hot Multi",“includedItems":[],"quantity": "1","unitPrice": "8.99","totalPrice": "8.99","discountAmount": "0.00"}},{{"description": "IND MI GORENG NOOD”,"unabbreviatedDescription": "Ind Mi Goreng Noodle",“includedItems":[],"quantity": "1","unitPrice": "4.99","totalPrice": "4.99","discountAmount": "0.00"}},{{"description": "HT BEEF DUMPLING D”,"unabbreviatedDescription": "Hot Beef Dumpling",“includedItems":[],"quantity": "1","unitPrice": "19.99","totalPrice": "19.99","discountAmount": "0.00"}},{{"description": "NS SHRIMP HOT SNCK”,"unabbreviatedDescription": "Shrimp Hot Snack",“includedItems":[],"quantity": "1","unitPrice": "1.99","totalPrice": "1.99","discountAmount": "0.00"}},{{"description": "ME AZUKI ICE CREAM”,"unabbreviatedDescription": "Azuki Ice Cream",“includedItems":[],"quantity": "1","unitPrice": "6.49","totalPrice": "6.49","discountAmount": "0.00"}}]}}'''
+example_1_output='''{{"merchant":"H MART","address":"458 Keawe st","city":"Honolulu","state":"<UNKNOWN>","phoneNumber":"<UNKNOWN>","tax":2.00,"total":44.45,"receiptDate":"07/15/23","receiptTime":"08:16pm","totalItems":5,"paymentType":"credit","diningOptions":"","creditCardType":"Discover","totalDiscount":0.00,"ITEMS":[{{"description":"SY RAMEN HOT MULTI","unabbreviatedDescription":"Sy Ramen Hot Multi","includedItems":[],"quantity":1,"unitPrice":8.99,"totalPrice":8.99,"discountAmount":0.00}},{{"description":"IND MI GORENG NOOD","unabbreviatedDescription":"Ind Mi Goreng Noodle","includedItems":[],"quantity":1,"unitPrice":4.99,"totalPrice":4.99,"discountAmount":0.00}},{{"description":"HT BEEF DUMPLING D","unabbreviatedDescription":"Hot Beef Dumpling","includedItems":[],"quantity":1,"unitPrice":19.99,"totalPrice":19.99,"discountAmount":0.00}},{{"description":"NS SHRIMP HOT SNCK","unabbreviatedDescription":"Shrimp Hot Snack","includedItems":[],"quantity":1,"unitPrice":1.99,"totalPrice":1.99,"discountAmount":0.00}},{{"description":"ME AZUKI ICE CREAM","unabbreviatedDescription":"Azuki Ice Cream","includedItems":[],"quantity":1,"unitPrice":6.49,"totalPrice":6.49,"discountAmount":0.00}}]}}'''
 
 example_2_input ='''<UNKNOWN> PURCHASE **
 Panda Express #2150
@@ -134,7 +134,7 @@ Email <UNKNOWN> quired to receive coupon
 Join the Panda team!
 PandaCareers.com'''
 
-example_2_output ='''{{"merchant": "Panda Express # 2150","address": "<UNKNOWN>","city": "Honclulu","state": "HI","phoneNumber": "(808)956-7229","tax": "0.57","total": "12.67","receiptDate": "6/9/2023","receiptTime": "11:02:50 AM",“totalItems”:"2",“paymentType”:”Debit”,“DiningOptions”:”TO GO”,“creditCardType”:”Visa”,“totalDiscount”:”0.00”,"ITEMS":[{{"description": "Plate","unabbreviatedDescription": "Plate",“includedItems”: ["FRIED RICE-½", "FRIED <UNKNOWN>", "STR BN CKN BREAST", "ORANGE CKN"],"quantity": "1","unitPrice": "10.60","totalPrice": "10.60","discountAmount": "0.00"}},{{"description": "XTRA ENTREE”,"unabbreviatedDescription": "Extra Entree",“includedItems”: [“VEG SPRING <UNKNOWN>”],"quantity": "1","unitPrice": "1.50","totalPrice": "1.50","discountAmount": "0.00"}}]}}'''
+example_2_output ='''{{"merchant":"Panda Express # 2150","address":"<UNKNOWN>","city":"Honclulu","state":"HI","phoneNumber":"(808)956-7229","tax":0.57,"total":12.67,"receiptDate":"6/9/2023","receiptTime":"11:02:50 AM","totalItems":2,"paymentType":"Debit","diningOptions":"TO GO","creditCardType":"Visa","totalDiscount":0.00,"ITEMS":[{{"description":"Plate","unabbreviatedDescription":"Plate","includedItems": ["FRIED RICE-½", "FRIED <UNKNOWN>","STR BN CKN BREAST","ORANGE CKN"],"quantity":1,"unitPrice":10.60,"totalPrice":10.60,"discountAmount":0.00}},{{"description":"XTRA ENTREE","unabbreviatedDescription":"Extra Entree","includedItems":["VEG SPRING <UNKNOWN>"],"quantity":1,"unitPrice":1.50,"totalPrice":1.50,"discountAmount":0.00}}]}}'''
 
 example_3_input='''Longs Drugs <UNKNOWN>
 4211 WAIALAE AVE
@@ -209,7 +209,7 @@ Share Your Feedback
 Hablamos español
 THANK YOU. SHOP 24 HOURS AT CVS.COM'''
 
-example_3_output='''{{"merchant": "Longs Drugs","address": "4211 WAIALAE AVE","city": "HONOLULU","state": "HI","phoneNumber": "808.732.0781","tax": "0.77","total": "17.24","receiptDate": "JULY 3, 2023","receiptTime": "2:48 PM",“totalItems”:"6",“paymentType”:”Credit”,“DiningOptions”:”None”,“creditCardType”:”CHASE VISA”,“totalDiscount”:”0.00”,"ITEMS":[{{"description": "CFRIO SF PEG BAG","unabbreviatedDescription": "CoffeeRio Peg Bag", “includedItems":[],"quantity": "3","unitPrice": "4.59","totalPrice": "13.77","discountAmount": "0.00"}},{{"description": "CR GYSR SPR WTR","unabbreviatedDescription": "Crystal Geyser Spring Water", “includedItems":[],"quantity": "2","unitPrice": "1.29","totalPrice": "2.58","discountAmount": "0.00"}},{{"description": "BOTTLE DEPOSIT","unabbreviatedDescription": "Bottle Deposit",“includedItems":[],"quantity": "2","unitPrice": "0.05","totalPrice": "0.10","discountAmount": "0.00"}},{{"description": "HI CONTAINER FEE","unabbreviatedDescription": "HI Container Fee",“includedItems":[],"quantity": "2","unitPrice": "0.01","totalPrice": "0.02”,"discountAmount": "0.00"}}]}}'''
+example_3_output='''{{"merchant":"Longs Drugs","address":"4211 WAIALAE AVE","city":"HONOLULU","state":"HI","phoneNumber":"808.732.0781","tax":0.77,"total":17.24,"receiptDate":"JULY 3, 2023","receiptTime":"2:48 PM","totalItems":6,"paymentType":"Credit","diningOptions":"","creditCardType":"CHASE VISA","totalDiscount":0.00,"ITEMS":[{{"description":"CFRIO SF PEG BAG","unabbreviatedDescription":"CoffeeRio Peg Bag","includedItems":[],"quantity":3,"unitPrice":4.59,"totalPrice":13.77,"discountAmount":0.00}},{{"description": "CR GYSR SPR WTR","unabbreviatedDescription":"Crystal Geyser Spring Water","includedItems":[],"quantity":2,"unitPrice":1.29,"totalPrice":2.58,"discountAmount":0.00}},{{"description":"BOTTLE DEPOSIT","unabbreviatedDescription":"Bottle Deposit","includedItems":[],"quantity":2,"unitPrice":0.05,"totalPrice":0.10,"discountAmount":0.00}},{{"description":"HI CONTAINER FEE","unabbreviatedDescription":"HI Container Fee","includedItems":[],"quantity":2,"unitPrice":0.01,"totalPrice":0.02,"discountAmount":0.00}}]}}'''
 
 example_4_input='''129
 For question comments or concerns
@@ -267,7 +267,7 @@ Text MD349 To 38000
 Sign up for MyMcDonald's rewards
 to earn points on future visits'''
 
-example_4_output='''{{"merchant":"McDonald's Restaurant","address": "3549 RUSSETT GREEN E","city": "<UNKNOWN>","state": MD","phoneNumber": "800-683-5587","tax": "0.48","total": "8.56","receiptDate": "07/04/2023”,"receiptTime": "04:24 PM",“totalItems”:"2",“paymentType”:”CREDIT”,“DiningOptions”:”Take-Out”,“creditCardType”:”Visa”,“totalDiscount”:”0.00”,"ITEMS":[{{"description": "Happy Meal Ch Burger","unabbreviatedDescription": "Happy Meal Cheese Burger", “includedItems”: [“Cheeseburger", "NO Pickle", "Extra Kids Fry", "Apple Juice", "S Apl Jc Surcharge", "ELEMENTAL”],"quantity": "1","unitPrice": “4.39","totalPrice": "4.39","discountAmount": "0.00"}},{{"description": "S Grimace Bday Shake","unabbreviatedDescription": "Grimace Birthday Shake", “includedItems”: [“S Shake Surcharge”],"quantity": "1","unitPrice": “3.69","totalPrice": "3.69","discountAmount": "0.00"}}]}}'''
+example_4_output='''{{"merchant":"McDonald's Restaurant","address":"3549 RUSSETT GREEN E","city":"<UNKNOWN>","state":MD","phoneNumber":"800-683-5587","tax":0.48,"total":8.56,"receiptDate":"07/04/2023","receiptTime":"04:24 PM","totalItems":2,"paymentType":"CREDIT","diningOptions":"Take-Out","creditCardType":"Visa","totalDiscount":0.00,"ITEMS":[{{"description":"Happy Meal Ch Burger","unabbreviatedDescription":"Happy Meal Cheese Burger","includedItems":["Cheeseburger","NO Pickle","Extra Kids Fry","Apple Juice","S Apl Jc Surcharge","ELEMENTAL"],"quantity":1,"unitPrice":4.39,"totalPrice":4.39,"discountAmount":0.00}},{{"description":"S Grimace Bday Shake","unabbreviatedDescription":"Grimace Birthday Shake","includedItems":["S Shake Surcharge"],"quantity":1,"unitPrice":3.69,"totalPrice":3.69,"discountAmount":0.00}}]}}'''
 
 example_5_input='''Longs Drugs <UNKNOWN>
 91-919 FORT WEAVER RD
@@ -337,7 +337,134 @@ JULY 18, 2023
 7:38 PM
 <UNKNOWN> <UNKNOWN>'''
 
-example_5_output='''{{"merchant": "Longs Drugs","address": "91-919 FORT WEAVER RD","city": "EWA BEACH","state": "HI","phoneNumber": "808.689.5860","tax": "0.36","total": "7.99","receiptDate": "JULY 18, 2023”,"receiptTime": "7:38 PM",“totalItems”:"3",“paymentType”:”DEBIT”,“DiningOptions”:”None”,“creditCardType”:”<UNKNOWN>”,“totalDiscount”:”7.54”,"ITEMS":[{{"description": "OREO ORIG DBL STFF","unabbreviatedDescription": "Oreo Double Stuff",“includedItems":[], "quantity": "1","unitPrice": “6.99","totalPrice": "2.93","discountAmount": "4.06"}},{{"description": "BAUD WAFER CHOCLT","unabbreviatedDescription": "Wafer Chocolate",“includedItems":[], "quantity": "1","unitPrice": “2.69","totalPrice": "1.10","discountAmount": "1.59"}},{{"description": " HWNISL TEABG GVGNS","unabbreviatedDescription": "Teabag",“includedItems":[],"quantity": "1","unitPrice": “5.49","totalPrice": "3.60","discountAmount": "1.89"}}]}}'''
+example_5_output='''{{"merchant":"Longs Drugs","address":"91-919 FORT WEAVER RD","city":"EWA BEACH","state":"HI","phoneNumber":"808.689.5860","tax":0.36,"total":7.99,"receiptDate":"JULY 18, 2023","receiptTime":"7:38 PM","totalItems":3,"paymentType":"DEBIT","diningOptions":"","creditCardType":"<UNKNOWN>","totalDiscount":7.54,"ITEMS":[{{"description":"OREO ORIG DBL STFF","unabbreviatedDescription":"Oreo Double Stuff","includedItems":[],"quantity":1,"unitPrice":6.99,"totalPrice":2.93,"discountAmount":4.06}},{{"description":"BAUD WAFER CHOCLT","unabbreviatedDescription":"Wafer Chocolate","includedItems":[],"quantity":1,"unitPrice":2.69,"totalPrice":1.10,"discountAmount":1.59}},{{"description":"HWNISL TEABG GVGNS","unabbreviatedDescription":"Teabag","includedItems":[],"quantity":1,"unitPrice":5.49,"totalPrice":3.60,"discountAmount":1.89}}]}}'''
+
+example_6_input='''
+Store 215 Dir Dane Elder
+Main:(808) 396-6337
+377 Keahole Street
+HONOLULU HI 96825
+00021505202752310131927
+YOUR CASHIER TODAY WAS SELF
+GROCERY
+Price
+You Pay
+7889530002 OYSTER SAUCE 180Z
+6.79
+6.79 B
+BAKED GOODS
+22381100000 QRT CK LEMON
+8.99
+8.99 B
+MEAT
+4262900325 NY STYLE GRND PORK
+6.49
+6.49 B
+PRODUCE
+4069
+GREEN CABBAGE
+7.98
+7.98 B
+WT
+4.46 <UNKNOWN> @ $1.79 /lb
+4238
+REDUCED BANANAS
+4.49
+4.49 B
+WT
+3.23 <UNKNOWN> @ $1.39 /lb
+TAX
+1.64
+****
+BALANCE
+36.38
+Credit Purchase 10/13/23 19:27
+<UNKNOWN> # ************1301
+<UNKNOWN> <UNKNOWN> AUTH: <UNKNOWN>
+PAYMENT AMOUNT
+36.38
+AL VISA CREDIT
+AID A0000000031010
+TVR 0000000000
+TSI 0000
+Visa
+36.38
+CHANGE
+0.00
+YOUR REWARDS
+Points Towards Next Reward 34 of 100
+TOTAL NUMBER OF ITEMS SOLD =
+5
+10/13/23 19:27 215 52 275
+8852
+Thank you for shopping <UNKNOWN>
+For SAFEWAY FOR <UNKNOWN> questions call
+877-276-9637 or Safeway.com/foru'''
+
+example_6_output='''{{"merchant":"SAFEWAY","address":"377 Keahole Street","city":"HONOLULU","state":"HI","phoneNumber":"(808) 396-6337","tax":1.64,"total":36.38,"receiptDate":"10/13/23","receiptTime":"19:27","totalItems":5,"paymentType":"Credit","diningOptions":"","creditCardType":"Visa","totalDiscount":0.00,"ITEMS":[{{"description":"OYSTER SAUCE 18OZ","unabbreviatedDescription":"Oyster Sauce 18oz","includedItems":[],"quantity":1,"unitPrice":6.79,"totalPrice":6.79,"discountAmount":0.00}},{{"description":"QT CK LEMON","unabbreviatedDescription":"Quart Chicken Lemon","includedItems":[],"quantity":1,"unitPrice":8.99,"totalPrice":8.99,"discountAmount":0.00}},{{"description":"NY STYLE GRND PORK","unabbreviatedDescription":"New York Style Grand Pork","includedItems":[],"quantity":1,"unitPrice":6.49,"totalPrice":6.49,"discountAmount":0.00}},{{"description":"GREEN CABBAGE","unabbreviatedDescription":"Green Cabbage","includedItems":["4.46 <UNKNOWN>","@ $1.79 /lb"],"quantity":1,"unitPrice":7.98,"totalPrice":7.98,"discountAmount":0.00}},{{"description":"REDUCED BANANAS","unabbreviatedDescription":"Reduced Bananas","includedItems":["3.23 <UNKNOWN>","@ $1.39 /lb"],"quantity":1,"unitPrice":4.49,"totalPrice":4.49,"discountAmount":0.00}}]}}'''
+
+example_7_input='''Longs <UNKNOWN> <UNKNOWN>
+2470 S KING ST
+HONOLULU, HI 96826
+808.947.2651
+REG#13 TRN#4266 CSHR#0000092 STR#9954
+ExtraCare Card <UNKNOWN>
+********7703
+F 1 CVS LINER UNSC DB
+135S
+3.99N
+F 1 CVS LINER UNSC DB 135S 3.99N
+F 1 HALLS COOL BRRY CD 70CT 6.49T
+3 ITEMS
+SUBTOTAL
+14.47
+HI 4.712% TAX
+.31
+TOTAL
+14.78
+CASH
+20.00
+CHANGE
+5.22
+3509 9543 2884 2661 38
+Returns with receipt, subject to
+CVS Return Policy, thru 12/14/2023
+Refund amount is based on price
+after all coupons and <UNKNOWN>
+OCTOBER 15, 2023
+11:34 AM
+Feeling sick? We offer COVID+FLU testing
+in select CVS Locations, two tests in
+one swab. Appointments are required.
+Results available in 1 to 3 days. Make
+your appointment today at CVS.com. Flu
+test recommended within 1-2 days of
+symptom onset.
+The sales tax on period products is $0.38,
+which CVS paid on your behalf.
+F=FLEXIBLE SPENDING ACCT SUMMARY (FSA)
+Health Care Eligible Total 14.78
+FSA summary above includes items
+<UNKNOWN> tax) that may be eligible for plan
+reimbursement. Restrictions may apply.
+THANK YOU. OPEN 24 HOURS 7 DAYS A WEEK
+ExtraCare Card balances as of 09/12
+Year to Date Savings
+93.93
+Fill 10 prescriptions Get $5EB
+Pharmacy and Health ExtraBucks
+Quantity Toward this Reward
+15
+Quantity Needed to Earn Reward
+5
+Pharmacy & Health Rewards Enrollment Status
+Active Members
+2
+Access all coupons & rewards, and
+track your 2% earnings in the CVS
+Pharmacy app!'''
+
+example_7_output='''{{"merchant":"Longs","address":"2470 S KING ST","city":"HONOLULU","state":"HI","phoneNumber":"808.947.2651","tax":0.31,"total":14.78,"receiptDate":"OCTOBER 15, 2023","receiptTime":"11:34 AM","totalItems":3,"paymentType":"CASH","diningOptions":"","creditCardType":"<UNKNOWN>","totalDiscount":0.00,"ITEMS":[{{"description":"CVS LINER UNSC DB","unabbreviatedDescription":"CVS Liner Unscented Double","includedItems":["135S"],"quantity":2,"unitPrice":3.99,"totalPrice":7.98,"discountAmount":0.00}},{{"description":"HALLS COOL BRRY CD 70CT","unabbreviatedDescription":"Halls Cool Berry Cough Drops","includedItems":[],"quantity":1,"unitPrice":6.49,"totalPrice":6.49,"discountAmount":0.00}}]}}'''
 
 def get_prompt_examples():
     return [
@@ -346,4 +473,6 @@ def get_prompt_examples():
     {"ExampleInput": example_3_input, "ExampleOutput": example_3_output},
     {"ExampleInput": example_4_input, "ExampleOutput": example_4_output},
     {"ExampleInput": example_5_input, "ExampleOutput": example_5_output},
+    {"ExampleInput": example_6_input, "ExampleOutput": example_6_output},
+    {"ExampleInput": example_7_input, "ExampleOutput": example_7_output},
 ]
