@@ -12,7 +12,8 @@ receipts_folder = "receipts/text" # the receipt folder should have two subfolder
 openai_api_key="INSERT_OPENAI_API_KEY_HERE"
 
 receiptParser = convert.make_receiptParser()
-fewshot_prompt = convert.make_fewshot_prompt(receiptParser)
+print(receiptParser.get_format_instructions())
+fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
 model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
 chain = convert.make_chain(fewshot_prompt, model, recieptParser)
 

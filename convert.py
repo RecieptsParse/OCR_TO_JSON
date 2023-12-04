@@ -12,14 +12,6 @@ import openai
 # local prompt_examples module
 from prompt_examples import get_prompt_examples
 
-# '''
-# Defining a subitem to be used for the includedItems category in the Item object.
-# The includedItems fields consists of a list of SubItems and can be empty.
-# For example, a 'cheesburger' Item might have includedItems:['bun', 'patty', 'cheese']
-# '''
-# class SubItem(BaseModel):
-#     description: str
-
 '''
 An enumeration of the types of payment methods for the paymentType category in the ReceiptInfo object.
 The default in ReceiptInfo is 'cash'.
@@ -72,7 +64,6 @@ class ReceiptInfo(BaseModel):
             returnValue = PaymentType.DEBIT
         return returnValue
 
-# <-- Break Point --> 
 def make_receiptParser():
     return PydanticOutputParser(pydantic_object=ReceiptInfo)
 
@@ -89,11 +80,11 @@ def get_example_prompt(input_variables=["ExampleInput", "ExampleOutput"], templa
 def get_suffix():
     return "input:\n{input}\noutput:\n"
 
-def make_fewshot_prompt(receiptParser):
+def make_fewshot_prompt(format_instructions):
     return (FewShotPromptTemplate(
     prefix = get_prompt_prefix(),
     input_variables=["input"], 
-    partial_variables={'format_instructions': receiptParser().get_format_instructions()},
+    partial_variables={'format_instructions': format_instructions},
     examples=get_prompt_examples(),
     example_prompt = get_example_prompt(),
     example_separator="\n",
