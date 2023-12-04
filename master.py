@@ -2,6 +2,7 @@ import vendor_database
 import product_database
 import search
 import convert
+import os
 
 '''
 FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
@@ -15,8 +16,9 @@ receiptParser = convert.make_receiptParser()
 print(receiptParser.get_format_instructions())
 fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
 model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
-chain = convert.make_chain(fewshot_prompt, model, recieptParser)
+chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
+"""
 json_objects = []
 receipts_folder = "receipts/text"
 for filename in os.listdir(receipts_folder):
@@ -29,8 +31,9 @@ for filename in os.listdir(receipts_folder):
 with open('receipts_json', 'w') as fp:
     for receipt in json_objects:
         # write each receipt JSON on a new line
-        fp.write("%s\n" % item)
+        fp.write("%s\n" % receipt)
     print('Done')
+"""
             
 '''
 saves faiss index and mapping to directory 
