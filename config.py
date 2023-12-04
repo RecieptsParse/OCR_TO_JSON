@@ -190,12 +190,13 @@ product_categories = {
         "Outdoor appliances BBQ Grill lawn mower lantern mosquito zapper sprinklers rope"
     ],
     "Automotive": [
-        "Car Parts Windsheild Wipers Break Pads engine oil fuel injector Car Wax Oil Gas",
+        "Car Parts Windsheild Wipers Break Pads engine oil fuel injector Car Wax Oil Gas Leaded Unleadead",
         "car care kit tire pressure gauge Tire Sealant Transmission Fluid brake fluid tire chains",
         "car fuel system cleaner dashboard cleaner exhaust pipe polish seat covers Air Filter car freshener Pumper Sticker",
         "car battery jumper cables spark plugs headlight bulbs ",
         "Toyota Honda Subaru Hyundai Tesla BMW Ford Nissan Volkswagen Mercedes Benz Chrysker",
         "Budget Avis Enterprise Hertz Alamo",
+        "Sedan Van Hatchbacks Electric Cars Compact Sports",
         "Valvoline Royal Purple Lucas Oil Pennzoil"
     ],
     "Toys And Games": [
@@ -217,7 +218,9 @@ product_categories = {
         "Books Magazines Hardcover Journal Poetry Classic Novels Literature Fantasy Sci-fi Romance Mystery Memoir Barnes & Noble Comic Books",
         "Stationery Items Mechanical Pencils Sticky Notes Pencil Case Fountain Pen Flashcards Origami Kit Markers Weekly Planner",
         "Paint Art Supplies Coloring Book Watercolor Sketchbook Top Spiral Oil Pastels Canvas Pad",
-        "Packet envelope letter tape"
+        "Packet envelope letter tape",
+        "Fiction Non-Fiction Biography Autobiographies Science Philosophy Cookbooks Graphic Novels Adventures",
+        "Highlighters Ballpoint Pens Calligraphy Charcoal Pencils Art Paper Clips Sticky Tabs Glitter Colored Pencils Stencils"
     ],
     "Pharmacy And Health Products": [
         "Medications Supplements Chewable Tablets Pain Relief Tablets Vitamins Omega-3 Fish Oil Capsules Probiotic",
@@ -238,7 +241,7 @@ product_categories = {
         "Baby Care Items Monitor Baby Wipes HUGGIES Pampers BABY FORMULA Diaper Rash Cream Bottles Sippy Cup",
         "INF CAR SEAT infant STROLLER Carrier baby High Chair Changing Pad Booster Seat NURSERY CRIB",
         "Baby Toys Plush Rattle Teething Rings BBY Swaddle BLANKET Play Mat Rolly Cars Pacifier"
-        "Diapers diaper-bag "
+        "Diapers diaper-bag Pasifier"
     ],
     "Cleaning Supplies": [
         "Cleaning Products LYSOL Wipes WINDEX Spray CLOROX BLCH GAIN 2X TIDE LQ PODS Disinfectants",
@@ -251,7 +254,8 @@ product_categories = {
         "Greeting Cards Envelopes HLMRK Hallmark Seasonal Items Christmas Ornaments Scented Candles advent calendar",
         "Musical instruments acoustic guitar Fender piano violin sheet music trumpet drum bass microphone Yamaha",
         "DRIVER LICENSE permit state ID certificate notarized",
-        "Souvenirs keychain snowglobe magnet postcard stamps compass"
+        "Souvenirs keychain snowglobe magnet postcard stamps compass",
+        "Piano Guitar Ukulele"
     ],
     "Event Tickets": [
         "Movie Tickets Cinema Theatre Regal Consolidated Film Festival General Admission Child",
