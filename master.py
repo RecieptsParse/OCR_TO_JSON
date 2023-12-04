@@ -18,9 +18,9 @@ fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructio
 model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
 chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
-"""
+
 json_objects = []
-receipts_folder = "receipts/text"
+receipts_folder = "data/receipts/text"
 for filename in os.listdir(receipts_folder):
     if filename.endswith('.txt'):
         with open(os.path.join(receipts_folder, filename)) as f:
@@ -28,12 +28,12 @@ for filename in os.listdir(receipts_folder):
             response = chain.invoke({"input": data})
             json_objects.append(response.model_dump_json())
 
-with open('receipts_json', 'w') as fp:
+with open('receipts_json.text', 'w') as fp:
     for receipt in json_objects:
         # write each receipt JSON on a new line
         fp.write("%s\n" % receipt)
     print('Done')
-"""
+
             
 '''
 saves faiss index and mapping to directory 
