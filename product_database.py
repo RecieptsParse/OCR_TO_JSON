@@ -7,7 +7,6 @@ import pickle
 import config
 
 def make_product_database():
-
     model = SentenceTransformer(config.transformer_model)
     index = faiss.IndexFlatL2(config.dimensions)
 
