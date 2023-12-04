@@ -76,7 +76,7 @@ def read_one(json_object):
         top_vendor = search.query_classification(string, 5, "vendor")
         print(top_vendor)
         items_for_receipt = one_reciept['ITEMS']
-        for i in range(one_reciept['ITEMS']):
+        for i in range(len(one_reciept['ITEMS'])):
              product_query = items_for_receipt[i]['unabbreviatedDescription']
              top_product = search.query_classification(product_query, 10, "product")
              print(top_product)
