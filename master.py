@@ -112,7 +112,8 @@ def read_one(json_object):
             diining_option = one_reciept['diningOptions']
             query_string += f'{diining_option} '
             for j in range(len(one_reciept['ITEMS'])):
-                query_string += one_reciept['ITEMS'][j]['unabbreviatedDescription']
+                items = one_reciept['ITEMS'][j]['unabbreviatedDescription']
+                query_string += f'{items} '
 
             top_vendor = search.query_classification(query_string, 5, "vendor")
             file.write(f'- {i} Vendor Prediction {top_vendor}\n')
@@ -120,7 +121,9 @@ def read_one(json_object):
             items_for_receipt = one_reciept['ITEMS']
             for j in range(len(one_reciept['ITEMS'])):
                 product_query = items_for_receipt[j]['unabbreviatedDescription']
-                top_product = search.query_classification(product_query, 10, "product")
+                descr = items_for_receipt[j]['description']
+                product_query += f' {descr} {merchant_name}' 
+                top_product = search.query_classification(product_query, 4, "product")
                 file.write(f' {j} Item: {product_query} category: {top_product}\n')
 
 """
