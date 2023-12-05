@@ -40,7 +40,7 @@ vendor_categories = {
         "Coffee shop",
         "tip",
         "Chinese takeout",
-        'sushi",
+        "sushi",
         "fast food",
         "dining establishment",
         "take-out",
