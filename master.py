@@ -13,7 +13,7 @@ This code has not been tested yet.
 receipts_folder = "data/receipts/text_1" # the receipt folder should have two subfolders of images and text
 # ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
 
-openai_api_key="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"
+openai_api_key="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"
 
 
 receiptParser = convert.make_receiptParser()
@@ -22,7 +22,7 @@ model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_a
 chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
 for filename in os.listdir(receipts_folder):
-    if filename.endswith('.json'):
+    if filename.endswith('.txt'):
         with open(os.path.join(receipts_folder, filename)) as f:
             data = f.read()
             # IF DEBUGGING IS NEEDED
@@ -30,7 +30,9 @@ for filename in os.listdir(receipts_folder):
             # print(f'reading from {filename}')
             # print(data)
             response = chain.invoke({"input": data})
-            with open('all_receipts_json.json', 'w') as fp: # Write each JSON object as it gets parsed
+            
+            # with 'a' in open it will create or append to current file
+            with open('all_receipts_json.json', 'a') as fp: # Write each JSON object as it gets parsed
                     # write each receipt JSON on a new line
                     fp.write(response.model_dump_json() + "\n")
     print('Done')
