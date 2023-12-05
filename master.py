@@ -18,23 +18,23 @@ receipts_folder = "data/receipts/text_3and4" # the receipt folder should have tw
 # # ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
 
 
-# openai_api_key="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"
+# openai_api_key=""
 
 
-receiptParser = convert.make_receiptParser()
-fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
-model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
-chain = convert.make_chain(fewshot_prompt, model, receiptParser)
+# receiptParser = convert.make_receiptParser()
+# fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
+# model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
+# chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
-for filename in os.listdir(receipts_folder):
-    if filename.endswith('.txt'):
-        with open(os.path.join(receipts_folder, filename)) as f:
-            data = f.read()
-            # IF DEBUGGING IS NEEDED
-            print()
-            print(f'reading from {filename}')
-            # print(data)
-            response = chain.invoke({"input": data})
+# for filename in os.listdir(receipts_folder):
+#     if filename.endswith('.txt'):
+#         with open(os.path.join(receipts_folder, filename)) as f:
+#             data = f.read()
+#             # IF DEBUGGING IS NEEDED
+#             print()
+#             print(f'reading from {filename}')
+#             # print(data)
+#             response = chain.invoke({"input": data})
 
 # receiptParser = convert.make_receiptParser()
 # fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
@@ -84,7 +84,6 @@ def read_json_receipts(file_path):
 def read_one(json_object):
     dataframe = pd.DataFrame()
     for i in range(len(json_object)):
-        print(i)
         query_string = ""
         one_reciept = json_object[i]
         merchant_name = one_reciept['merchant']
@@ -96,6 +95,7 @@ def read_one(json_object):
 
         top_vendor = search.query_classification(query_string, 5, "vendor")
         print(f'{top_vendor}')
+        print(query_string)
         items_for_receipt = one_reciept['ITEMS']
         for j in range(len(one_reciept['ITEMS'])):
              product_query = items_for_receipt[j]['unabbreviatedDescription']
