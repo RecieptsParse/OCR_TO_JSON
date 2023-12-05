@@ -63,8 +63,6 @@ class Item(BaseModel):
             returnValue = quantity
         elif (isinstance(quantity, float)):
             returnValue = math.ceil(quantity)
-        else:
-            returnValue = 0
         return returnValue
 
     
@@ -88,6 +86,22 @@ class ReceiptInfo(BaseModel):
     tax: float=Field(description="tax amount")
     total: float=Field(description="total amount paid")
     ITEMS: List[Item]
+    
+    @field_validator('totalItems', mode='before')
+    @classmethod
+    def validate_totalItems(cls, totalItems: typing.Any) -> int:
+        returnValue = 0
+        if (isinstance(totalItems, str)):
+            try:
+                returnValue = math.ceil(float(totalItems))
+            except:
+                returnValue = 0
+        elif (isinstance(totalItems, int)):
+            returnValue = totalItems
+        elif (isinstance(totalItems, float)):
+            returnValue = math.ceil(totalItems)
+        return returnValue
+
     
     @field_validator('paymentType', mode='before')
     def validate_paymentType(cls, paymentType: str) -> PaymentType:
