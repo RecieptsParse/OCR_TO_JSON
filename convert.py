@@ -98,7 +98,7 @@ class ReceiptInfo(BaseModel):
     totalItems: int=Field(description="number of items")
     diningOptions: str=Field(default="", description="here or to-go items for consumable items")
     paymentType: PaymentType=Field(default="cash", description="payment method")
-    creditCardType: str=Field(default="<UNKNOWN>", description="credit card type")
+    creditCardType: str=Field(default="", description="credit card type")
     totalDiscount: float=Field(default=0.00, description="total discount")
     tax: float=Field(description="tax amount")
     total: float=Field(description="total amount paid")

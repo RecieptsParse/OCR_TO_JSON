@@ -17,92 +17,93 @@ dimensions = 1024
 Vendor categories for making vendor database in vendor_database.py
 '''
 
-vendor_categories  = {
+vendor_categories = {
     "Grocery and Supermarkets": [
-        "food products.",
-        "frozen foods.",
-        "packaged foods.",
-        "bottle deposit.",
+        "food products",
+        "frozen foods",
+        "packaged foods",
+        "bottle deposit",
         "HI container fee",
         "Safeway",
-        "baking Cooking ingredients.",
-        "various household items.",
-        "pet supplies.",
-        "cleaning laundry essentials.",
-        "personal care products.",
-        "market mart."
+        "baking Cooking ingredients",
+        "various household items",
+        "pet supplies",
+        "cleaning laundry essentials",
+        "personal care products",
+        "market mart"
     ],
     "Restaurants and Food Services": [
-        "places to eat.",
+        "places to eat",
         "plate lunch",
-        "no side.",
-        "McDonald's.",
-        "Coffee shop.",
-        "tip.",
+        "no side",
+        "McDonald's",
+        "Coffee shop",
+        "tip",
         "Chinese takeout",
-        "fast food.",
-        "dining establishment.",
-        "take-out.",
-        "for-here.", 
-        "delivery."
+        'sushi",
+        "fast food",
+        "dining establishment",
+        "take-out",
+        "for-here", 
+        "delivery"
     ],
     "Clothing and Apparel": [
-        "Stores selling a variety of clothing.",
-        "footwear.",
-        "ROSS.",
+        "Stores selling a variety of clothing",
+        "footwear",
+        "ROSS",
         "Old Navy",
         "T&C Surf",
-        "designer brands.",
-        "children's clothing.",
-        "accessories and jewelry.",
-        "second-hand and thrift stores.",
-        "custom tailoring and alterations.",
-        "fashion.",
-        "clothing styles."
+        "designer brands",
+        "children's clothing",
+        "accessories and jewelry",
+        "second-hand and thrift stores",
+        "custom tailoring and alterations",
+        "fashion",
+        "clothing styles"
     ],
     "Health and Beauty": [
-        "pharmacies.",
-        "Longs Drugs.",
-        "Cosmetics and makeup.",
-        "Medical devices and aids.",
-        "Natural and organic beauty products.",
-        "Perfumes and fragrances.",
-        "CVS store.",
-        "beauty supply stores.",
-        "Sephora.",
-        "health products.",
-        "personal care products."
+        "pharmacies",
+        "Longs Drugs",
+        "Cosmetics and makeup",
+        "Medical devices and aids",
+        "Natural and organic beauty products",
+        "Perfumes and fragrances",
+        "CVS store",
+        "beauty supply stores",
+        "Sephora",
+        "health products",
+        "personal care products"
     ],
     "Electronics and Appliances": [
-        "consumer electronics.",
-        "Best Buy.",
+        "consumer electronics",
+        "Best Buy",
         "Apple Store",
         "AT&T Phone Service Provider",
-        "Cameras and photography gear.",
-        "Audio equipment.",
-        "Mobile phones and tablets.",
-        "Computers and peripherals.",
-        "TVs and home theater systems.",
-        "Gaming consoles and accessories.",
-        "household appliances.",
-        "accessories for electronics and appliances."
+        "Cameras and photography gear",
+        "Audio equipment",
+        "Mobile phones and tablets",
+        "Computers and peripherals",
+        "TVs and home theater systems",
+        "Gaming consoles and accessories",
+        "household appliances",
+        "accessories for electronics and appliances"
     ],
     "Home and Garden": [
-        "home improvement.",
+        "home improvement",
         "gardening supplies.",
-        "furniture.",
-        "home decor.",
-        "DIY and hardware tools.",
-        "Building materials.",
-        "Home Depot.",
+        "furniture",
+        "home decor",
+        "DIY and hardware tools",
+        "Building materials",
+        "Home Depot",
         "Lowe's Store",
         "City Mill",
-        "Outdoor furniture.",
-        "Plants and flowers."
+        "Outdoor furniture",
+        "Plants and flowers"
 
     ],
     "Entertainment and Leisure": [
-        "movie theaters.",
+        "movie theaters",
         "Barnes & Noble",
         "Consolidated Theatres",
         "Regal Cinemas",
@@ -110,11 +111,11 @@ vendor_categories  = {
         "Toys Board Games",
         "Amusement Parks",
         "Zoo or Aquarium or Musuem",
-        "Craft art supply stores.",
-        "bookstores.",
+        "Craft art supply stores",
+        "bookstores",
         "Concert Hall Ballet Performance Theatre",
-        "hobby shops.",
-        "various entertainment goods and services."
+        "hobby shops",
+        "various entertainment goods and services"
     ]
 }
 
@@ -160,12 +161,11 @@ product_categories = {
         "coat jacket jumper raincoat vest sweatshirt blazer",
         "Activewear Compression Joggers TechMesh Breathable Workout DriFit TankTop Sneaker cleats FootLocker swimsuit",
         "Headwear Knit Beanie Hat Baseball Cap Sun Visor Fedora Snapback party hat helmet crown hair-tie scrunchy",
-        "Accessories Eyewear Sunglasses Jewelry Rings Necklace pendant Scarves Gloves Belts Watches Tie Leather Bag Claire's",
-
+        "Accessories Eyewear Sunglasses Jewelry Rings Necklace pendant Scarves Gloves Belts Watches Tie Leather Bag Claire's"
     ],
     "Electronics": [
         "Mobile Devices SAMSUNG GALAXY S20 ULTRA 128GB COSMIC GRAY IPHONE 13 PRO NOKIA BLACKBERRY KEY3 64GB Bestbuy",
-        "Consumer Electronics LG 55-INCH 4K OLED SMART TV SONY WIRELESS HEADPHONES GAMING MONITOR PORTABLE BLUETOOTH SPEAKER"
+        "Consumer Electronics LG 55-INCH 4K OLED SMART TV SONY WIRELESS HEADPHONES GAMING MONITOR PORTABLE BLUETOOTH SPEAKER",
         "Gaming Consoles NINTENDO SWITCH 3DS XL SONY PLAYSTATION 3 XBOX 360 SEGA GENESIS Gamecube controllers Gamestop",
         "Apple IPHONE AIRPODS PRO CHARGING CASE IPAD PRO MACBOOK AIR USB-C LIGHTNING CABLE",
         "Computers HP Pavilion Laptop Graphics Card Keyboard Mousepad C4000 Router Microsoft Surface Wifi",
@@ -240,7 +240,7 @@ product_categories = {
     "Baby Products": [
         "Baby Care Items Monitor Baby Wipes HUGGIES Pampers BABY FORMULA Diaper Rash Cream Bottles Sippy Cup",
         "INF CAR SEAT infant STROLLER Carrier baby High Chair Changing Pad Booster Seat NURSERY CRIB",
-        "Baby Toys Plush Rattle Teething Rings BBY Swaddle BLANKET Play Mat Rolly Cars Pacifier"
+        "Baby Toys Plush Rattle Teething Rings BBY Swaddle BLANKET Play Mat Rolly Cars Pacifier",
         "Diapers diaper-bag Pasifier"
     ],
     "Cleaning Supplies": [

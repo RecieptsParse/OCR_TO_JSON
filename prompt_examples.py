@@ -337,7 +337,7 @@ JULY 18, 2023
 7:38 PM
 <UNKNOWN> <UNKNOWN>'''
 
-example_5_output='''{{"merchant":"Longs Drugs","address":"91-919 FORT WEAVER RD","city":"EWA BEACH","state":"HI","phoneNumber":"808.689.5860","tax":0.36,"total":7.99,"receiptDate":"JULY 18, 2023","receiptTime":"7:38 PM","totalItems":3,"paymentType":"DEBIT","diningOptions":"","creditCardType":"<UNKNOWN>","totalDiscount":7.54,"ITEMS":[{{"description":"OREO ORIG DBL STFF","unabbreviatedDescription":"Oreo Double Stuff","includedItems":[],"quantity":1,"unitPrice":6.99,"totalPrice":2.93,"discountAmount":4.06}},{{"description":"BAUD WAFER CHOCLT","unabbreviatedDescription":"Wafer Chocolate","includedItems":[],"quantity":1,"unitPrice":2.69,"totalPrice":1.10,"discountAmount":1.59}},{{"description":"HWNISL TEABG GVGNS","unabbreviatedDescription":"Teabag","includedItems":[],"quantity":1,"unitPrice":5.49,"totalPrice":3.60,"discountAmount":1.89}}]}}'''
+example_5_output='''{{"merchant":"Longs Drugs","address":"91-919 FORT WEAVER RD","city":"EWA BEACH","state":"HI","phoneNumber":"808.689.5860","tax":0.36,"total":7.99,"receiptDate":"JULY 18, 2023","receiptTime":"7:38 PM","totalItems":3,"paymentType":"DEBIT","diningOptions":"","creditCardType":"","totalDiscount":7.54,"ITEMS":[{{"description":"OREO ORIG DBL STFF","unabbreviatedDescription":"Oreo Double Stuff","includedItems":[],"quantity":1,"unitPrice":6.99,"totalPrice":2.93,"discountAmount":4.06}},{{"description":"BAUD WAFER CHOCLT","unabbreviatedDescription":"Wafer Chocolate","includedItems":[],"quantity":1,"unitPrice":2.69,"totalPrice":1.10,"discountAmount":1.59}},{{"description":"HWNISL TEABG GVGNS","unabbreviatedDescription":"Teabag","includedItems":[],"quantity":1,"unitPrice":5.49,"totalPrice":3.60,"discountAmount":1.89}}]}}'''
 
 example_6_input='''
 Store 215 Dir Dane Elder
@@ -464,7 +464,7 @@ Access all coupons & rewards, and
 track your 2% earnings in the CVS
 Pharmacy app!'''
 
-example_7_output='''{{"merchant":"Longs","address":"2470 S KING ST","city":"HONOLULU","state":"HI","phoneNumber":"808.947.2651","tax":0.31,"total":14.78,"receiptDate":"OCTOBER 15, 2023","receiptTime":"11:34 AM","totalItems":3,"paymentType":"CASH","diningOptions":"","creditCardType":"<UNKNOWN>","totalDiscount":0.00,"ITEMS":[{{"description":"CVS LINER UNSC DB","unabbreviatedDescription":"CVS Liner Unscented Double","includedItems":["135S"],"quantity":2,"unitPrice":3.99,"totalPrice":7.98,"discountAmount":0.00}},{{"description":"HALLS COOL BRRY CD 70CT","unabbreviatedDescription":"Halls Cool Berry Cough Drops","includedItems":[],"quantity":1,"unitPrice":6.49,"totalPrice":6.49,"discountAmount":0.00}}]}}'''
+example_7_output='''{{"merchant":"Longs","address":"2470 S KING ST","city":"HONOLULU","state":"HI","phoneNumber":"808.947.2651","tax":0.31,"total":14.78,"receiptDate":"OCTOBER 15, 2023","receiptTime":"11:34 AM","totalItems":3,"paymentType":"CASH","diningOptions":"","creditCardType":"","totalDiscount":0.00,"ITEMS":[{{"description":"CVS LINER UNSC DB","unabbreviatedDescription":"CVS Liner Unscented Double","includedItems":["135S"],"quantity":2,"unitPrice":3.99,"totalPrice":7.98,"discountAmount":0.00}},{{"description":"HALLS COOL BRRY CD 70CT","unabbreviatedDescription":"Halls Cool Berry Cough Drops","includedItems":[],"quantity":1,"unitPrice":6.49,"totalPrice":6.49,"discountAmount":0.00}}]}}'''
 
 def get_prompt_examples():
     return [
