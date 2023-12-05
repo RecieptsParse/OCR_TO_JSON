@@ -142,7 +142,7 @@ def make_receiptParser():
     return PydanticOutputParser(pydantic_object=ReceiptInfo)
 
 def get_prompt_prefix():
-    return '''You are a capable large language model. Your task is to extract data from a given receipt and format it into the JSON schema below. Use the default values if you're not sure. Try to infer a value for the field: unabbreviatedDescription. The values for the fields "description" and "unnabbreviatedDescription" can not be the same. If you determine that the value for the fields: "tax", "total", "totalDiscount", "totalItems", "quantity", "unitPrice", "totalPrice", and "discountAmount" contains any character other than "01234567890.", please convert the value to a string. Some items may be priced at a weighted rate, such as "per pound" or "per ounce". Text can be used for multiple fields. Please use double-quotes for all string values. If there are double-quotes inside string values, please escape those characters with the "\" character.
+    return '''You are a capable large language model. Your task is to extract data from a given receipt and format it into the JSON schema below. Use the default values if you're not sure. Try to infer a value for the field: unabbreviatedDescription. The values for the fields "description" and "unnabbreviatedDescription" can not be the same. Please wrap all numeric values in double-quotes. Some items may be priced at a weighted rate, such as "per pound" or "per ounce". Text can be used for multiple fields. Please use double-quotes for all string values. If there are double-quotes inside string values, please escape those characters with the "\" character.
     
     {format_instructions}
     
