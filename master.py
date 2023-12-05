@@ -114,7 +114,6 @@ Proposed: Data Structure
 # {Merchant} {First Item} {diningOptions} {SecondItem}
 
 json_obj = read_json_receipts('all_receipts_json.json')
-print(json_obj)
 
 read_one(json_obj)
 
