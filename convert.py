@@ -34,35 +34,20 @@ class Item(BaseModel):
     unitPrice: float=Field(default=0.00, description="cost per unit")
     totalPrice: float=Field(default=0.00, description="total cost of unit(s) purchased")
     discountAmount: float=Field(default=0.00, description="discount for item")
-    
-    @field_validator('unitPrice', mode='before')
-    @classmethod
-    def validate_unitPrice(cls, unitPrice: typing.Any) -> float:
-        returnValue = 0.00
-        if (isinstance(unitPrice, str)):
-            try:
-                returnValue = (float(string))
-            except:
-                returnValue = 0.00
-        elif (isinstance(unitPrice, int)):
-            returnValue = float(unitPrice)
-        elif (isinstance(unitPrice, float)):
-            returnValue = unitPrice
-        return returnValue
 
-    @field_validator('totalPrice', mode='before')
+    @field_validator('unitPrice', 'totalPrice', 'discountAmount', mode='before')
     @classmethod
-    def validate_totalPrice(cls, totalPrice: typing.Any) -> float:
+    def validate_float_Item(cls, inputValue: typing.Any) -> float:
         returnValue = 0.00
-        if (isinstance(totalPrice, str)):
+        if (isinstance(inputValue, str)):
             try:
-                returnValue = (float(string))
+                returnValue = (float(inputValue))
             except:
                 returnValue = 0.00
-        elif (isinstance(totalPrice, int)):
-            returnValue = float(totalPrice)
-        elif (isinstance(totalPrice, float)):
-            returnValue = totalPrice
+        elif (isinstance(inputValue, int)):
+            returnValue = float(inputValue)
+        elif (isinstance(inputValue, float)):
+            returnValue = inputValue
         return returnValue
     
     @field_validator('quantity', mode='before')
@@ -71,7 +56,7 @@ class Item(BaseModel):
         returnValue = 0
         if (isinstance(quantity, str)):
             try:
-                returnValue = math.ceil(float(string))
+                returnValue = math.ceil(float(quantity))
             except:
                 returnValue = 0
         elif (isinstance(quantity, int)):
@@ -136,11 +121,28 @@ class ReceiptInfo(BaseModel):
             returnValue = 'TO GO'
         return returnValue
 
+    @field_validator('tax', 'total', 'totalDiscount', mode='before')
+    @classmethod
+    def validate_float_ReceiptInfo(cls, inputValue: typing.Any) -> float:
+        returnValue = 0.00
+        if (isinstance(inputValue, str)):
+            try:
+                returnValue = math.ceil(float(inputValue))
+            except:
+                returnValue = 0.00
+        elif (isinstance(inputValue, int)):
+            returnValue = float(inputValue)
+        elif (isinstance(inputValue, float)):
+            returnValue = inputValue
+        else:
+            returnValue = 0.00
+        return returnValue
+
 def make_receiptParser():
     return PydanticOutputParser(pydantic_object=ReceiptInfo)
 
 def get_prompt_prefix():
-    return '''You are a capable large language model. Your task is to extract data from a given receipt and format it into the JSON schema below. Use the default values if you're not sure. Try to infer a value for the field: unabbreviatedDescription. The fields "tax", "total", "totalDiscount", "unitPrice", "totalPrice", and "discountAmount" can only accept floating point values. The values for the fields "description" and "unnabbreviatedDescription" can not be the same. Some items may be priced at a weighted rate, such as "per pound" or "per ounce". Text can be used for multiple fields. Please use double-quotes for all string values. If there are double-quotes inside string values, please escape those characters with the "\" character.
+    return '''You are a capable large language model. Your task is to extract data from a given receipt and format it into the JSON schema below. Use the default values if you're not sure. Try to infer a value for the field: unabbreviatedDescription. The values for the fields "description" and "unnabbreviatedDescription" can not be the same. If you determine that the value for the fields: "tax", "total", "totalDiscount", "totalItems", "quantity", "unitPrice", "totalPrice", and "discountAmount" contains any character other than "01234567890.", please convert the value to a string. Some items may be priced at a weighted rate, such as "per pound" or "per ounce". Text can be used for multiple fields. Please use double-quotes for all string values. If there are double-quotes inside string values, please escape those characters with the "\" character.
     
     {format_instructions}
     
