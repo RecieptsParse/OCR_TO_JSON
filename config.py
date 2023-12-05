@@ -220,9 +220,9 @@ product_categories = {
         "Energy Sports Drinks Red Bull Monster Rockstar 5-hour Energy Powerade Gatorade XTEND",
         "milk tea boba smoothie slush",
         
-        "Herbal Tea Green Tea Black Tea Chamomile Tea Peppermint Tea",
-        "Soft Drinks 7UP Root Beer Ginger Ale Cream Soda",
-        "Health Drinks Protein Shake Green Smoothie Detox Juice",
+#         "Herbal Tea Green Tea Black Tea Chamomile Tea Peppermint Tea",
+#         "Soft Drinks 7UP Root Beer Ginger Ale Cream Soda",
+#         "Health Drinks Protein Shake Green Smoothie Detox Juice",
 #         "Hot Beverages Hot Chocolate Cappuccino Espresso Latte",
 #         "Sports Drinks Electrolyte Replacement Hydration Drinks",
 #         "Fruit Juices Orange Juice Apple Juice Cranberry Juice",
@@ -278,8 +278,8 @@ product_categories = {
 #         "Winter Accessories Scarves Gloves Hats Ear Muffs",
 #         "Summer Accessories Sun Hats Sunglasses Beach Towels",
 #         "Jewelry Earrings Bracelets Necklaces Rings",
-        "Handbags Totes Clutches Backpacks Wallets",
-        "Fashion Accessories Belts Cufflinks Pocket Squares",
+#         "Handbags Totes Clutches Backpacks Wallets",
+#         "Fashion Accessories Belts Cufflinks Pocket Squares",
         "Swimwear Bikinis Swim Trunks Rash Guards"
     ],
     "Electronics": [
@@ -300,9 +300,9 @@ product_categories = {
 #         "Video Game Accessories Controllers Headsets Cables",
 #         "Photography Cameras Lenses Tripods Memory Cards",
 #         "Car Electronics GPS Systems Dash Cams Car Chargers",
-        "Kitchen Appliances Toasters Blenders Juicers",
-        "Health Electronics Blood Pressure Monitors Glucose Meters",
-        "Wearable Tech Smartwatches Fitness Trackers",
+#         "Kitchen Appliances Toasters Blenders Juicers",
+#         "Health Electronics Blood Pressure Monitors Glucose Meters",
+#         "Wearable Tech Smartwatches Fitness Trackers",
         "Televisions LED LCD Plasma Smart TVs"
         
     ],
@@ -326,8 +326,8 @@ product_categories = {
 #         "Decorative Accents Candles Picture Frames Rugs",
 #         "Bedding Sets Duvets Sheets Pillows Blankets",
 #         "Cleaning Supplies Mops Brooms Dusters",
-        "Gardening Tools Shovels Hoes Trowels Watering Cans",
-        "Home Security Locks Safes Alarm Systems",
+#         "Gardening Tools Shovels Hoes Trowels Watering Cans",
+#         "Home Security Locks Safes Alarm Systems",
         "DIY Tools Hammers Screwdrivers Wrenches"
     ],
     "Outdoor Goods": [
@@ -345,9 +345,9 @@ product_categories = {
 #         "Biking Accessories Helmets Locks Pumps",
 #         "Picnic Supplies Picnic Baskets Coolers Blankets",
 #         "Golf Gear Golf Clubs Balls Tees Gloves",
-        "Beach Gear Beach Chairs Umbrellas Surfboards",
-        "Hunting Gear Hunting Rifles Ammunition Camouflage",
-        "Fitness Equipment Jump Ropes Kettlebells Mats",
+#         "Beach Gear Beach Chairs Umbrellas Surfboards",
+#         "Hunting Gear Hunting Rifles Ammunition Camouflage",
+#         "Fitness Equipment Jump Ropes Kettlebells Mats",
         "Team Sports Soccer Balls Basketballs Volleyballs"
     ],
     "Automotive": [
@@ -370,8 +370,8 @@ product_categories = {
 #         "Tires and Wheels Tires Rims Hubcaps",
 #         "Automotive Tools Jacks Wrenches Diagnostic Tools",
 #         "Vehicle Storage Roof Racks Cargo Boxes",
-        "Truck Accessories Bed Liners Tool Boxes",
-        "Travel Accessories Luggage Racks Pet Carriers",
+#         "Truck Accessories Bed Liners Tool Boxes",
+#         "Travel Accessories Luggage Racks Pet Carriers",
         "Car Detailing Products Wax Polishes Cleaners"
     ],
     "Toys And Games": [
@@ -394,7 +394,7 @@ product_categories = {
 #         "Building Toys Blocks Legos K'Nex",
 #         "Board Games Chess Checkers Backgammon",
 #         "Action Figures Superheroes Dinosaurs Robots",
-        "Stuffed Animals Bears Rabbits Elephants",
+#         "Stuffed Animals Bears Rabbits Elephants",
         "Sports Toys Basketballs Footballs Soccer Balls"
     ],
     "Sporting Goods": [
@@ -411,10 +411,10 @@ product_categories = {
 #         "Cycling Bicycles Helmets Locks Accessories",
 #         "Golf Equipment Golf Clubs Balls Gloves",
 #         "Running Gear Running Shoes Apparel Trackers",
-        "Combat Sports Boxing Gloves Punching Bags",
-        "Racket Sports Tennis Badminton Squash",
-        "Sportswear Jerseys Shorts Socks Caps",
-        "Fishing Gear Rods Reels Lures Tackle",
+#         "Combat Sports Boxing Gloves Punching Bags",
+#         "Racket Sports Tennis Badminton Squash",
+#         "Sportswear Jerseys Shorts Socks Caps",
+#         "Fishing Gear Rods Reels Lures Tackle",
         "Hunting Equipment Rifles Ammo Camouflage"
     ],
     "Books And Stationery": [
@@ -435,7 +435,7 @@ product_categories = {
 #         "Self-Help Books Motivational Inspirational",
 #         "Biographies Famous Figures Historical Accounts",
 #         "Science Books Physics Chemistry Biology",
-        "Technology Books Computing Programming",
+#         "Technology Books Computing Programming",
         "Religious Texts Bibles Qurans Torahs"
     ],
     "Pharmacy And Health Products": [
@@ -459,7 +459,7 @@ product_categories = {
 #         "Oral care toothpaste mouthwash floss",
 #         "Senior care aids walkers canes",
 #         "Allergy relief antihistamines decongestants",
-        "Digestive health antacids probiotics",
+#         "Digestive health antacids probiotics",
         "Sleep aids melatonin valerian"
     ],
     "Pet Supplies": [
@@ -469,9 +469,9 @@ product_categories = {
         "Pet Enclosures FISH TANK HAMSTER CAGE CAT LITTER REPTILE HEAT LAMP Scratching Posts Perches Pet Bed Bowl",
         "Pet Accessories DOG COLLAR Leash Pet ID Tag Treat Leash",
         "Aquarium Supplies Fish food Water conditioner Filter Tank decorations",
-        "Bird Care Seed mix Cage liner Aviary toys Beak conditioner",
-        "Reptile Supplies Terrarium substrate Heat mat UVB light",
-        "Small Animal Bedding Guinea pig food Hamster wheel Rabbit hutch",
+#         "Bird Care Seed mix Cage liner Aviary toys Beak conditioner",
+#         "Reptile Supplies Terrarium substrate Heat mat UVB light",
+#         "Small Animal Bedding Guinea pig food Hamster wheel Rabbit hutch",
         "Veterinary Supplies Pet medication Flea collar Dewormer Heartworm prevention"
     ],
     "Baby Products": [
@@ -480,9 +480,9 @@ product_categories = {
         "Baby Toys Plush Rattle Teething Rings BBY Swaddle BLANKET Play Mat Rolly Cars Pacifier",
         "Diapers diaper-bag Pasifier",
         "Baby Clothing Onesies Socks Bibs Baby shoes Sleepwear",
-        "Feeding Supplies Breast pump Nursing cover Baby food Bibs Spoons",
-        "Healthcare Thermometer Nasal aspirator Baby toothbrush Vitamin drops",
-        "Safety Gates Baby monitors Outlet covers Corner guards",
+#         "Feeding Supplies Breast pump Nursing cover Baby food Bibs Spoons",
+#         "Healthcare Thermometer Nasal aspirator Baby toothbrush Vitamin drops",
+#         "Safety Gates Baby monitors Outlet covers Corner guards",
         "Nursery Decor Mobiles Wall decals Night lights Bedding sets"
     ],
     "Cleaning Supplies": [
@@ -491,8 +491,8 @@ product_categories = {
         "Laundry Detergents Dishwashing Supplies DAWN sponge Hand soap dispenser wash sanitizer sponge dish towel",
         "Cleaning Tools cloth paper towels broom WONDER MOP dustpan Odor Eliminator air freshener glade",
         "Bathroom Cleaners Toilet bowl cleaner Grout brush Shower spray",
-        "Kitchen Cleaners Degreaser Oven cleaner Dishwasher pods",
-        "Floor Care Vacuum bags Mop refill Hardwood floor polish",
+#         "Kitchen Cleaners Degreaser Oven cleaner Dishwasher pods",
+#         "Floor Care Vacuum bags Mop refill Hardwood floor polish",
         "Window Cleaning Glass cleaner Squeegee Microfiber cloth"
     ],
     "Gifts And Miscellaneous": [        
@@ -501,11 +501,11 @@ product_categories = {
         "Musical instruments acoustic guitar Fender piano violin sheet music trumpet drum bass microphone Yamaha",
         "DRIVER LICENSE permit state ID certificate notarized",
         "Souvenirs keychain snowglobe magnet postcard stamps compass",
-        "Piano Guitar Ukulele",
-        "Craft Supplies Yarn Paint Brushes Glue Beads",
-        "Party Supplies Balloons Streamers Tableware Confetti",
-        "Books Fiction Non-fiction E-books Magazines",
-        "Office Supplies Pens Notebooks Stapler Paper clips"
+        "Piano Guitar Ukulele"
+#         "Craft Supplies Yarn Paint Brushes Glue Beads",
+#         "Party Supplies Balloons Streamers Tableware Confetti",
+#         "Books Fiction Non-fiction E-books Magazines",
+#         "Office Supplies Pens Notebooks Stapler Paper clips"
     ],
     "Event Tickets": [        
         "Movie Tickets Cinema Theatre Regal Consolidated Film Festival General Admission Child",
@@ -513,10 +513,10 @@ product_categories = {
         "Amusement Park Tickets Wet n Wild Season Pass Carnival Cirus Comedy Night Plane Ticket",
         "Event Tickets Blaisdell Symphony Concert Hall Ballet Dance Performance Opera Live music Band",
         "Seat Number Time Showing Taylor Swift Iam Tongi",
-        "Ticket Master LiveNation",
-        "Concert Tickets Rock Pop Jazz Festival Seating",
-        "Theater Broadway Plays Musicals Drama Comedy",
-        "Sports Events Soccer Baseball Basketball Hockey Tickets",
+#         "Ticket Master LiveNation",
+#         "Concert Tickets Rock Pop Jazz Festival Seating",
+#         "Theater Broadway Plays Musicals Drama Comedy",
+#         "Sports Events Soccer Baseball Basketball Hockey Tickets",
         "Festival Passes Music Food Wine Arts Crafts"
     ]
 }
