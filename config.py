@@ -24,7 +24,7 @@ vendor_categories = {
         "packaged foods",
         "bottle deposit",
         "HI container fee",
-        "Safeway",
+        "Safeway foodland wholefoods costco walmart ABC STORES",
         "baking Cooking ingredients",
         "various household items",
         "pet supplies",
@@ -50,7 +50,7 @@ vendor_categories = {
     "Clothing and Apparel": [
         "Stores selling a variety of clothing",
         "footwear",
-        "ROSS",
+        "ROSS Dress for less",
         "Old Navy",
         "T&C Surf",
         "designer brands",
@@ -128,17 +128,17 @@ product_categories = {
     "Food Products": [
         "Fresh Apple slices Bananas Carrot Watermelon cantalope grapes Cucumber Foodland", 
         "Poultry chicken lamb beef shrimp bacon hamburger spam fish salmon ahi poke roll steak ribs oyster",
-        "Grain cereal rice wheat millet potato granola oatmeal sweet bread loaf crackers eggs",
-        "salt vinegar mayonase ketchup pepper mustard pickels lettuce tomato",
+        "Grain cereal rice wheat millet potato granola bars oatmeal sweet bread loaf crackers eggs",
+        "salt vinegar mayonase mayo ketchup pepper mustard pickels lettuce tomato",
         "ORG – Organic VG – Vegetable PK – Pack GF - gluten free SF - sugar freeWhole Foods PC LCL", 
         "GRK YGRT SNCK CKN BRST RSTD PNUT BTTR SR CRM OR CCNUT",
-        "ice cream twix jolly rancher milky way gummy bears KitKat lillipop sour gummy peg bag chocolate See's Candy",
-        "Packaged Frozen Canned Foods Campbell's Soup Lunchables Microwaveable Instant Ramen Safeway bento curry",
+        "ice cream Meadow Gold twix jolly rancher milky way gummy bears goldbears KitKat lillipop sour gummy peg bag chocolate See's Candy",
+        "Packaged Frozen Canned Foods Campbell's Soup Lunchables Microwaveable Instant Ramen Safeway bento curry peg bag",
         "Samyang Hot Ramen Turtle Chips Kimchi Miso Matcha Pocky Soy Sauce H-mart Don Quijote Kellogs"
     ],
     "Beverages": [
         "Mineral Water Lemonade Boba Tea Coffee Milk Shake Juice Box POG Starbucks",
-        "SPR SPRKL WTR BTL Icd AMER ORG JCE GRN T ALM MLK SFTDK DK",
+        "SPR SPRKL WTR BTL Icd AMER ORG JCE GRN T ALM MLK SFTDK DK deposit fee handling fee",
         "Diet Soda Coca Cola Pepsi Dr Pepper Mountain Dew Sprite Fanta",
         "Alcoholic Beverages Rum Wine Beer Cocktails Liquor Vodka Whiskey Gin Sangria",
         "Energy Sports Drinks Red Bull Monster Rockstar 5-hour Energy Powerade Gatorade XTEND",
@@ -159,7 +159,7 @@ product_categories = {
         "Bottoms High-Waisted Skinny Jeans Cargo Pants Pleated Midi Skirt Denim Capris Leggings Old Navy",
         "Dresses Floral Maxi Dress Sundress Strapless Slip Evening Gown Macys robe pajamas apron",
         "coat jacket jumper raincoat vest sweatshirt blazer",
-        "Activewear Compression Joggers TechMesh Breathable Workout DriFit TankTop Sneaker cleats FootLocker swimsuit",
+        "Activewear Compression Joggers TechMesh Breathable Workout DriFit TankTop Sneaker cleats FootLocker swimsuit ProCat Puna",
         "Headwear Knit Beanie Hat Baseball Cap Sun Visor Fedora Snapback party hat helmet crown hair-tie scrunchy",
         "Accessories Eyewear Sunglasses Jewelry Rings Necklace pendant Scarves Gloves Belts Watches Tie Leather Bag Claire's"
     ],
@@ -175,7 +175,7 @@ product_categories = {
     "Home": [
         "Furniture coffee table wooden chair vanity dresser nightstand sofa bookshelf plastic storage bins fan sticker",
         "Home Decor clock ceramic vase picture frame mirror curtains art wallpaper indoor succulent plants",
-        "Queen-sized memory foam mattress comforter Bedding throw blanket body pillow cover towel area rug table cloth",
+        "Queen-sized memory foam mattress comforter Bedding throw blanket body throw pillow cover Microfiber towel area rug table cloth",
         "Dining Ware Kitchenware Stainless Steel kitchen knife pot pan porcelain dinner plate china set fork chopsticks ZIPLOC",
         "Home appliances blender stove microwave lamp refrigerator air fryer toaster air conditioner TV Cable Wifi fire-extinguisher",
         "Home Office printer paper stapler printer paper desk monitor stand folders Office Depot",
@@ -226,12 +226,12 @@ product_categories = {
         "Medications Supplements Chewable Tablets Pain Relief Tablets Vitamins Omega-3 Fish Oil Capsules Probiotic",
         "First Aid Supplies Band-Aids Antiseptic Wipes Sterile Gauze Pads Cold Packs Compress Hand Sanitizer",
         "DayQuil Severe Cold & Flu Relief Robitussin Maximum Strength Cough and Chest Congestion Kleenex Halls Cough Drops",
-        "feminine hygiene products pads tampon menstrual cups plan-b birth-control morning after pills panty liners",
+        "feminine hygiene products pads tampon tampax menstrual cups plan-b birth-control morning after pills panty liners",
         "percription glasses contacts cough drops",
         "Medical Equipment Blood Pressure Monitor Digital Thermometer Crutches Folding Walker Medical Scale wheelchair cane"
     ],
     "Pet Supplies": [
-        "Pet Food Treats Dry dog canned food CHEW STICKS Puppy Formula",
+        "Pet Food Treats Dog snacks Dry dog canned food CHEW STICKS Puppy Formula",
         "Pet Toys Squeaky Plush Chew Toy Rubber Ball Fetch Frisbee Teething Ring",
         "Pet Grooming Products Flea and Tick Shampoo Deodorizing Pet Wipes Brush Clippers",
         "Pet Enclosures FISH TANK HAMSTER CAGE CAT LITTER REPTILE HEAT LAMP Scratching Posts Perches Pet Bed Bowl",
