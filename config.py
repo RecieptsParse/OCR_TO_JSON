@@ -176,7 +176,7 @@ product_categories = {
         "Furniture coffee table wooden chair vanity dresser nightstand sofa bookshelf plastic storage bins fan sticker",
         "Home Decor clock ceramic vase picture frame mirror curtains art wallpaper indoor succulent plants",
         "Queen-sized memory foam mattress comforter Bedding throw blanket body throw pillow cover Microfiber towel area rug table cloth",
-        "Dining Ware Kitchenware Stainless Steel kitchen knife pot pan porcelain dinner plate china set fork chopsticks ZIPLOC",
+        "Dining Ware Kitchenware Kettle Stainless Steel kitchen knife pot pan porcelain dinner plate china set fork chopsticks ZIPLOC",
         "Home appliances blender stove microwave lamp refrigerator air fryer toaster air conditioner TV Cable Wifi fire-extinguisher",
         "Home Office printer paper stapler printer paper desk monitor stand folders Office Depot",
         "envelopes pillow bed sheet pillow cover",
