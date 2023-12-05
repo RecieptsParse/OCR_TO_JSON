@@ -137,7 +137,7 @@ product_categories = {
     ],
     "Beverages": [
         "Mineral Water Lemonade Boba Tea Coffee Milk Shake Juice Box POG Starbucks",
-        "SPR SPRKL WTR BTL Icd AMER ORG JCE GRN T ALM MLK",
+        "SPR SPRKL WTR BTL Icd AMER ORG JCE GRN T ALM MLK SFTDK DK",
         "Diet Soda Coca Cola Pepsi Dr Pepper Mountain Dew Sprite Fanta",
         "Alcoholic Beverages Rum Wine Beer Cocktails Liquor Vodka Whiskey Gin Sangria",
         "Energy Sports Drinks Red Bull Monster Rockstar 5-hour Energy Powerade Gatorade XTEND",
