@@ -10,10 +10,16 @@ import pandas as pd
 FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
 This code has not been tested yet.
 '''
+
 receipts_folder = "data/receipts/text_3and4" # the receipt folder should have two subfolders of images and text
 # ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
 
-openai_api_key="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"
+# receipts_folder = "data/receipts/text_1" # the receipt folder should have two subfolders of images and text
+# # ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
+
+
+# openai_api_key="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"
+
 
 receiptParser = convert.make_receiptParser()
 fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
@@ -29,12 +35,26 @@ for filename in os.listdir(receipts_folder):
             print(f'reading from {filename}')
             # print(data)
             response = chain.invoke({"input": data})
-            
-            # with 'a' in open it will create or append to current file
-            with open('all_receipts_json.json', 'a') as fp: # Write each JSON object as it gets parsed
-                    # write each receipt JSON on a new line
-                    fp.write(response.model_dump_json() + "\n")
-    print('Done')
+
+# receiptParser = convert.make_receiptParser()
+# fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
+# model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
+# chain = convert.make_chain(fewshot_prompt, model, receiptParser)
+
+# for filename in os.listdir(receipts_folder):
+#     if filename.endswith('.txt'):
+#         with open(os.path.join(receipts_folder, filename)) as f:
+#             data = f.read()
+#             # IF DEBUGGING IS NEEDED
+#             # print()
+#             # print(f'reading from {filename}')
+#             # print(data)
+#             response = chain.invoke({"input": data})
+#             # with 'a' in open it will create or append to current file
+#             with open('all_receipts_json.json', 'a') as fp: # Write each JSON object as it gets parsed
+#                     # write each receipt JSON on a new line
+#                     fp.write(response.model_dump_json() + "\n")
+#     print('Done')
 
             
 '''
@@ -64,23 +84,23 @@ def read_json_receipts(file_path):
 def read_one(json_object):
     dataframe = pd.DataFrame()
     for i in range(len(json_object)):
+        print(i)
+        query_string = ""
         one_reciept = json_object[i]
         merchant_name = one_reciept['merchant']
-        first_item = one_reciept['ITEMS'][0]['unabbreviatedDescription'] # need to read as JSON object
-        diining_option = one_reciept['DiningOption']
-        if (first_item['ITEMS'][1]['unabbreviatedDescription']):
-            second_item = first_item['ITEMS'][1]['unabbreviatedDescription']
-            string = f'{merchant_name} {first_item} {diining_option} {second_item}'
-        else:
-            string = f'{merchant_name} {first_item} {diining_option}'
-        
-        top_vendor = search.query_classification(string, 5, "vendor")
-        print(top_vendor)
+        query_string += f'{merchant_name} '
+        diining_option = one_reciept['diningOptions']
+        query_string += f'{diining_option} '
+        for j in range(len(one_reciept['ITEMS'])):
+            query_string += one_reciept['ITEMS'][j]['unabbreviatedDescription']
+
+        top_vendor = search.query_classification(query_string, 5, "vendor")
+        print(f'{top_vendor}')
         items_for_receipt = one_reciept['ITEMS']
-        for i in range(len(one_reciept['ITEMS'])):
-             product_query = items_for_receipt[i]['unabbreviatedDescription']
+        for j in range(len(one_reciept['ITEMS'])):
+             product_query = items_for_receipt[j]['unabbreviatedDescription']
              top_product = search.query_classification(product_query, 10, "product")
-             print(top_product)
+             print(f' {j} Item: {product_query} category: {top_product}')
 
 """
 Proposed: Data Structure
@@ -88,21 +108,24 @@ Proposed: Data Structure
 |      | Vendor Category | Item1_Product category | Item2_Product Category | Item2_ Product Category |  
 |   1  |                 |                        |                        |                         | 
 |   2  |                 |                        |                        |                         |
-"""
-     
-    
-        
-          
+"""         
+
 
 # {Merchant} {First Item} {diningOptions} {SecondItem}
-vendor_query = "mcDonalds hamburger meal take-out fries"
-top_vendor = search.query_classification(vendor_query, 5, "vendor")
+
+json_obj = read_json_receipts('all_receipts_json.json')
+print(json_obj)
+
+read_one(json_obj)
+
+# vendor_query  = "mcDonalds hamburger meal take-out fries"
+# top_vendor = search.query_classification(vendor_query, 5, "vendor")
 
 """
 Get JSON and search for items (iterate through all items) -- Simlilar to Assignmnet 1
 """
 # Items in JSON 
-product_query = "organic apples"
-top_product = search.query_classification(product_query, 10, "product")
+# product_query = "organic apples"
+# top_product = search.query_classification(product_query, 10, "product")
 
-print(top_product,top_vendor,sep="\n")
+# print(top_product,top_vendor,sep="\n")

@@ -127,10 +127,10 @@ Product categories for making product database in product_database.py
 product_categories = {
     "Food Products": [
         "Fresh Apple slices Bananas Carrot Watermelon cantalope grapes Cucumber Foodland", 
-        "Poultry chicken lamb beef shrimp bacon hamburger spam fish salmon ahi poke steak ribs oyster",
+        "Poultry chicken lamb beef shrimp bacon hamburger spam fish salmon ahi poke roll steak ribs oyster",
         "Grain cereal rice wheat millet potato granola oatmeal sweet bread loaf crackers eggs",
         "salt vinegar mayonase ketchup pepper mustard pickels lettuce tomato",
-        "ORG – Organic VG – Vegetable PK – Pack GF - gluten free SF - sugar freeWhole Foods", 
+        "ORG – Organic VG – Vegetable PK – Pack GF - gluten free SF - sugar freeWhole Foods PC LCL", 
         "GRK YGRT SNCK CKN BRST RSTD PNUT BTTR SR CRM OR CCNUT",
         "ice cream twix jolly rancher milky way gummy bears KitKat lillipop sour gummy peg bag chocolate See's Candy",
         "Packaged Frozen Canned Foods Campbell's Soup Lunchables Microwaveable Instant Ramen Safeway bento curry",
