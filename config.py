@@ -233,7 +233,6 @@ product_categories = {
         "Beauty Tools Makeup Brushes Eyelash Curler Nail File",
         "Therapeutic Oils Eucalyptus Oil Lavender Oil Tea Tree Oil",
         "Baby Care Baby Shampoo Baby Lotion Baby Powder"
-        
     ],
     "Clothing And Accessories": [
         "Formal Wear Suits Tuxedos Dress Shirts Ties",
@@ -264,8 +263,7 @@ product_categories = {
         "Kitchen Appliances Toasters Blenders Juicers",
         "Health Electronics Blood Pressure Monitors Glucose Meters",
         "Wearable Tech Smartwatches Fitness Trackers",
-        "Televisions LED LCD Plasma Smart TVs"
-        
+        "Televisions LED LCD Plasma Smart TVs"        
     ],
     "Home": [
         "Living Room Sofas Armchairs Coffee Tables TV Stands",
