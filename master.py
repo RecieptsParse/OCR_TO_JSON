@@ -37,72 +37,72 @@ for filename in os.listdir(receipts_folder):
     print('Done')
 
             
-# '''
-# saves faiss index and mapping to directory 
-# model for embeddings & descriptions can be updated in config.py
-# '''
-# vendor_database.make_vendor_database()
-# product_database.make_product_database()
+'''
+saves faiss index and mapping to directory 
+model for embeddings & descriptions can be updated in config.py
+'''
+vendor_database.make_vendor_database()
+product_database.make_product_database()
 
 
-# """
-# Get JSON and search for fields (Merchant, First Item, DiningOption, Second Itemm) -- Similar to Assignment 1
-# """
+"""
+Get JSON and search for fields (Merchant, First Item, DiningOption, Second Itemm) -- Similar to Assignment 1
+"""
 
-# """
-# NEED TO TEST
-# """
-# def read_json_receipts(file_path):
-#     with open(file_path, 'r') as f:
-#          lines = f.readlines()
-#     json_objects = []
-#     for line in lines:
-#          json_object = json.loads(line)
-#          json_objects.append(json_object)
-#     return json_objects
+"""
+NEED TO TEST
+"""
+def read_json_receipts(file_path):
+    with open(file_path, 'r') as f:
+         lines = f.readlines()
+    json_objects = []
+    for line in lines:
+         json_object = json.loads(line)
+         json_objects.append(json_object)
+    return json_objects
 
-# def read_one(json_object):
-#     dataframe = pd.DataFrame()
-#     for i in range(len(json_object)):
-#         one_reciept = json_object[i]
-#         merchant_name = one_reciept['merchant']
-#         first_item = one_reciept['ITEMS'][0]['unabbreviatedDescription'] # need to read as JSON object
-#         diining_option = one_reciept['DiningOption']
-#         if (first_item['ITEMS'][1]['unabbreviatedDescription']):
-#             second_item = first_item['ITEMS'][1]['unabbreviatedDescription']
-#             string = f'{merchant_name} {first_item} {diining_option} {second_item}'
-#         else:
-#             string = f'{merchant_name} {first_item} {diining_option}'
+def read_one(json_object):
+    dataframe = pd.DataFrame()
+    for i in range(len(json_object)):
+        one_reciept = json_object[i]
+        merchant_name = one_reciept['merchant']
+        first_item = one_reciept['ITEMS'][0]['unabbreviatedDescription'] # need to read as JSON object
+        diining_option = one_reciept['DiningOption']
+        if (first_item['ITEMS'][1]['unabbreviatedDescription']):
+            second_item = first_item['ITEMS'][1]['unabbreviatedDescription']
+            string = f'{merchant_name} {first_item} {diining_option} {second_item}'
+        else:
+            string = f'{merchant_name} {first_item} {diining_option}'
         
-#         top_vendor = search.query_classification(string, 5, "vendor")
-#         print(top_vendor)
-#         items_for_receipt = one_reciept['ITEMS']
-#         for i in range(len(one_reciept['ITEMS'])):
-#              product_query = items_for_receipt[i]['unabbreviatedDescription']
-#              top_product = search.query_classification(product_query, 10, "product")
-#              print(top_product)
+        top_vendor = search.query_classification(string, 5, "vendor")
+        print(top_vendor)
+        items_for_receipt = one_reciept['ITEMS']
+        for i in range(len(one_reciept['ITEMS'])):
+             product_query = items_for_receipt[i]['unabbreviatedDescription']
+             top_product = search.query_classification(product_query, 10, "product")
+             print(top_product)
 
-# """
-# Proposed: Data Structure
+"""
+Proposed: Data Structure
 
-# |      | Vendor Category | Item1_Product category | Item2_Product Category | Item2_ Product Category |  
-# |   1  |                 |                        |                        |                         | 
-# |   2  |                 |                        |                        |                         |
-# """
+|      | Vendor Category | Item1_Product category | Item2_Product Category | Item2_ Product Category |  
+|   1  |                 |                        |                        |                         | 
+|   2  |                 |                        |                        |                         |
+"""
      
     
         
           
 
-# # {Merchant} {First Item} {diningOptions} {SecondItem}
-# vendor_query = "mcDonalds hamburger meal take-out fries"
-# top_vendor = search.query_classification(vendor_query, 5, "vendor")
+# {Merchant} {First Item} {diningOptions} {SecondItem}
+vendor_query = "mcDonalds hamburger meal take-out fries"
+top_vendor = search.query_classification(vendor_query, 5, "vendor")
 
-# """
-# Get JSON and search for items (iterate through all items) -- Simlilar to Assignmnet 1
-# """
-# # Items in JSON 
-# product_query = "organic apples"
-# top_product = search.query_classification(product_query, 10, "product")
+"""
+Get JSON and search for items (iterate through all items) -- Simlilar to Assignmnet 1
+"""
+# Items in JSON 
+product_query = "organic apples"
+top_product = search.query_classification(product_query, 10, "product")
 
-# print(top_product,top_vendor,sep="\n")
+print(top_product,top_vendor,sep="\n")
