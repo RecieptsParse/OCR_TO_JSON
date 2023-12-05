@@ -81,26 +81,47 @@ def read_json_receipts(file_path):
          json_objects.append(json_object)
     return json_objects
 
-def read_one(json_object):
-    dataframe = pd.DataFrame()
-    for i in range(len(json_object)):
-        query_string = ""
-        one_reciept = json_object[i]
-        merchant_name = one_reciept['merchant']
-        query_string += f'{merchant_name} '
-        diining_option = one_reciept['diningOptions']
-        query_string += f'{diining_option} '
-        for j in range(len(one_reciept['ITEMS'])):
-            query_string += one_reciept['ITEMS'][j]['unabbreviatedDescription']
+# def read_one(json_object):
+#     dataframe = pd.DataFrame()
+#     for i in range(len(json_object)):
+#         query_string = ""
+#         one_reciept = json_object[i]
+#         merchant_name = one_reciept['merchant']
+#         query_string += f'{merchant_name} '
+#         diining_option = one_reciept['diningOptions']
+#         query_string += f'{diining_option} '
+#         for j in range(len(one_reciept['ITEMS'])):
+#             query_string += one_reciept['ITEMS'][j]['unabbreviatedDescription']
 
-        top_vendor = search.query_classification(query_string, 5, "vendor")
-        print(f'- {i} Vendor Prediction {top_vendor}')
-        print(f'Query: {query_string}')
-        items_for_receipt = one_reciept['ITEMS']
-        for j in range(len(one_reciept['ITEMS'])):
-             product_query = items_for_receipt[j]['unabbreviatedDescription']
-             top_product = search.query_classification(product_query, 10, "product")
-             print(f' {j} Item: {product_query} category: {top_product}')
+#         top_vendor = search.query_classification(query_string, 5, "vendor")
+#         print(f'- {i} Vendor Prediction {top_vendor}')
+#         print(f'Query: {query_string}')
+#         items_for_receipt = one_reciept['ITEMS']
+#         for j in range(len(one_reciept['ITEMS'])):
+#              product_query = items_for_receipt[j]['unabbreviatedDescription']
+#              top_product = search.query_classification(product_query, 10, "product")
+#              print(f' {j} Item: {product_query} category: {top_product}')
+
+def read_one(json_object):
+    with open('output.txt', 'a') as file:
+        for i in range(len(json_object)):
+            query_string = ""
+            one_reciept = json_object[i]
+            merchant_name = one_reciept['merchant']
+            query_string += f'{merchant_name} '
+            diining_option = one_reciept['diningOptions']
+            query_string += f'{diining_option} '
+            for j in range(len(one_reciept['ITEMS'])):
+                query_string += one_reciept['ITEMS'][j]['unabbreviatedDescription']
+
+            top_vendor = search.query_classification(query_string, 5, "vendor")
+            file.write(f'- {i} Vendor Prediction {top_vendor}\n')
+            file.write(f'Query: {query_string}\n')
+            items_for_receipt = one_reciept['ITEMS']
+            for j in range(len(one_reciept['ITEMS'])):
+                product_query = items_for_receipt[j]['unabbreviatedDescription']
+                top_product = search.query_classification(product_query, 10, "product")
+                file.write(f' {j} Item: {product_query} category: {top_product}\n')
 
 """
 Proposed: Data Structure

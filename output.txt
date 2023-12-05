@@ -1,0 +1,181 @@
+- 0 Vendor Prediction Grocery and Supermarkets
+Query: Walmart  KettlePopcornDog SnacksChicken Noodle SoupPot Roast SoupTunaSpam Lunch MeatDeluxe Bar 8 CountBenadryl 100GoldbearsSour GoldbearsNori
+ 0 Item: Kettle category: Food Products
+ 1 Item: Popcorn category: Food Products
+ 2 Item: Dog Snacks category: Food Products
+ 3 Item: Chicken Noodle Soup category: Food Products
+ 4 Item: Pot Roast Soup category: Food Products
+ 5 Item: Tuna category: Food Products
+ 6 Item: Spam Lunch Meat category: Food Products
+ 7 Item: Deluxe Bar 8 Count category: Beverages
+ 8 Item: Benadryl 100 category: Pharmacy And Health Products
+ 9 Item: Goldbears category: Toys And Games
+ 10 Item: Sour Goldbears category: Food Products
+ 11 Item: Nori category: Food Products
+- 1 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Spring WaterDeposit Soft drink SingleFee Soft drink SingleSignature Parchment Paper
+ 0 Item: Spring Water category: Beverages
+ 1 Item: Deposit Soft drink Single category: Beverages
+ 2 Item: Fee Soft drink Single category: Beverages
+ 3 Item: Signature Parchment Paper category: Books And Stationery
+- 2 Vendor Prediction Restaurants and Food Services
+Query: Grain Exchange  16oz Iced Latte
+ 0 Item: 16oz Iced Latte category: Beverages
+- 3 Vendor Prediction Health and Beauty
+Query: ROSS DRESS FOR LESS  750ml PomegranateSugar Free Hazelnut50.72oz Oka AlkaliNike MD Valiant
+ 0 Item: 750ml Pomegranate category: Food Products
+ 1 Item: Sugar Free Hazelnut category: Food Products
+ 2 Item: 50.72oz Oka Alkali category: Food Products
+ 3 Item: Nike MD Valiant category: Clothing And Accessories
+- 4 Vendor Prediction Home and Garden
+Query: Oahu Hawaii  TH PillowRE Pillow
+ 0 Item: TH Pillow category: Toys And Games
+ 1 Item: RE Pillow category: Home
+- 5 Vendor Prediction Restaurants and Food Services
+Query: LEAHI HEALTH MANOA DINE IN Deep Green
+ 0 Item: Deep Green category: Food Products
+- 6 Vendor Prediction Grocery and Supermarkets
+Query: <UNKNOWN>  Large Skillet Pan12 TongsCorkscrew
+ 0 Item: Large Skillet Pan category: Home
+ 1 Item: 12 Tongs category: Food Products
+ 2 Item: Corkscrew category: Home
+- 7 Vendor Prediction Restaurants and Food Services
+Query: SAFEWAY  Cheesecake Slice
+ 0 Item: Cheesecake Slice category: Food Products
+- 8 Vendor Prediction Entertainment and Leisure
+Query: Longs  CoffeeRio Peg BagHallmark Everyday Card AssortmentTrolli Sour Crawlers
+ 0 Item: CoffeeRio Peg Bag category: Baby Products
+ 1 Item: Hallmark Everyday Card Assortment category: Gifts And Miscellaneous
+ 2 Item: Trolli Sour Crawlers category: Food Products
+- 9 Vendor Prediction Entertainment and Leisure
+Query: Sam's Club  BookWhole MilkRevolGouda HavartiCrest PasteTampax RadiantBananas
+ 0 Item: Book category: Books And Stationery
+ 1 Item: Whole Milk category: Food Products
+ 2 Item: Revol category: Beverages
+ 3 Item: Gouda Havarti category: Food Products
+ 4 Item: Crest Paste category: Health And Beauty
+ 5 Item: Tampax Radiant category: Clothing And Accessories
+ 6 Item: Bananas category: Food Products
+- 10 Vendor Prediction Electronics and Appliances
+Query: KAHEKA STORE  JK Net SpongePLS Fridge Tray WideRefrigerator SlimPlastic Kirei StockeAvocado
+ 0 Item: JK Net Sponge category: Cleaning Supplies
+ 1 Item: PLS Fridge Tray Wide category: Home
+ 2 Item: Refrigerator Slim category: Beverages
+ 3 Item: Plastic Kirei Stocke category: Toys And Games
+ 4 Item: Avocado category: Food Products
+- 11 Vendor Prediction Restaurants and Food Services
+Query: Sam's Club  Easy Peel Shrimp InfusedDiet Coke 24 Pack CansHawaii Deposit FeeHawaii Handling FeeMixed NutsDoritos Cool RanchUnknown Item 150Bashati
+ 0 Item: Easy Peel Shrimp Infused category: Food Products
+ 1 Item: Diet Coke 24 Pack Cans category: Beverages
+ 2 Item: Hawaii Deposit Fee category: Event Tickets
+ 3 Item: Hawaii Handling Fee category: Event Tickets
+ 4 Item: Mixed Nuts category: Food Products
+ 5 Item: Doritos Cool Ranch category: Food Products
+ 6 Item: Unknown Item 150 category: Gifts And Miscellaneous
+ 7 Item: Bashati category: Food Products
+- 12 Vendor Prediction Restaurants and Food Services
+Query: COSTCO WHOLESALE  Slice CheeseSlice PepperoniCold Brew Matcha FreezeFrozen Mango Chunks
+ 0 Item: Slice Cheese category: Food Products
+ 1 Item: Slice Pepperoni category: Food Products
+ 2 Item: Cold Brew Matcha Freeze category: Food Products
+ 3 Item: Frozen Mango Chunks category: Food Products
+- 13 Vendor Prediction Grocery and Supermarkets
+Query: Foodland  Salmon FilletFree-Range Chicken Boneless Skinless ThighTri-Flavor Shredded LettuceKraft Fat-Free Mexican 4 CheeseKroger Shredded MozzarellaKraft Shredded Italian 5 CheeseOscar Mayer Fully Cooked Bacon93/7 Ground Beef BrickChosen Foods Canola OilLocal Ahi PokeLocal Ahi California RollLocal Ahi Maui PokeLocal Flour TortillaRosarita Refried BeansBush's Black BeansApple Envy
+ 0 Item: Salmon Fillet category: Food Products
+ 1 Item: Free-Range Chicken Boneless Skinless Thigh category: Food Products
+ 2 Item: Tri-Flavor Shredded Lettuce category: Food Products
+ 3 Item: Kraft Fat-Free Mexican 4 Cheese category: Food Products
+ 4 Item: Kroger Shredded Mozzarella category: Food Products
+ 5 Item: Kraft Shredded Italian 5 Cheese category: Food Products
+ 6 Item: Oscar Mayer Fully Cooked Bacon category: Food Products
+ 7 Item: 93/7 Ground Beef Brick category: Food Products
+ 8 Item: Chosen Foods Canola Oil category: Food Products
+ 9 Item: Local Ahi Poke category: Food Products
+ 10 Item: Local Ahi California Roll category: Beverages
+ 11 Item: Local Ahi Maui Poke category: Food Products
+ 12 Item: Local Flour Tortilla category: Food Products
+ 13 Item: Rosarita Refried Beans category: Food Products
+ 14 Item: Bush's Black Beans category: Food Products
+ 15 Item: Apple Envy category: Electronics
+- 14 Vendor Prediction Grocery and Supermarkets
+Query: H MART  KabochaMint
+ 0 Item: Kabocha category: Food Products
+ 1 Item: Mint category: Food Products
+- 15 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Petit Ecolir MilkMeadow Gold Ice
+ 0 Item: Petit Ecolir Milk category: Food Products
+ 1 Item: Meadow Gold Ice category: Beverages
+- 16 Vendor Prediction Home and Garden
+Query: SAFEWAY  
+ 0 Item:  category: Beverages
+ 1 Item:  category: Beverages
+ 2 Item:  category: Beverages
+- 17 Vendor Prediction Restaurants and Food Services
+Query: Krispy Kreme Doughnuts & Coffee  Latte Iced Medium
+ 0 Item: Latte Iced Medium category: Beverages
+- 18 Vendor Prediction Restaurants and Food Services
+Query: Olive DINE IN Table GamesSoft DrinkCalamariSoup & SaladGnocchiKids StrawberryKid CYO Meat Sauce Spaghetti
+ 0 Item: Table Games category: Toys And Games
+ 1 Item: Soft Drink category: Beverages
+ 2 Item: Calamari category: Food Products
+ 3 Item: Soup & Salad category: Food Products
+ 4 Item: Gnocchi category: Food Products
+ 5 Item: Kids Strawberry category: Beverages
+ 6 Item: Kid CYO Meat Sauce Spaghetti category: Food Products
+ 7 Item:  category: Beverages
+- 19 Vendor Prediction Restaurants and Food Services
+Query: Longs  10 Rainbow Playball EachCoffeeRio Peg Bag
+ 0 Item: 10 Rainbow Playball Each category: Toys And Games
+ 1 Item: CoffeeRio Peg Bag category: Baby Products
+- 20 Vendor Prediction Grocery and Supermarkets
+Query: Walmart  Squeeze Buffalo MayoMandarin 3-pound Bag
+ 0 Item: Squeeze Buffalo Mayo category: Beverages
+ 1 Item: Mandarin 3-pound Bag category: Food Products
+- 21 Vendor Prediction Health and Beauty
+Query: <UNKNOWN> Drugs  <UNKNOWN> Sugar-Free Peg BagFrio Sugar-Free Peg Bag
+ 0 Item: <UNKNOWN> Sugar-Free Peg Bag category: Food Products
+ 1 Item: Frio Sugar-Free Peg Bag category: Food Products
+- 22 Vendor Prediction Restaurants and Food Services
+Query: COSTCO WHOLESALE  Chicken TaquitoOrganic BananasOrganic BlendSourdough BreadKansas BlueberryJack's SalsaAvocadosPotato BakeCream CheeseOrganic Beef BrothKansas BaconSandwich WrapPie PumpkinsWhole MilkWhole <UNKNOWN>All in Pan
+ 0 Item: Chicken Taquito category: Food Products
+ 1 Item: Organic Bananas category: Food Products
+ 2 Item: Organic Blend category: Food Products
+ 3 Item: Sourdough Bread category: Food Products
+ 4 Item: Kansas Blueberry category: Food Products
+ 5 Item: Jack's Salsa category: Food Products
+ 6 Item: Avocados category: Food Products
+ 7 Item: Potato Bake category: Food Products
+ 8 Item: Cream Cheese category: Food Products
+ 9 Item: Organic Beef Broth category: Food Products
+ 10 Item: Kansas Bacon category: Food Products
+ 11 Item: Sandwich Wrap category: Food Products
+ 12 Item: Pie Pumpkins category: Food Products
+ 13 Item: Whole Milk category: Food Products
+ 14 Item: Whole <UNKNOWN> category: Beverages
+ 15 Item: All in Pan category: Food Products
+- 23 Vendor Prediction Clothing and Apparel
+Query: PACSUN  JG Striped Brianna Sweater
+ 0 Item: JG Striped Brianna Sweater category: Clothing And Accessories
+- 24 Vendor Prediction Health and Beauty
+Query: Longs Drugs  Crio SF Peg BagCrystal Geyser Spring WaterBottle DepositHI Container Fee
+ 0 Item: Crio SF Peg Bag category: Baby Products
+ 1 Item: Crystal Geyser Spring Water category: Beverages
+ 2 Item: Bottle Deposit category: Health And Beauty
+ 3 Item: HI Container Fee category: Event Tickets
+- 25 Vendor Prediction Restaurants and Food Services
+Query: Oahu Honolulu Ala Moana  ProCatProCat Puna
+ 0 Item: ProCat category: Food Products
+ 1 Item: ProCat Puna category: Food Products
+- 26 Vendor Prediction Electronics and Appliances
+Query: ABC STORES  Evian Water LTR
+ 0 Item: Evian Water LTR category: Beverages
+- 27 Vendor Prediction Grocery and Supermarkets
+Query: How doers get more  Tapcon BitTapcon 3/16x1-3/4 Star FlatKidSafe Epic HangerDetailers Microfiber QC Towels 3pk10-Piece Brass Borefast Self DrillingDW Max Impact Set 30pc
+ 0 Item: Tapcon Bit category: Toys And Games
+ 1 Item: Tapcon 3/16x1-3/4 Star Flat category: Home
+ 2 Item: KidSafe Epic Hanger category: Baby Products
+ 3 Item: Detailers Microfiber QC Towels 3pk category: Health And Beauty
+ 4 Item: 10-Piece Brass Borefast Self Drilling category: Automotive
+ 5 Item: DW Max Impact Set 30pc category: Sporting Goods
+- 28 Vendor Prediction Restaurants and Food Services
+Query: KOZO SUSHI MOILIILI  
