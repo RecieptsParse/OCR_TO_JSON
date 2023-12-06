@@ -11,15 +11,10 @@ FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
 This code has not been tested yet.
 '''
 
-receipts_folder = "data/receipts/text_3and4" # the receipt folder should have two subfolders of images and text
+receipts_folder = "data/receipts/text_0" # the receipt folder should have subfolders of images and text
 # ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
 
-# receipts_folder = "data/receipts/text_1" # the receipt folder should have two subfolders of images and text
-# # ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
-
-
 # openai_api_key=""
-
 
 # receiptParser = convert.make_receiptParser()
 # fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
@@ -33,27 +28,12 @@ receipts_folder = "data/receipts/text_3and4" # the receipt folder should have tw
 #             # IF DEBUGGING IS NEEDED
 #             print()
 #             print(f'reading from {filename}')
-#             # print(data)
+#             print(data)
 #             response = chain.invoke({"input": data})
-
-# receiptParser = convert.make_receiptParser()
-# fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
-# model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
-# chain = convert.make_chain(fewshot_prompt, model, receiptParser)
-
-# for filename in os.listdir(receipts_folder):
-#     if filename.endswith('.txt'):
-#         with open(os.path.join(receipts_folder, filename)) as f:
-#             data = f.read()
-#             # IF DEBUGGING IS NEEDED
-#             # print()
-#             # print(f'reading from {filename}')
-#             # print(data)
-#             response = chain.invoke({"input": data})
-#             # with 'a' in open it will create or append to current file
-#             with open('all_receipts_json.json', 'a') as fp: # Write each JSON object as it gets parsed
+#             # with 'a' in open() it will create or append to current file
+#             with open('test_json.json', 'a') as fp: # Write each JSON object as it gets parsed
 #                     # write each receipt JSON on a new line
-#                     fp.write(response.model_dump_json() + "\n")
+#                     fp.write(json.dumps({"ReceiptInfo": json.loads(response.model_dump_json())}) + "\n")
 #     print('Done')
 
             
@@ -102,29 +82,29 @@ def read_json_receipts(file_path):
 #              top_product = search.query_classification(product_query, 10, "product")
 #              print(f' {j} Item: {product_query} category: {top_product}')
 
-def read_one(json_object):
-    with open('output.txt', 'a') as file:
-        for i in range(len(json_object)):
-            query_string = ""
-            one_reciept = json_object[i]
-            merchant_name = one_reciept['merchant']
-            query_string += f'{merchant_name} '
-            diining_option = one_reciept['diningOptions']
-            query_string += f'{diining_option} '
-            for j in range(len(one_reciept['ITEMS'])):
-                items = one_reciept['ITEMS'][j]['unabbreviatedDescription']
-                query_string += f'{items} '
+# def read_one(json_object):
+#     with open('output.txt', 'a') as file:
+#         for i in range(len(json_object)):
+#             query_string = ""
+#             one_reciept = json_object[i]
+#             merchant_name = one_reciept['merchant']
+#             query_string += f'{merchant_name} '
+#             dining_option = one_reciept['diningOptions']
+#             query_string += f'{dining_option} '
+#             for j in range(len(one_reciept['ITEMS'])):
+#                 items = one_reciept['ITEMS'][j]['unabbreviatedDescription']
+#                 query_string += f'{items} '
 
-            top_vendor = search.query_classification(query_string, 5, "vendor")
-            file.write(f'- {i} Vendor Prediction {top_vendor}\n')
-            file.write(f'Query: {query_string}\n')
-            items_for_receipt = one_reciept['ITEMS']
-            for j in range(len(one_reciept['ITEMS'])):
-                product_query = items_for_receipt[j]['unabbreviatedDescription']
-                descr = items_for_receipt[j]['description']
-                product_query += f' {descr} {merchant_name}' 
-                top_product = search.query_classification(product_query, 4, "product")
-                file.write(f' {j} Item: {product_query} category: {top_product}\n')
+#             top_vendor = search.query_classification(query_string, 5, "vendor")
+#             file.write(f'- {i} Vendor Prediction {top_vendor}\n')
+#             file.write(f'Query: {query_string}\n')
+#             items_for_receipt = one_reciept['ITEMS']
+#             for j in range(len(one_reciept['ITEMS'])):
+#                 product_query = items_for_receipt[j]['unabbreviatedDescription']
+#                 descr = items_for_receipt[j]['description']
+#                 product_query += f' {descr} {merchant_name}' 
+#                 top_product = search.query_classification(product_query, 4, "product")
+#                 file.write(f' {j} Item: {product_query} category: {top_product}\n')
 
 """
 Proposed: Data Structure
