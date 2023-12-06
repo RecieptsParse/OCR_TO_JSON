@@ -5,6 +5,7 @@ import convert
 import os
 import json
 import pandas as pd
+import csv
 
 '''
 FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
@@ -82,8 +83,37 @@ def read_json_receipts(file_path):
 #              top_product = search.query_classification(product_query, 10, "product")
 #              print(f' {j} Item: {product_query} category: {top_product}')
 
+# write to txt
+
+def read_one(json_object):
+    with open('output.txt', 'a') as file:
+        for i in range(len(json_object)):
+            query_string = ""
+            one_reciept = json_object[i]
+            merchant_name = one_reciept['merchant']
+            query_string += f'{merchant_name} '
+            dining_option = one_reciept['diningOptions']
+            query_string += f'{dining_option} '
+            for j in range(len(one_reciept['ITEMS'])):
+                items = one_reciept['ITEMS'][j]['unabbreviatedDescription']
+                query_string += f' | {items} |'
+
+            top_vendor = search.query_classification(query_string, 5, "vendor")
+            file.write(f'- {i} Vendor Prediction {top_vendor}\n')
+            file.write(f'Query: {query_string}\n')
+            items_for_receipt = one_reciept['ITEMS']
+            for j in range(len(one_reciept['ITEMS'])):
+                product_query = items_for_receipt[j]['unabbreviatedDescription']
+                descr = items_for_receipt[j]['description']
+                product_query += f' {descr} {merchant_name}' 
+                top_product = search.query_classification(product_query, 4, "product")
+                file.write(f' {j} Item: {product_query} category: {top_product}\n')
+
+# write to csv
+
 # def read_one(json_object):
-#     with open('output.txt', 'a') as file:
+#     with open('output.csv', 'a',newline='') as file:
+#         writer = csv.writer(file)
 #         for i in range(len(json_object)):
 #             query_string = ""
 #             one_reciept = json_object[i]
@@ -96,8 +126,6 @@ def read_json_receipts(file_path):
 #                 query_string += f'{items} '
 
 #             top_vendor = search.query_classification(query_string, 5, "vendor")
-#             file.write(f'- {i} Vendor Prediction {top_vendor}\n')
-#             file.write(f'Query: {query_string}\n')
 #             items_for_receipt = one_reciept['ITEMS']
 #             for j in range(len(one_reciept['ITEMS'])):
 #                 product_query = items_for_receipt[j]['unabbreviatedDescription']
@@ -106,12 +134,13 @@ def read_json_receipts(file_path):
 #                 top_product = search.query_classification(product_query, 4, "product")
 #                 file.write(f' {j} Item: {product_query} category: {top_product}\n')
 
+
 """
 Proposed: Data Structure
 
-|      | Vendor Category | Item1_Product category | Item2_Product Category | Item2_ Product Category |  
-|   1  |                 |                        |                        |                         | 
-|   2  |                 |                        |                        |                         |
+|      | Vendor Category | Item1_Product category | 
+|   1  |                 |                        |
+|   2  |                 |                        |
 """         
 
 
