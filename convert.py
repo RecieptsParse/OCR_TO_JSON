@@ -15,15 +15,6 @@ import typing
 from prompt_examples import get_prompt_examples
 
 '''
-An enumeration of the types of payment methods for the paymentType category in the ReceiptInfo object.
-The default in ReceiptInfo is 'cash'.
-'''   
-class PaymentType(Enum):
-    CREDIT = 'credit'
-    DEBIT = 'debit'
-    CASH = 'cash'
-
-'''
 This object represents a single item (good/service) that was purchased in the receipt text.
 '''
 class Item(BaseModel):
@@ -80,7 +71,7 @@ class ReceiptInfo(BaseModel):
     receiptTime: str=Field(description="time purchased")
     totalItems: int=Field(description="number of items")
     diningOptions: str=Field(default="", description="here or to-go items for consumable items")
-    paymentType: PaymentType=Field(default="cash", description="payment method")
+    paymentType: str=Field(default="cash", description="payment method")
     creditCardType: str=Field(default="", description="credit card type")
     totalDiscount: float=Field(default=0.00, description="total discount")
     tax: float=Field(description="tax amount")
@@ -102,20 +93,17 @@ class ReceiptInfo(BaseModel):
             returnValue = math.ceil(totalItems)
         return returnValue
 
-    
     @field_validator('paymentType', mode='before')
-    def validate_paymentType(cls, paymentType: str) -> PaymentType:
+    def validate_paymentType(cls, paymentType: str) -> str:
         string = paymentType.lower()
-        returnValue = PaymentType.CASH
-        check_if_credit = True
+        returnValue = 'cash'
         credit_card_names = ['visa', 'discover', 'mastercard', 'american', 'express', 'amex', 'chase', 'citi', 'credit']
         if 'debit' in string:
-            returnValue = PaymentType.DEBIT
-            check_if_credit = False
-        if check_if_credit:
+            returnValue = 'debit'
+        else:
             for term in credit_card_names:
                 if term in string:
-                    returnValue = PaymentType.CREDIT
+                    returnValue = 'credit'
         return returnValue
     
     @field_validator('diningOptions', mode='before')
