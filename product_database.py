@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer
+from transformers import AutoModel
 import faiss
 import numpy as np
 import pickle
@@ -7,7 +8,10 @@ import pickle
 import config
 
 def make_product_database():
-    model = SentenceTransformer(config.transformer_model)
+    #model = SentenceTransformer(config.transformer_model)
+    model = AutoModel.from_pretrained('jinaai/jina-embeddings-v2-base-en', trust_remote_code=True) # trust_remote_code is needed to use the encode method
+
+
     index = faiss.IndexFlatL2(config.dimensions)
 
     product_categories  = config.product_categories

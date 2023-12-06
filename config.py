@@ -9,8 +9,9 @@
  The dimensions value should match that of the model used
 '''
 
-transformer_model = "BAAI/bge-large-en-v1.5"
-dimensions = 1024
+#transformer_model = "BAAI/bge-large-en-v1.5"
+transformer_model = 'jinaai/jina-embeddings-v2-base-en'
+dimensions = 768
 
 
 '''

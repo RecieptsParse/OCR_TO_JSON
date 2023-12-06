@@ -1,5 +1,6 @@
 from collections import Counter
 from sentence_transformers import SentenceTransformer
+from transformers import AutoModel
 import numpy as np
 import faiss
 import pickle
@@ -8,7 +9,9 @@ import pickle
 import config
 
 # Shared model initialization
-model = SentenceTransformer(config.transformer_model)
+#model = SentenceTransformer(config.transformer_model)
+model = AutoModel.from_pretrained('jinaai/jina-embeddings-v2-base-en', trust_remote_code=True) # trust_remote_code is needed to use the encode method
+
 
 class Classifier:
     def __init__(self, index_path, mapping_path):
@@ -31,6 +34,7 @@ class Classifier:
         _, indices = self.index.search(np.array([embedding]), k)
         results = [self.mapping[idx] for idx in indices[0]]
         most_common_result = Counter(results).most_common(1)[0][0]
+        print(_)
         return most_common_result
 
 # Function to get the classifier
