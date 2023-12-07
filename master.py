@@ -74,7 +74,7 @@ def classify(json_receipts):
             for item in receipt['ITEMS']:
                 items_unabbr = item['unabbreviatedDescription']
                 item_description = item['description']
-                vendor_query.append(f"{items_unabbr} {item_description} {items_unabbr}")
+                vendor_query.append(f"{items_unabbr} {item_description}")
             
             #processes query string, then classifies vendor, writes to file
             query_string = " ".join(vendor_query)
