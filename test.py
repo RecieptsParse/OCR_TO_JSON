@@ -12,6 +12,7 @@ import os
 class TestConvert(unittest.TestCase):
     # TestCase's are defined for functions in convert.py in order of appearance
     
+    # setUp the attributes needed for the tests
     def setUp(self):
         self.prompt_prefix = '''You are a capable large language model. Your task is to extract data from a given receipt and format it into the JSON schema below. Use the default values if you're not sure. Try to infer a value for the field: unabbreviatedDescription. The values for the fields "description" and "unnabbreviatedDescription" can not be the same. Please wrap all numeric values in double-quotes. Some items may be priced at a weighted rate, such as "per pound" or "per ounce". Text can be used for multiple fields. Please use double-quotes for all string values. If there are double-quotes inside string values, please escape those characters with the "\" character.
     
@@ -133,18 +134,18 @@ class TestPromptExamples(unittest.TestCase):
 class TestVendorDatabase(unittest.TestCase):
     # TestCase for the file: vendor_database.py
     
+    # setUp the class attributes for the tests
     def setUp(self):
         self.vendor_index_path = 'vendor_embeddings.index'
         self.vendor_mapping_path = 'vendor_mapping.pk1'
         vendor_database.make_vendor_database()
 
-    
     def test_make_vendor_database(self):
         # Test if the index file was created
         if os.path.exists(self.vendor_index_path):
             index = faiss.read_index(self.vendor_index_path)
             self.assertTrue(isinstance(index, faiss.swigfaiss.IndexFlat))
-            #os.remove(self.vendor_mapping_path)
+            os.remove(self.vendor_index_path)
         else:
             raise Exception(f"{self.vendor_index_path} does not exist")
         
@@ -160,13 +161,14 @@ class TestVendorDatabase(unittest.TestCase):
                 self.assertEqual(vendor_mapping[90], 'Electronics and Appliances')
                 self.assertEqual(vendor_mapping[110], 'Home and Garden')
                 self.assertEqual(vendor_mapping[140], 'Entertainment and Leisure')
-            #os.remove(self.vendor_mapping_path)
+            os.remove(self.vendor_mapping_path)
         else:
             raise Exception(f"{self.vendor_mapping_path} does not exist")
 
 class TestProductDatabase(unittest.TestCase):
     # TestCase for the file: product_database.py
     
+    # setUp the class attributes for the tests
     def setUp(self):
         self.product_index_path = 'product_embeddings.index'
         self.product_mapping_path = 'product_mapping.pk1'
@@ -177,7 +179,7 @@ class TestProductDatabase(unittest.TestCase):
         if os.path.exists(self.product_index_path):
             index = faiss.read_index(self.product_index_path)
             self.assertTrue(isinstance(index, faiss.swigfaiss.IndexFlat))
-            #os.remove(self.product_index_path)
+            os.remove(self.product_index_path)
         else:
             raise Exception(f"{self.product_index_path} does not exist")
         
@@ -203,10 +205,81 @@ class TestProductDatabase(unittest.TestCase):
                 self.assertEqual(product_mapping[125], 'Cleaning Supplies')
                 self.assertEqual(product_mapping[135], 'Gifts And Miscellaneous')
                 self.assertEqual(product_mapping[144], 'Event Tickets')
-                #os.remove(self.product_mapping_path)
+                os.remove(self.product_mapping_path)
         else:
-            raise Exception(f"{self.product_index_path} does not exist")
+            raise Exception(f"{self.product_mapping_path} does not exist")
+
+class TestSearch(unittest.TestCase):
+    # TestCase for the file: search.py
+    
+    def setUp(self):
+        vendor_database.make_vendor_database()
+        product_database.make_product_database()
+        self.vendor_classifier = search.get_classifier('vendor')
+        self.product_classifier = search.get_classifier('product')
+        self.vendor_classifier.load_resources()
+        self.product_classifier.load_resources()
         
+    def test_load_resources(self):
+        # Check index attributes
+        self.assertTrue(isinstance(self.vendor_classifier.index, faiss.swigfaiss.IndexFlat))
+        self.assertTrue(isinstance(self.product_classifier.index, faiss.swigfaiss.IndexFlat))
+        
+        # Check vendor_classifier mapping attribute
+        vendor_mapping = self.vendor_classifier.mapping
+        self.assertEqual(len(vendor_mapping), 144)
+        self.assertEqual(vendor_mapping[15], 'Grocery and Supermarkets')
+        self.assertEqual(vendor_mapping[30], 'Restaurants and Food Services')
+        self.assertEqual(vendor_mapping[45], 'Clothing and Apparel')
+        self.assertEqual(vendor_mapping[70], 'Health and Beauty')
+        self.assertEqual(vendor_mapping[90], 'Electronics and Appliances')
+        self.assertEqual(vendor_mapping[110], 'Home and Garden')
+        self.assertEqual(vendor_mapping[140], 'Entertainment and Leisure')
+        
+        
+        # Check product_classifier mapping attribute
+        product_mapping = self.product_classifier.mapping
+        self.assertEqual(len(product_mapping), 145)
+        self.assertEqual(product_mapping[0], 'Food Products')
+        self.assertEqual(product_mapping[10], 'Beverages')
+        self.assertEqual(product_mapping[20], 'Health And Beauty')
+        self.assertEqual(product_mapping[30], 'Clothing And Accessories')
+        self.assertEqual(product_mapping[38], 'Electronics')
+        self.assertEqual(product_mapping[45], 'Home')
+        self.assertEqual(product_mapping[55], 'Outdoor Goods')
+        self.assertEqual(product_mapping[65], 'Automotive')
+        self.assertEqual(product_mapping[75], 'Toys And Games')
+        self.assertEqual(product_mapping[85], 'Sporting Goods')
+        self.assertEqual(product_mapping[95], 'Books And Stationery')
+        self.assertEqual(product_mapping[100], 'Pharmacy And Health Products')
+        self.assertEqual(product_mapping[110], 'Pet Supplies')
+        self.assertEqual(product_mapping[120], 'Baby Products')
+        self.assertEqual(product_mapping[125], 'Cleaning Supplies')
+        self.assertEqual(product_mapping[135], 'Gifts And Miscellaneous')
+        self.assertEqual(product_mapping[144], 'Event Tickets')
+        
+        # Check the KNN search() function for classification
+        def test_search(self):
+            self.assertEqual(self.vendor_classifier.search("mcDonalds hamburger meal take-out fries", 5), 'Restaurants and Food Services')
+            self.assertEqual(self.product_classifier.search("organic apples", 5), 'Food Products')
+            self.assertFalse(self.vendor_classifier.search("mcDonalds hamburger meal take-out fries", 5) == 'Grocery and Supermarkets')
+            self.assertFalse(self.product_classifier.search("organic apples", 5) == 'Beverages')
+
+        # get_classifier() is not tested, as its proper function is integral for the rest of the tests.
+        # Should get_classifier() fail, the other tests will fail as well as a domino effect.
+        
+        # query_classification() is not tested, as its constituent functions are tested above
+        
+        def tearDown(self):
+            # Remove the index and mapping files
+            if os.path.exists(self.vendor_index_path):
+                os.remove(self.vendor_index_path)
+            if os.path.exists(self.vendor_mapping_path):
+                os.remove(self.vendor_mapping_path)
+            if os.path.exists(self.product_index_path):
+                os.remove(self.product_index_path)
+            if os.path.exists(self.product_mapping_path):
+                os.remove(self.product_mapping_path)            
           
 if __name__ == "__main__":
     unittest.main()
