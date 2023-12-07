@@ -120,7 +120,7 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(self.model.temperature, 1.00)
         self.assertEqual(self.model.openai_api_key, "INSERT_OPENAI_API KEY")
         
-    # NOTE: make_chain() is not tested due to it being composed of the return values of other functions that are tested
+    # make_chain() is not tested due to it being composed of the return values of other functions that are tested
 
 class TestPromptExamples(unittest.TestCase):
     # TestCase for the singular getter method in prompt_examples.py
@@ -217,10 +217,10 @@ class TestSearch(unittest.TestCase):
         product_database.make_product_database()
         self.vendor_classifier = search.get_classifier('vendor')
         self.product_classifier = search.get_classifier('product')
-        self.vendor_classifier.load_resources()
-        self.product_classifier.load_resources()
         
     def test_load_resources(self):
+        self.vendor_classifier.load_resources()
+        self.product_classifier.load_resources()
         # Check index attributes
         self.assertTrue(isinstance(self.vendor_classifier.index, faiss.swigfaiss.IndexFlat))
         self.assertTrue(isinstance(self.product_classifier.index, faiss.swigfaiss.IndexFlat))
@@ -258,28 +258,28 @@ class TestSearch(unittest.TestCase):
         self.assertEqual(product_mapping[135], 'Gifts And Miscellaneous')
         self.assertEqual(product_mapping[144], 'Event Tickets')
         
-        # Check the KNN search() function for classification
-        def test_search(self):
-            self.assertEqual(self.vendor_classifier.search("mcDonalds hamburger meal take-out fries", 5), 'Restaurants and Food Services')
-            self.assertEqual(self.product_classifier.search("organic apples", 5), 'Food Products')
-            self.assertFalse(self.vendor_classifier.search("mcDonalds hamburger meal take-out fries", 5) == 'Grocery and Supermarkets')
-            self.assertFalse(self.product_classifier.search("organic apples", 5) == 'Beverages')
+    # Check the KNN search() function for classification
+    def test_search(self):
+        self.assertEqual(self.vendor_classifier.search("mcDonalds hamburger meal take-out fries", 5), 'Restaurants and Food Services')
+        self.assertEqual(self.product_classifier.search("organic apples", 5), 'Food Products')
+        self.assertFalse(self.vendor_classifier.search("mcDonalds hamburger meal take-out fries", 5) == 'Grocery and Supermarkets')
+        self.assertFalse(self.product_classifier.search("organic apples", 5) == 'Beverages')
 
-        # get_classifier() is not tested, as its proper function is integral for the rest of the tests.
-        # Should get_classifier() fail, the other tests will fail as well as a domino effect.
-        
-        # query_classification() is not tested, as its constituent functions are tested above
-        
-        def tearDown(self):
-            # Remove the index and mapping files
-            if os.path.exists(self.vendor_index_path):
-                os.remove(self.vendor_index_path)
-            if os.path.exists(self.vendor_mapping_path):
-                os.remove(self.vendor_mapping_path)
-            if os.path.exists(self.product_index_path):
-                os.remove(self.product_index_path)
-            if os.path.exists(self.product_mapping_path):
-                os.remove(self.product_mapping_path)            
+    def tearDown(self):
+        # Remove the index and mapping files
+        if os.path.exists(self.vendor_classifier.index_path):
+            os.remove(self.vendor_classifier.index_path)
+        if os.path.exists(self.vendor_classifier.mapping_path):
+            os.remove(self.vendor_classifier.mapping_path)
+        if os.path.exists(self.product_classifier.index_path):
+            os.remove(self.product_classifier.index_path)
+        if os.path.exists(self.product_classifier.mapping_path):
+            os.remove(self.product_classifier.mapping_path)  
+
+    # get_classifier() is not tested, as its proper function is integral for the rest of the tests.
+    # Should get_classifier() fail, the other tests will fail as well as a domino effect.
+
+    # query_classification() is not tested, as its constituent functions are tested above          
           
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=2)
