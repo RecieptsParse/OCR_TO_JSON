@@ -95,32 +95,38 @@ class ReceiptInfo(BaseModel):
 
     @field_validator('paymentType', mode='before')
     def validate_paymentType(cls, paymentType: str) -> str:
-        string = paymentType.lower()
         returnValue = 'cash'
-        credit_card_names = ['visa', 'discover', 'mastercard', 'american', 'express', 'amex', 'chase', 'citi', 'credit']
-        if 'debit' in string:
-            returnValue = 'debit'
-        else:
-            for term in credit_card_names:
-                if term in string:
-                    returnValue = 'credit'
+        try:
+            string = paymentType.lower()
+            credit_card_names = ['visa', 'discover', 'mastercard', 'american', 'express', 'amex', 'chase', 'citi', 'credit', 'card']
+            if 'debit' in string:
+                returnValue = 'debit'
+            else:
+                for term in credit_card_names:
+                    if term in string:
+                        returnValue = 'credit'
+        except:
+            pass
         return returnValue
     
     @field_validator('diningOptions', mode='before')
     @classmethod
     def validate_diningOptions(cls, diningOptions: str) -> str:
-        string = diningOptions.lower()
         returnValue = ''
-        dine_in_terms = ['for', 'here', 'dine', 'in', 'house', 'on']
-        to_go_terms = ['take', 'out', 'carry', 'to', 'go', 'pick', 'up', 'delivery', 'grab', 'away']
-        dine_in_score = sum([string.__contains__(term) for term in dine_in_terms])
-        to_go_score = sum([string.__contains__(term) for term in to_go_terms])
-        if (dine_in_score > to_go_score):
-            returnValue = 'DINE IN'
-        elif (dine_in_score < to_go_score):
-            returnValue = 'TO GO'
-        elif ((dine_in_score != 0) and (to_go_score != 0) and (dine_in_score == to_go_score)):
-            returnValue = 'TO GO'
+        try:
+            string = diningOptions.lower()
+            dine_in_terms = ['for', 'here', 'dine', 'in', 'house', 'on']
+            to_go_terms = ['take', 'out', 'carry', 'to', 'go', 'pick', 'up', 'delivery', 'grab', 'away']
+            dine_in_score = sum([string.__contains__(term) for term in dine_in_terms])
+            to_go_score = sum([string.__contains__(term) for term in to_go_terms])
+            if (dine_in_score > to_go_score):
+                returnValue = 'DINE IN'
+            elif (dine_in_score < to_go_score):
+                returnValue = 'TO GO'
+            elif ((dine_in_score != 0) and (to_go_score != 0) and (dine_in_score == to_go_score)):
+                returnValue = 'TO GO'
+        except:
+            pass
         return returnValue
 
     @field_validator('tax', 'total', 'totalDiscount', mode='before')
@@ -129,7 +135,7 @@ class ReceiptInfo(BaseModel):
         returnValue = 0.00
         if (isinstance(inputValue, str)):
             try:
-                returnValue = math.ceil(float(inputValue))
+                returnValue = float(inputValue)
             except:
                 returnValue = 0.00
         elif (isinstance(inputValue, int)):
