@@ -5,6 +5,11 @@ import random
 '''
 This file chooses (num_files) numbers of files from data/receipts/text for NER-Evaluation.
 For context, data/receipts/text is the folder that contains all the raw receipt text files.
+
+------------------------------------------WARNING------------------------------------------
+Once run, this program will completely change the receipts used for NER-Evaluation, which
+means that the hand-annotated NER-Evaluate golden annotations will no longer be valid! 
+Please keep this in mind before running this program.
 '''
 
 # How many files to pick randomly for NER-Evaluation
@@ -23,17 +28,19 @@ ner_evaluate_files = os.listdir(ner_evaluate_folder)
 
 # Clear out the existing files in data/receipts/ner_evaluate
 for file in ner_evaluate_files:
-    relative_file_path = os.path.join(ner_evaluate_folder, file)
-    if os.path.exists(relative_file_path):
-        os.remove(relative_file_path)
+    if file.endswith('.txt'):
+        relative_file_path = os.path.join(ner_evaluate_folder, file)
+        if os.path.exists(relative_file_path):
+            os.remove(relative_file_path)
 
 # Pick 10 random files from data/receipts/text to use for NER-Evaluation
-for i in range(num_files):
+i = 0
+while i < num_files:
     random_file = random.choice(raw_text_files)
     if random_file.endswith('.txt'):
         with open(os.path.join(raw_text_folder, random_file)) as f:
             copy_to_path = f"{receipts_folder}/ner_evaluate/{random_file}"
             print(copy_to_path)
             shutil.copy(f.name, copy_to_path)
-    else:
-        i -= 1 # repeats the process and doesn't count the skipped file
+            i += 1
+            # since this chunk doesn't run unless a .txt file is encountered, (num_files) number of files will always be chosen
