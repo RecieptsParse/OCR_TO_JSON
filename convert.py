@@ -69,12 +69,11 @@ class Item(BaseModel):
     def validate_includedItems(cls, includedItems):
         return_array = []
         for item in includedItems:
-            new_item = item
-            if "UNKNOWN" in new_item:
-                new_item = new_item.replace("<UNKNOWN>", "")
-                new_item = new_item.replace("UNKNOWN", "")
-                new_item = " ".join(new_item.split())
-            return_array.append(new_item)
+            new_item = item.replace("<UNKNOWN>", "")
+            new_item = new_item.replace("UNKNOWN", "")
+            new_item = " ".join(new_item.split())
+            if new_item:
+                return_array.append(new_item)
         return return_array
 
     

@@ -39,6 +39,20 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(convert.Item.validate_quantity(5),5)
         self.assertEqual(convert.Item.validate_quantity(5),5.0)
 
+    def test_validate_string_Item(self):
+        self.assertEqual(convert.Item.validate_string_Item("<UNKNOWN>"), "")
+        self.assertEqual(convert.Item.validate_string_Item("UNKNOWN"), "")
+        self.assertEqual(convert.Item.validate_string_Item("UNKNOWN orange"), "orange")
+        self.assertEqual(convert.Item.validate_string_Item("Apple    banana   \n"), "Apple banana")
+        self.assertEqual(convert.Item.validate_string_Item("grape"), "grape")
+    
+    def test_validate_includedItems(self):
+        test_array = convert.Item.validate_includedItems(["", "<UNKNOWN>", "UNKNOWN grape", "Apple     banana", "orange"])
+        self.assertTrue(len(test_array), 3)
+        self.assertEqual(test_array[0], "grape")
+        self.assertEqual(test_array[1], "Apple banana")
+        self.assertEqual(test_array[2], "orange")
+
     def test_validate_totalItems(self):
         self.assertEqual(convert.ReceiptInfo.validate_totalItems("<UNKNOWN>"), 0)
         self.assertEqual(convert.ReceiptInfo.validate_totalItems("7.1"), 8)
@@ -68,6 +82,13 @@ class TestConvert(unittest.TestCase):
         self.assertEqual(convert.ReceiptInfo.validate_float_ReceiptInfo("7.7"), 7.7)
         self.assertEqual(convert.ReceiptInfo.validate_float_ReceiptInfo(3.33), 3.33)
         self.assertEqual(convert.ReceiptInfo.validate_float_ReceiptInfo(5),5.0)
+    
+    def test_validate_string_ReceiptInfo(self):
+        self.assertEqual(convert.ReceiptInfo.validate_string_ReceiptInfo("<UNKNOWN>"), "")
+        self.assertEqual(convert.ReceiptInfo.validate_string_ReceiptInfo("UNKNOWN"), "")
+        self.assertEqual(convert.ReceiptInfo.validate_string_ReceiptInfo("UNKNOWN orange"), "orange")
+        self.assertEqual(convert.ReceiptInfo.validate_string_ReceiptInfo("Apple    banana   \n"), "Apple banana")
+        self.assertEqual(convert.ReceiptInfo.validate_string_ReceiptInfo("grape"), "grape")
         
     def test_get_prompt_prefix(self):
         prefix = self.prompt_prefix
