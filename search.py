@@ -34,7 +34,6 @@ class Classifier:
         _, indices = self.index.search(np.array([embedding]), k)
         results = [self.mapping[idx] for idx in indices[0]]
         most_common_result = Counter(results).most_common(1)[0][0]
-        print(_)
         return most_common_result
 
 # Function to get the classifier
