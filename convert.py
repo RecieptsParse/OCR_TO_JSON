@@ -28,33 +28,54 @@ class Item(BaseModel):
 
     @field_validator('unitPrice', 'totalPrice', 'discountAmount', mode='before')
     @classmethod
-    def validate_float_Item(cls, inputValue: typing.Any) -> float:
-        returnValue = 0.00
-        if (isinstance(inputValue, str)):
+    def validate_float_Item(cls, input_value: typing.Any) -> float:
+        return_value = 0.00
+        if (isinstance(input_value, str)):
             try:
-                returnValue = (float(inputValue))
+                return_value = (float(input_value))
             except:
-                returnValue = 0.00
-        elif (isinstance(inputValue, int)):
-            returnValue = float(inputValue)
-        elif (isinstance(inputValue, float)):
-            returnValue = inputValue
-        return returnValue
+                return_value = 0.00
+        elif (isinstance(input_value, int)):
+            return_value = float(input_value)
+        elif (isinstance(input_value, float)):
+            return_value = input_value
+        return return_value
     
     @field_validator('quantity', mode='before')
     @classmethod
     def validate_quantity(cls, quantity: typing.Any) -> int:
-        returnValue = 0
+        return_value = 0
         if (isinstance(quantity, str)):
             try:
-                returnValue = math.ceil(float(quantity))
+                return_value = math.ceil(float(quantity))
             except:
-                returnValue = 0
+                return_value = 0
         elif (isinstance(quantity, int)):
-            returnValue = quantity
+            return_value = quantity
         elif (isinstance(quantity, float)):
-            returnValue = math.ceil(quantity)
-        return returnValue
+            return_value = math.ceil(quantity)
+        return return_value
+    
+    @field_validator('description', 'unabbreviatedDescription', mode='after')
+    @classmethod
+    def validate_string_Item(cls, input_value: str) -> str:
+        return_value = input_value.replace("<UNKNOWN>", "")
+        return_value = return_value.replace("UNKNOWN", "")
+        return_value = " ".join(return_value.split())
+        return return_value
+    
+    @field_validator('includedItems', mode='after')
+    @classmethod
+    def validate_includedItems(cls, includedItems):
+        return_array = []
+        for item in includedItems:
+            new_item = item
+            if "UNKNOWN" in new_item:
+                new_item = new_item.replace("<UNKNOWN>", "")
+                new_item = new_item.replace("UNKNOWN", "")
+                new_item = " ".join(new_item.split())
+            return_array.append(new_item)
+        return return_array
 
     
 '''
@@ -81,38 +102,38 @@ class ReceiptInfo(BaseModel):
     @field_validator('totalItems', mode='before')
     @classmethod
     def validate_totalItems(cls, totalItems: typing.Any) -> int:
-        returnValue = 0
+        return_value = 0
         if (isinstance(totalItems, str)):
             try:
-                returnValue = math.ceil(float(totalItems))
+                return_value = math.ceil(float(totalItems))
             except:
-                returnValue = 0
+                return_value = 0
         elif (isinstance(totalItems, int)):
-            returnValue = totalItems
+            return_value = totalItems
         elif (isinstance(totalItems, float)):
-            returnValue = math.ceil(totalItems)
-        return returnValue
+            return_value = math.ceil(totalItems)
+        return return_value
 
     @field_validator('paymentType', mode='before')
     def validate_paymentType(cls, paymentType: str) -> str:
-        returnValue = 'cash'
+        return_value = 'cash'
         try:
             string = paymentType.lower()
             credit_card_names = ['visa', 'discover', 'mastercard', 'american', 'express', 'amex', 'chase', 'citi', 'credit', 'card']
             if 'debit' in string:
-                returnValue = 'debit'
+                return_value = 'debit'
             else:
                 for term in credit_card_names:
                     if term in string:
-                        returnValue = 'credit'
+                        return_value = 'credit'
         except:
             pass
-        return returnValue
+        return return_value
     
     @field_validator('diningOptions', mode='before')
     @classmethod
     def validate_diningOptions(cls, diningOptions: str) -> str:
-        returnValue = ''
+        return_value = ''
         try:
             string = diningOptions.lower()
             dine_in_terms = ['for', 'here', 'dine', 'in', 'house', 'on']
@@ -120,32 +141,41 @@ class ReceiptInfo(BaseModel):
             dine_in_score = sum([string.__contains__(term) for term in dine_in_terms])
             to_go_score = sum([string.__contains__(term) for term in to_go_terms])
             if (dine_in_score > to_go_score):
-                returnValue = 'DINE IN'
+                return_value = 'DINE IN'
             elif (dine_in_score < to_go_score):
-                returnValue = 'TO GO'
+                return_value = 'TO GO'
             elif ((dine_in_score != 0) and (to_go_score != 0) and (dine_in_score == to_go_score)):
-                returnValue = 'TO GO'
+                return_value = 'TO GO'
         except:
             pass
-        return returnValue
+        return return_value
 
     @field_validator('tax', 'total', 'totalDiscount', mode='before')
     @classmethod
-    def validate_float_ReceiptInfo(cls, inputValue: typing.Any) -> float:
-        returnValue = 0.00
-        if (isinstance(inputValue, str)):
+    def validate_float_ReceiptInfo(cls, input_value: typing.Any) -> float:
+        return_value = 0.00
+        if (isinstance(input_value, str)):
             try:
-                returnValue = float(inputValue)
+                return_value = float(input_value)
             except:
-                returnValue = 0.00
-        elif (isinstance(inputValue, int)):
-            returnValue = float(inputValue)
-        elif (isinstance(inputValue, float)):
-            returnValue = inputValue
+                return_value = 0.00
+        elif (isinstance(input_value, int)):
+            return_value = float(input_value)
+        elif (isinstance(input_value, float)):
+            return_value = input_value
         else:
-            returnValue = 0.00
-        return returnValue
-
+            return_value = 0.00
+        return return_value
+    
+    @field_validator('merchant', 'address', 'city', 'state', 'phoneNumber', 
+                     'receiptDate', 'receiptTime', 'creditCardType', mode='after')
+    @classmethod
+    def validate_string_ReceiptInfo(cls, input_value: str) -> str:
+        return_value = input_value.replace("<UNKNOWN>", "")
+        return_value = return_value.replace("UNKNOWN", "")
+        return_value = " ".join(return_value.split())
+        return return_value
+             
 def make_receiptParser():
     return PydanticOutputParser(pydantic_object=ReceiptInfo)
 
