@@ -140,9 +140,9 @@ def read_one(json_object):
 
 # {Merchant} {First Item} {diningOptions} {SecondItem}
 
-# json_obj = read_json_receipts('all_receipts_json.json')
+json_obj = read_json_receipts('all_receipts_json.json')
 
-# read_one(json_obj)
+read_one(json_obj)
 
 # vendor_query  = "mcDonalds hamburger meal take-out fries"
 # top_vendor = search.query_classification(vendor_query, 5, "vendor")
