@@ -8,31 +8,30 @@ import pandas as pd
 import csv
 
 '''
-FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
-This code has not been tested yet.
+Convert raw receipt text to JSON objects and store the JSON objects as strings in 
 '''
 
-receipts_folder = "data/receipts/text_0" # the receipt folder should have subfolders of images and text
-# ^currently running batches of raw txt files, in the same folder as the complete data/receipts/text folder
+# receipts_folder = "data/receipts/ner_evaluate" # the folder that contains raw receipt text files to convert to JSON
 
-# openai_api_key=""
+# openai_api_key="INSERT_OPENAI_API_KEY"
 
+# # Set up the main components of the JSON conversion process
 # receiptParser = convert.make_receiptParser()
 # fewshot_prompt = convert.make_fewshot_prompt(receiptParser.get_format_instructions())
 # model = convert.make_model(model="gpt-3.5-turbo-16k", temperature=1.00, openai_api_key=openai_api_key)
 # chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
+# # Iterate through receipts_folder, and convert each receipt to a JSON object
+# print(os.listdir(receipts_folder)) # DELETE ME LATER
 # for filename in os.listdir(receipts_folder):
 #     if filename.endswith('.txt'):
 #         with open(os.path.join(receipts_folder, filename)) as f:
 #             data = f.read()
-#             # IF DEBUGGING IS NEEDED
 #             print()
 #             print(f'reading from {filename}')
-#             print(data)
 #             response = chain.invoke({"input": data})
 #             # with 'a' in open() it will create or append to current file
-#             with open('test_json.json', 'a') as fp: # Write each JSON object as it gets parsed
+#             with open('receipts_json.json', 'a') as fp: # Write each JSON object as it gets parsed
 #                     # write each receipt JSON on a new line
 #                     fp.write(json.dumps({"ReceiptInfo": json.loads(response.model_dump_json())}) + "\n")
 #     print('Done')
@@ -98,11 +97,12 @@ def read_one(json_object):
                 items_unabbre = one_reciept['ITEMS'][j]['unabbreviatedDescription']
                 item_abbre = one_reciept['ITEMS'][i]['description']
                 query_string += f' {items_unabbre} {item_abbre} '
+                items = one_reciept['ITEMS'][j]['unabbreviatedDescription']
+                query_string += f' | {items} |'
 
             top_vendor = search.query_classification(query_string, 5, "vendor")
             file.write(f'- {i} Vendor Prediction {top_vendor}\n')
             file.write(f'Query: {query_string}\n')
-            one_reciept['vendor_cat'] = top_vendor
             items_for_receipt = one_reciept['ITEMS']
             for j in range(len(one_reciept['ITEMS'])):
                 product_query = items_for_receipt[j]['unabbreviatedDescription']
@@ -110,14 +110,13 @@ def read_one(json_object):
                 product_query += f' {descr} {merchant_name}' 
                 top_product = search.query_classification(product_query, 10, "product")
                 file.write(f' {j} Item: {product_query} category: {top_product}\n')
-                items_for_receipt[j]['item_cat'] = top_product
-            with open('modified_output.json', 'w') as json_file:
-                json.dump(json_object, json_file, indent=2)
 
-# write to JSON only
+# write to csv
 """DID NOT TEST YET"""
 # def read_one(json_object):
-#     with open('output.txt', 'a') as file:
+#     with open('output.csv', 'a',newline='') as file:
+#         writer = csv.writer(file)
+#         writer.writerow(['Number','Vendor','Item'])
 #         for i in range(len(json_object)):
 #             query_string = ""
 #             one_reciept = json_object[i]
@@ -127,24 +126,25 @@ def read_one(json_object):
 #             query_string += f'{dining_option} '
 #             for j in range(len(one_reciept['ITEMS'])):
 #                 items = one_reciept['ITEMS'][j]['unabbreviatedDescription']
-#                 query_string += f' {items} '
+#                 query_string += f'{items} '
 
 #             top_vendor = search.query_classification(query_string, 5, "vendor")
-#             one_reciept['vendor_cat'] = top_vendor
 #             items_for_receipt = one_reciept['ITEMS']
 #             for j in range(len(one_reciept['ITEMS'])):
+#                 arr = [i,top_vendor]
 #                 product_query = items_for_receipt[j]['unabbreviatedDescription']
 #                 descr = items_for_receipt[j]['description']
 #                 product_query += f' {descr} {merchant_name}' 
-#                 top_product = search.query_classification(product_query, 10, "product")
-#                 items_for_receipt[j]['item_cat'] = top_product
+#                 top_product = search.query_classification(product_query, 4, "product")
+#                 arr.append(top_product)
+#                 writer.writerow(arr)     
 
 
 # {Merchant} {First Item} {diningOptions} {SecondItem}
 
-json_obj = read_json_receipts('all_receipts_json.json')
+# json_obj = read_json_receipts('all_receipts_json.json')
 
-read_one(json_obj)
+# read_one(json_obj)
 
 # vendor_query  = "mcDonalds hamburger meal take-out fries"
 # top_vendor = search.query_classification(vendor_query, 5, "vendor")
@@ -157,3 +157,4 @@ Get JSON and search for items (iterate through all items) -- Simlilar to Assignm
 # top_product = search.query_classification(product_query, 10, "product")
 
 # print(top_product,top_vendor,sep="\n")
+print("PROGRAM END")

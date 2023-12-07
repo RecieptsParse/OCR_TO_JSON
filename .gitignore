@@ -162,3 +162,5 @@ cython_debug/
 # FAISS and mapping files saved to directory
 *.pk1
 *.index
+.DS_Store
+.Rhistory
