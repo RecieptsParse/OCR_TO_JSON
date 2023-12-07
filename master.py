@@ -8,8 +8,7 @@ import pandas as pd
 import csv
 
 '''
-FIX DOCUMENTATION LATER: JSON OBJECT CONVERSION PHASE
-This code has not been tested yet.
+Convert raw receipt text to JSON objects and store the JSON objects as strings in 
 '''
 
 receipts_folder = "data/receipts/text_0" # the receipt folder should have subfolders of images and text
@@ -32,7 +31,7 @@ receipts_folder = "data/receipts/text_0" # the receipt folder should have subfol
 #             print(data)
 #             response = chain.invoke({"input": data})
 #             # with 'a' in open() it will create or append to current file
-#             with open('test_json.json', 'a') as fp: # Write each JSON object as it gets parsed
+#             with open('receipts_json.json', 'a') as fp: # Write each JSON object as it gets parsed
 #                     # write each receipt JSON on a new line
 #                     fp.write(json.dumps({"ReceiptInfo": json.loads(response.model_dump_json())}) + "\n")
 #     print('Done')
