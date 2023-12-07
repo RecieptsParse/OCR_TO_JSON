@@ -1,0 +1,1788 @@
+[
+  {
+    "merchant": "Walmart",
+    "address": "1131 KUALA ST",
+    "city": "PEARL CITY",
+    "state": "HI",
+    "phoneNumber": "808-454-8785",
+    "receiptDate": "10/04/23",
+    "receiptTime": "14:24:58",
+    "totalItems": 19,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "VISA",
+    "totalDiscount": 0.0,
+    "tax": 4.78,
+    "total": 106.18,
+    "ITEMS": [
+      {
+        "description": "KETTLE",
+        "unabbreviatedDescription": "Kettle",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 43.24,
+        "totalPrice": 43.24,
+        "discountAmount": 0.0,
+        "item_cat": "Outdoor Goods"
+      },
+      {
+        "description": "POPCORN",
+        "unabbreviatedDescription": "Popcorn",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 7.88,
+        "totalPrice": 7.88,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "DOG SNACKS",
+        "unabbreviatedDescription": "Dog Snacks",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.54,
+        "totalPrice": 4.54,
+        "discountAmount": 0.0,
+        "item_cat": "Pet Supplies"
+      },
+      {
+        "description": "CHK NDL SOUP",
+        "unabbreviatedDescription": "Chicken Noodle Soup",
+        "includedItems": [],
+        "quantity": 3,
+        "unitPrice": 2.26,
+        "totalPrice": 6.78,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "POT RST SOUP",
+        "unabbreviatedDescription": "Pot Roast Soup",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.26,
+        "totalPrice": 2.26,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "TUNA",
+        "unabbreviatedDescription": "Tuna",
+        "includedItems": [],
+        "quantity": 4,
+        "unitPrice": 1.32,
+        "totalPrice": 5.28,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "SPAM LNCH MT",
+        "unabbreviatedDescription": "Spam Lunch Meat",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.98,
+        "totalPrice": 2.98,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "DL BAR 8CT",
+        "unabbreviatedDescription": "Deluxe Bar 8 Count",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 7.12,
+        "totalPrice": 7.12,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "BENADRYL 100",
+        "unabbreviatedDescription": "Benadryl 100",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 15.24,
+        "totalPrice": 15.24,
+        "discountAmount": 0.0,
+        "item_cat": "Pharmacy And Health Products"
+      },
+      {
+        "description": "GOLDBEARS",
+        "unabbreviatedDescription": "Goldbears",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 1.28,
+        "totalPrice": 2.56,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "SR GLDBRS",
+        "unabbreviatedDescription": "Sour Goldbears",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.98,
+        "totalPrice": 0.98,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "NORI",
+        "unabbreviatedDescription": "Nori",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 1.27,
+        "totalPrice": 2.54,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "SAFEWAY",
+    "address": "2855 East Manoa Road",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "(808) 988-2058",
+    "receiptDate": "06/24/23",
+    "receiptTime": "15:58",
+    "totalItems": 4,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Visa",
+    "totalDiscount": 0.12,
+    "tax": 0.31,
+    "total": 7.03,
+    "ITEMS": [
+      {
+        "description": "CG SPRING WTR",
+        "unabbreviatedDescription": "Spring Water",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.67,
+        "totalPrice": 1.67,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "DEP SFTDK SNGL FS",
+        "unabbreviatedDescription": "Deposit Soft drink Single",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.05,
+        "totalPrice": 0.05,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "FEE SFTDK SNGL FS",
+        "unabbreviatedDescription": "Fee Soft drink Single",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.01,
+        "totalPrice": 0.01,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "SIG PARCHMENT PAPR",
+        "unabbreviatedDescription": "Signature Parchment Paper",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.99,
+        "totalPrice": 4.99,
+        "discountAmount": 0.0,
+        "item_cat": "Pharmacy And Health Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Grain Exchange",
+    "address": "591 Collaboration Way",
+    "city": "Newark",
+    "state": "DE",
+    "phoneNumber": "",
+    "receiptDate": "7/12/23",
+    "receiptTime": "9:10 AM",
+    "totalItems": 1,
+    "diningOptions": "",
+    "paymentType": "cash",
+    "creditCardType": "",
+    "totalDiscount": 0.0,
+    "tax": 0.0,
+    "total": 5.0,
+    "ITEMS": [
+      {
+        "description": "16oz Iced Latte",
+        "unabbreviatedDescription": "16oz Iced Latte",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.0,
+        "totalPrice": 5.0,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "ROSS DRESS FOR LESS",
+    "address": "<UNKNOWN>",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "808-943-0137",
+    "receiptDate": "08/04/23",
+    "receiptTime": "5:37:51 PM",
+    "totalItems": 4,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Visa",
+    "totalDiscount": 0.0,
+    "tax": 2.19,
+    "total": 48.65,
+    "ITEMS": [
+      {
+        "description": "750ML POMEGRANATE",
+        "unabbreviatedDescription": "750ml Pomegranate",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.99,
+        "totalPrice": 3.99,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      },
+      {
+        "description": "SUGAR FREE HAZELNU",
+        "unabbreviatedDescription": "Sugar Free Hazelnut",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.99,
+        "totalPrice": 2.99,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      },
+      {
+        "description": "50.72oz OKA ALKALI",
+        "unabbreviatedDescription": "50.72oz Oka Alkali",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.49,
+        "totalPrice": 2.49,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      },
+      {
+        "description": "#NIKE MD VALIANT",
+        "unabbreviatedDescription": "Nike MD Valiant",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 36.99,
+        "totalPrice": 36.99,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Oahu Hawaii",
+    "address": "1450 Ala Moana Blvd, Ste 2401",
+    "city": "<UNKNOWN>",
+    "state": "HI",
+    "phoneNumber": "808-206-7162",
+    "receiptDate": "10/21/2023",
+    "receiptTime": "08:36 PM",
+    "totalItems": 2,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Discover",
+    "totalDiscount": 0.0,
+    "tax": 2.59,
+    "total": 57.59,
+    "ITEMS": [
+      {
+        "description": "TH P llow",
+        "unabbreviatedDescription": "TH Pillow",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 35.0,
+        "totalPrice": 35.0,
+        "discountAmount": 0.0,
+        "item_cat": "Home"
+      },
+      {
+        "description": "RE Pillow",
+        "unabbreviatedDescription": "RE Pillow",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 20.0,
+        "totalPrice": 20.0,
+        "discountAmount": 0.0,
+        "item_cat": "Home"
+      }
+    ],
+    "vendor_cat": "Restaurants and Food Services"
+  },
+  {
+    "merchant": "LEAHI HEALTH MANOA",
+    "address": "2752 WOODLAWN DRIVE",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "8082242607",
+    "receiptDate": "30-Jul-2023",
+    "receiptTime": "1:02:48P",
+    "totalItems": 1,
+    "diningOptions": "DINE IN",
+    "paymentType": "credit",
+    "creditCardType": "VISA",
+    "totalDiscount": 0.0,
+    "tax": 0.38,
+    "total": 8.38,
+    "ITEMS": [
+      {
+        "description": "Deep Green",
+        "unabbreviatedDescription": "Deep Green",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 8.0,
+        "totalPrice": 8.0,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      }
+    ],
+    "vendor_cat": "Restaurants and Food Services"
+  },
+  {
+    "merchant": "<UNKNOWN>",
+    "address": "700 <UNKNOWN> ST",
+    "city": "<UNKNOWN>",
+    "state": "<UNKNOWN>",
+    "phoneNumber": "808 <UNKNOWN> <UNKNOWN>",
+    "receiptDate": "09/27/23",
+    "receiptTime": "15:53:09",
+    "totalItems": 3,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Discover",
+    "totalDiscount": 0.0,
+    "tax": 0.36,
+    "total": 7.98,
+    "ITEMS": [
+      {
+        "description": "<UNKNOWN> <UNKNOWN> PAN",
+        "unabbreviatedDescription": "Large Skillet Pan",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.68,
+        "totalPrice": 5.68,
+        "discountAmount": 0.0,
+        "item_cat": "Books And Stationery"
+      },
+      {
+        "description": "<UNKNOWN> TONGS",
+        "unabbreviatedDescription": "12 Tongs",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.97,
+        "totalPrice": 0.97,
+        "discountAmount": 0.0,
+        "item_cat": "Home"
+      },
+      {
+        "description": "CORKSCREW",
+        "unabbreviatedDescription": "Corkscrew",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.97,
+        "totalPrice": 0.97,
+        "discountAmount": 0.0,
+        "item_cat": "Books And Stationery"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "SAFEWAY",
+    "address": "377 Keahole Street",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "(808) 396-6337",
+    "receiptDate": "10/13/23",
+    "receiptTime": "19:33",
+    "totalItems": 1,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "",
+    "totalDiscount": 0.0,
+    "tax": 0.28,
+    "total": 6.27,
+    "ITEMS": [
+      {
+        "description": "CHEESECAKE SLICE",
+        "unabbreviatedDescription": "Cheesecake Slice",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.99,
+        "totalPrice": 5.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Longs",
+    "address": "4211 WAIALAE AVE",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "<UNKNOWN> 0781",
+    "receiptDate": "JUNE 8, 2023",
+    "receiptTime": "6:17 PM",
+    "totalItems": 4,
+    "diningOptions": "",
+    "paymentType": "debit",
+    "creditCardType": "VISA DEBIT",
+    "totalDiscount": 0.0,
+    "tax": 0.0,
+    "total": 18.18,
+    "ITEMS": [
+      {
+        "description": "CFRIO SF PEG BAG",
+        "unabbreviatedDescription": "CoffeeRio Peg Bag",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.59,
+        "totalPrice": 4.59,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      },
+      {
+        "description": "HLMRK EVERYDY CARD ASST",
+        "unabbreviatedDescription": "Hallmark Everyday Card Assortment",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 4.99,
+        "totalPrice": 9.98,
+        "discountAmount": 0.0,
+        "item_cat": "Gifts And Miscellaneous"
+      },
+      {
+        "description": "TROLLI SOUR CRAWLR",
+        "unabbreviatedDescription": "Trolli Sour Crawlers",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.79,
+        "totalPrice": 2.79,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Sam's Club",
+    "address": "",
+    "city": "",
+    "state": "",
+    "phoneNumber": "(808) 945 - 9841",
+    "receiptDate": "10/24/23",
+    "receiptTime": "19:15",
+    "totalItems": 7,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Mastercard",
+    "totalDiscount": 0.0,
+    "tax": 3.07,
+    "total": 68.17,
+    "ITEMS": [
+      {
+        "description": "BOOK",
+        "unabbreviatedDescription": "Book",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 8.98,
+        "totalPrice": 8.98,
+        "discountAmount": 0.0,
+        "item_cat": "Books And Stationery"
+      },
+      {
+        "description": "WHL MILK",
+        "unabbreviatedDescription": "Whole Milk",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.92,
+        "totalPrice": 5.92,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "REVOL",
+        "unabbreviatedDescription": "Revol",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.88,
+        "totalPrice": 3.88,
+        "discountAmount": 0.0,
+        "item_cat": "Cleaning Supplies"
+      },
+      {
+        "description": "GOUDAHAVARTF",
+        "unabbreviatedDescription": "Gouda Havarti",
+        "includedItems": [],
+        "quantity": 3,
+        "unitPrice": 8.98,
+        "totalPrice": 26.94,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "CRESTPASTE",
+        "unabbreviatedDescription": "Crest Paste",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 16.38,
+        "totalPrice": 16.38,
+        "discountAmount": 0.0,
+        "item_cat": "Health And Beauty"
+      },
+      {
+        "description": "TAMPAX RAD",
+        "unabbreviatedDescription": "Tampax Radiant",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 17.38,
+        "totalPrice": 17.38,
+        "discountAmount": 0.0,
+        "item_cat": "Outdoor Goods"
+      },
+      {
+        "description": "BANANAS",
+        "unabbreviatedDescription": "Bananas",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.58,
+        "totalPrice": 3.58,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "KAHEKA STORE",
+    "address": "",
+    "city": "",
+    "state": "",
+    "phoneNumber": "973-4800",
+    "receiptDate": "08/13/2022",
+    "receiptTime": "20:18:17",
+    "totalItems": 6,
+    "diningOptions": "",
+    "paymentType": "debit",
+    "creditCardType": "",
+    "totalDiscount": 0.0,
+    "tax": 0.61,
+    "total": 13.55,
+    "ITEMS": [
+      {
+        "description": "JK NET SPONGE",
+        "unabbreviatedDescription": "JK Net Sponge",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.79,
+        "totalPrice": 1.79,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "PLS FRIDGE TRAY WIDE",
+        "unabbreviatedDescription": "PLS Fridge Tray Wide",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.99,
+        "totalPrice": 1.99,
+        "discountAmount": 0.0,
+        "item_cat": "Home"
+      },
+      {
+        "description": "REFRIGERATER SLIM",
+        "unabbreviatedDescription": "Refrigerator Slim",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.99,
+        "totalPrice": 1.99,
+        "discountAmount": 0.0,
+        "item_cat": "Electronics"
+      },
+      {
+        "description": "PLASTIC KIREI STOCKE",
+        "unabbreviatedDescription": "Plastic Kirei Stocke",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.99,
+        "totalPrice": 1.99,
+        "discountAmount": 0.0,
+        "item_cat": "Toys And Games"
+      },
+      {
+        "description": "AVOCADO",
+        "unabbreviatedDescription": "Avocado",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 2.59,
+        "totalPrice": 5.18,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Sam's Club",
+    "address": "",
+    "city": "",
+    "state": "",
+    "phoneNumber": "(808) 945 9841",
+    "receiptDate": "05/13/23",
+    "receiptTime": "19:17",
+    "totalItems": 8,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "",
+    "totalDiscount": 1.0,
+    "tax": 3.32,
+    "total": 74.2,
+    "ITEMS": [
+      {
+        "description": "EZPEELSHRINF",
+        "unabbreviatedDescription": "Easy Peel Shrimp Infused",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 16.98,
+        "totalPrice": 16.98,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "DC 24PK CANF",
+        "unabbreviatedDescription": "Diet Coke 24 Pack Cans",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 11.58,
+        "totalPrice": 11.58,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "HI DEPOSIT F",
+        "unabbreviatedDescription": "Hawaii Deposit Fee",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.2,
+        "totalPrice": 1.2,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "HI HANDLINGF",
+        "unabbreviatedDescription": "Hawaii Handling Fee",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.24,
+        "totalPrice": 0.24,
+        "discountAmount": 0.0,
+        "item_cat": "Event Tickets"
+      },
+      {
+        "description": "MIXED NUTS F",
+        "unabbreviatedDescription": "Mixed Nuts",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 9.98,
+        "totalPrice": 9.98,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "DORITOS COOF",
+        "unabbreviatedDescription": "Doritos Cool Ranch",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.96,
+        "totalPrice": 5.96,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "<UNKNOWN> 150F",
+        "unabbreviatedDescription": "Unknown Item 150",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.96,
+        "totalPrice": 5.96,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "BASHATI <UNKNOWN>",
+        "unabbreviatedDescription": "Bashati",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 19.98,
+        "totalPrice": 19.98,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "COSTCO WHOLESALE",
+    "address": "333A Keahole Street",
+    "city": "Honolulu",
+    "state": "HI",
+    "phoneNumber": "",
+    "receiptDate": "10/10/2023",
+    "receiptTime": "17:56",
+    "totalItems": 4,
+    "diningOptions": "",
+    "paymentType": "cash",
+    "creditCardType": "",
+    "totalDiscount": 0.0,
+    "tax": 0.47,
+    "total": 10.43,
+    "ITEMS": [
+      {
+        "description": "SLICE CHEESE",
+        "unabbreviatedDescription": "Slice Cheese",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.99,
+        "totalPrice": 1.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "SLICE PEP",
+        "unabbreviatedDescription": "Slice Pepperoni",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.99,
+        "totalPrice": 1.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "CB MCHA FRZE",
+        "unabbreviatedDescription": "Cold Brew Matcha Freeze",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.99,
+        "totalPrice": 2.99,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "FC MANGO",
+        "unabbreviatedDescription": "Frozen Mango Chunks",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.99,
+        "totalPrice": 2.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Foodland",
+    "address": "1150 Kuala Street",
+    "city": "Pearl City",
+    "state": "HI",
+    "phoneNumber": "808-453-1850",
+    "receiptDate": "",
+    "receiptTime": "",
+    "totalItems": 11,
+    "diningOptions": "",
+    "paymentType": "cash",
+    "creditCardType": "",
+    "totalDiscount": 0.0,
+    "tax": 5.01,
+    "total": 118.95,
+    "ITEMS": [
+      {
+        "description": "SALMON FILLET",
+        "unabbreviatedDescription": "Salmon Fillet",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 12.31,
+        "totalPrice": 12.31,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "FF CHX BL SL THGH",
+        "unabbreviatedDescription": "Free-Range Chicken Boneless Skinless Thigh",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 15.62,
+        "totalPrice": 15.62,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "=TF SHRED LETTUCE PC",
+        "unabbreviatedDescription": "Tri-Flavor Shredded Lettuce",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.49,
+        "totalPrice": 4.49,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "KFT F/MEX 4-CHS PC",
+        "unabbreviatedDescription": "Kraft Fat-Free Mexican 4 Cheese",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 6.0,
+        "totalPrice": 12.0,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "=KR SHRED MOZZRLLAPC",
+        "unabbreviatedDescription": "Kroger Shredded Mozzarella",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 6.0,
+        "totalPrice": 12.0,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "KFT SHRD ITAL 5CHSPC",
+        "unabbreviatedDescription": "Kraft Shredded Italian 5 Cheese",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 6.0,
+        "totalPrice": 6.0,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "OM FC BACON PC",
+        "unabbreviatedDescription": "Oscar Mayer Fully Cooked Bacon",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.69,
+        "totalPrice": 5.69,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "93/7 GRND BF BRICKPC",
+        "unabbreviatedDescription": "93/7 Ground Beef Brick",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 6.49,
+        "totalPrice": 6.49,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "CHALL CANOLA OIL PC",
+        "unabbreviatedDescription": "Chosen Foods Canola Oil",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.59,
+        "totalPrice": 3.59,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "LCL POKE AHI PC",
+        "unabbreviatedDescription": "Local Ahi Poke",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 7.69,
+        "totalPrice": 7.69,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "LCL AHI CAL ROLL PPC",
+        "unabbreviatedDescription": "Local Ahi California Roll",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 7.76,
+        "totalPrice": 7.76,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "LCL AHI MAUI POKE PC",
+        "unabbreviatedDescription": "Local Ahi Maui Poke",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 7.13,
+        "totalPrice": 7.13,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "LCL FLOUR TORT PC",
+        "unabbreviatedDescription": "Local Flour Tortilla",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.69,
+        "totalPrice": 5.69,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "ROSARITA REFRIED BPC",
+        "unabbreviatedDescription": "Rosarita Refried Beans",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.39,
+        "totalPrice": 3.39,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "=BUSH BLACK BEANS PC",
+        "unabbreviatedDescription": "Bush's Black Beans",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.59,
+        "totalPrice": 2.59,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "=APPLE ENVY PC",
+        "unabbreviatedDescription": "Apple Envy",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 8.8,
+        "totalPrice": 8.8,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "H MART",
+    "address": "458 Keawe st",
+    "city": "Honolulu",
+    "state": "HI",
+    "phoneNumber": "(808) 219-0924",
+    "receiptDate": "04/17/22",
+    "receiptTime": "05:46pm",
+    "totalItems": 2,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Visa Credit",
+    "totalDiscount": 0.0,
+    "tax": 0.26,
+    "total": 5.83,
+    "ITEMS": [
+      {
+        "description": "KABOCHA",
+        "unabbreviatedDescription": "Kabocha",
+        "includedItems": [
+          "3.62 <UNKNOWN>",
+          "@ 0.99 /lb"
+        ],
+        "quantity": 1,
+        "unitPrice": 3.58,
+        "totalPrice": 3.58,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "MINT",
+        "unabbreviatedDescription": "Mint",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.99,
+        "totalPrice": 1.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "SAFEWAY",
+    "address": "2855 East Manoa Road",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "(808) 988-2058",
+    "receiptDate": "08/19/22",
+    "receiptTime": "13:39",
+    "totalItems": 2,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Visa",
+    "totalDiscount": 5.0,
+    "tax": 0.41,
+    "total": 9.1,
+    "ITEMS": [
+      {
+        "description": "PETIT ECOLIR MLK",
+        "unabbreviatedDescription": "Petit Ecolir Milk",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.69,
+        "totalPrice": 4.69,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "MEADOW GOLD ICE",
+        "unabbreviatedDescription": "Meadow Gold Ice",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.0,
+        "totalPrice": 4.49,
+        "discountAmount": 0.49,
+        "item_cat": "Beverages"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "SAFEWAY",
+    "address": "1060 Keolu Drive",
+    "city": "KAILUA",
+    "state": "HI",
+    "phoneNumber": "(808) 266-5200",
+    "receiptDate": "",
+    "receiptTime": "",
+    "totalItems": 3,
+    "diningOptions": "",
+    "paymentType": "cash",
+    "creditCardType": "",
+    "totalDiscount": 1.5,
+    "tax": 0.47,
+    "total": 10.94,
+    "ITEMS": [
+      {
+        "description": "BODY ARMOR",
+        "unabbreviatedDescription": "",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 9.99,
+        "totalPrice": 9.99,
+        "discountAmount": 1.5,
+        "item_cat": "Sporting Goods"
+      },
+      {
+        "description": "DEP SFTDK 8 PK FS",
+        "unabbreviatedDescription": "",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.4,
+        "totalPrice": 0.4,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "FEE SFTDK 8 PK FS",
+        "unabbreviatedDescription": "",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 0.08,
+        "totalPrice": 0.08,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Home and Garden"
+  },
+  {
+    "merchant": "Krispy Kreme Doughnuts & Coffee",
+    "address": "330 City Drive South",
+    "city": "Orange",
+    "state": "CA",
+    "phoneNumber": "714.769.4330",
+    "receiptDate": "03/15/2023",
+    "receiptTime": "1:23 PM",
+    "totalItems": 1,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Visa",
+    "totalDiscount": 0.0,
+    "tax": 0.0,
+    "total": 3.99,
+    "ITEMS": [
+      {
+        "description": "Latte Iced Medium",
+        "unabbreviatedDescription": "Latte Iced Medium",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.99,
+        "totalPrice": 3.99,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Olive",
+    "address": "1279 New Churchman's Rd",
+    "city": "Christiana",
+    "state": "DE",
+    "phoneNumber": "302-731-5430",
+    "receiptDate": "5:34:20PM 07/13/2023",
+    "receiptTime": "07/13/2023",
+    "totalItems": 8,
+    "diningOptions": "DINE IN",
+    "paymentType": "credit",
+    "creditCardType": "<UNKNOWN>",
+    "totalDiscount": 0.0,
+    "tax": 0.0,
+    "total": 44.61,
+    "ITEMS": [
+      {
+        "description": "Table Games",
+        "unabbreviatedDescription": "Table Games",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.99,
+        "totalPrice": 2.99,
+        "discountAmount": 0.0,
+        "item_cat": "Toys And Games"
+      },
+      {
+        "description": "Soft Drink",
+        "unabbreviatedDescription": "Soft Drink",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.49,
+        "totalPrice": 3.49,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "Calamari",
+        "unabbreviatedDescription": "Calamari",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 11.79,
+        "totalPrice": 11.79,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "Soup & Salad",
+        "unabbreviatedDescription": "Soup & Salad",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 10.99,
+        "totalPrice": 10.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "Gnocchi",
+        "unabbreviatedDescription": "Gnocchi",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 1.0,
+        "totalPrice": 1.0,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "Kids Strawberry",
+        "unabbreviatedDescription": "Kids Strawberry",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.99,
+        "totalPrice": 2.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "Kid CYO Meat Sauce\nSpaghetti",
+        "unabbreviatedDescription": "Kid CYO Meat Sauce Spaghetti",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 6.99,
+        "totalPrice": 6.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "Add Meatball",
+        "unabbreviatedDescription": "",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 1.79,
+        "totalPrice": 3.58,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Longs",
+    "address": "4211 WAIALAE AVE",
+    "city": "<UNKNOWN>",
+    "state": "HI",
+    "phoneNumber": "808.732.0781",
+    "receiptDate": "MAY 11, 2022",
+    "receiptTime": "6:44 PM",
+    "totalItems": 3,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "CHASE VISA",
+    "totalDiscount": 0.0,
+    "tax": 0.75,
+    "total": 16.72,
+    "ITEMS": [
+      {
+        "description": "10RAINBOW PLAYBALL EACH",
+        "unabbreviatedDescription": "10 Rainbow Playball Each",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 7.99,
+        "totalPrice": 7.99,
+        "discountAmount": 0.0,
+        "item_cat": "Sporting Goods"
+      },
+      {
+        "description": "CFRIO SF PEG BAG",
+        "unabbreviatedDescription": "CoffeeRio Peg Bag",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 3.99,
+        "totalPrice": 7.98,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Walmart",
+    "address": "700 KEEAUMOKU ST",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "808-955-8441",
+    "receiptDate": "11/05/23",
+    "receiptTime": "22:30:53",
+    "totalItems": 2,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Discover",
+    "totalDiscount": 0.0,
+    "tax": 0.81,
+    "total": 17.97,
+    "ITEMS": [
+      {
+        "description": "SQZ BUF MAYO",
+        "unabbreviatedDescription": "Squeeze Buffalo Mayo",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 11.48,
+        "totalPrice": 11.48,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "MAND 3# BAG",
+        "unabbreviatedDescription": "Mandarin 3-pound Bag",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.68,
+        "totalPrice": 5.68,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "<UNKNOWN> Drugs",
+    "address": "2470 S KING ST",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "808.947.2651",
+    "receiptDate": "MAY 2, 2022",
+    "receiptTime": "9:52 AM",
+    "totalItems": 2,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "CHASE VISA",
+    "totalDiscount": 0.0,
+    "tax": 0.0,
+    "total": 8.36,
+    "ITEMS": [
+      {
+        "description": "<UNKNOWN> SF PEG BAG 3Z",
+        "unabbreviatedDescription": "<UNKNOWN> Sugar-Free Peg Bag",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.99,
+        "totalPrice": 3.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "FRIO SF PEG BAG 3Z",
+        "unabbreviatedDescription": "Frio Sugar-Free Peg Bag",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.99,
+        "totalPrice": 3.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "COSTCO WHOLESALE",
+    "address": "333A Keahole Street",
+    "city": "<UNKNOWN>",
+    "state": "HI",
+    "phoneNumber": "<UNKNOWN>",
+    "receiptDate": "09/28/2023",
+    "receiptTime": "17:48",
+    "totalItems": 16,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Visa",
+    "totalDiscount": 10.0,
+    "tax": 9.76,
+    "total": 216.89,
+    "ITEMS": [
+      {
+        "description": "CHKN TAQUITO",
+        "unabbreviatedDescription": "Chicken Taquito",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 14.79,
+        "totalPrice": 14.79,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "ORG BANANAS",
+        "unabbreviatedDescription": "Organic Bananas",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 2.99,
+        "totalPrice": 2.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "ORG BLEND",
+        "unabbreviatedDescription": "Organic Blend",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 15.99,
+        "totalPrice": 15.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "SRDOUGH BRD",
+        "unabbreviatedDescription": "Sourdough Bread",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.99,
+        "totalPrice": 4.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "KS BLUEBERRY",
+        "unabbreviatedDescription": "Kansas Blueberry",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 8.99,
+        "totalPrice": 8.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "JACKS SALSA",
+        "unabbreviatedDescription": "Jack's Salsa",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 6.99,
+        "totalPrice": 6.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "AVOCADOS",
+        "unabbreviatedDescription": "Avocados",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 6.89,
+        "totalPrice": 6.89,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "POTATO BAKE",
+        "unabbreviatedDescription": "Potato Bake",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 9.99,
+        "totalPrice": 9.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "CREAM CHEESE",
+        "unabbreviatedDescription": "Cream Cheese",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 11.99,
+        "totalPrice": 11.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "ORGN BS BST",
+        "unabbreviatedDescription": "Organic Beef Broth",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 28.87,
+        "totalPrice": 28.87,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "KS BACON",
+        "unabbreviatedDescription": "Kansas Bacon",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 19.99,
+        "totalPrice": 19.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "SW WRAP",
+        "unabbreviatedDescription": "Sandwich Wrap",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 18.1,
+        "totalPrice": 18.1,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "PIE PUMPKINS",
+        "unabbreviatedDescription": "Pie Pumpkins",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 4.99,
+        "totalPrice": 4.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "WHOLE MILK",
+        "unabbreviatedDescription": "Whole Milk",
+        "includedItems": [],
+        "quantity": 3,
+        "unitPrice": 5.79,
+        "totalPrice": 17.37,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "WHOLE <UNKNOWN>",
+        "unabbreviatedDescription": "Whole <UNKNOWN>",
+        "includedItems": [],
+        "quantity": 3,
+        "unitPrice": 5.79,
+        "totalPrice": 17.37,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      },
+      {
+        "description": "ALL IN PAN",
+        "unabbreviatedDescription": "All in Pan",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 49.99,
+        "totalPrice": 49.99,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "PACSUN",
+    "address": "1450 ALA MOANA BL #3224",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "808-943-9317",
+    "receiptDate": "10/8/23",
+    "receiptTime": "6:50 PM",
+    "totalItems": 1,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Discover",
+    "totalDiscount": 0.0,
+    "tax": 1.79,
+    "total": 40.0,
+    "ITEMS": [
+      {
+        "description": "JG STRIPED BRIANNA SWEATE",
+        "unabbreviatedDescription": "JG Striped Brianna Sweater",
+        "includedItems": [
+          "Color: White/black",
+          "Size: 1sz size"
+        ],
+        "quantity": 1,
+        "unitPrice": 38.0,
+        "totalPrice": 38.0,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      }
+    ],
+    "vendor_cat": "Clothing and Apparel"
+  },
+  {
+    "merchant": "Longs Drugs",
+    "address": "4211 WAIALAE AVE",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "808.732.0781",
+    "receiptDate": "JULY 3, 2023",
+    "receiptTime": "2:48 PM",
+    "totalItems": 9,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "CHASE VISA",
+    "totalDiscount": 0.0,
+    "tax": 0.77,
+    "total": 17.24,
+    "ITEMS": [
+      {
+        "description": "CFRIO SF PEG BAG",
+        "unabbreviatedDescription": "Crio SF Peg Bag",
+        "includedItems": [],
+        "quantity": 3,
+        "unitPrice": 4.59,
+        "totalPrice": 13.77,
+        "discountAmount": 0.0,
+        "item_cat": "Sporting Goods"
+      },
+      {
+        "description": "CR GYSR SPR WTR",
+        "unabbreviatedDescription": "Crystal Geyser Spring Water",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 1.29,
+        "totalPrice": 2.58,
+        "discountAmount": 0.0,
+        "item_cat": "Beverages"
+      },
+      {
+        "description": "BOTTLE DEPOSIT",
+        "unabbreviatedDescription": "Bottle Deposit",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 0.05,
+        "totalPrice": 0.1,
+        "discountAmount": 0.0,
+        "item_cat": "Baby Products"
+      },
+      {
+        "description": "HI CONTAINER FEE",
+        "unabbreviatedDescription": "HI Container Fee",
+        "includedItems": [],
+        "quantity": 2,
+        "unitPrice": 0.01,
+        "totalPrice": 0.02,
+        "discountAmount": 0.0,
+        "item_cat": "Pharmacy And Health Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "Oahu Honolulu Ala Moana",
+    "address": "1450 Ala Moana Blvd, Ste 2401",
+    "city": "<UNKNOWN>",
+    "state": "Hawaii",
+    "phoneNumber": "808-206-7162",
+    "receiptDate": "08/24/2022",
+    "receiptTime": "06:52 PM",
+    "totalItems": 2,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "<UNKNOWN>",
+    "totalDiscount": 0.0,
+    "tax": 2.17,
+    "total": 48.15,
+    "ITEMS": [
+      {
+        "description": "ProCat",
+        "unabbreviatedDescription": "ProCat",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 29.99,
+        "totalPrice": 29.99,
+        "discountAmount": 0.0,
+        "item_cat": "Electronics"
+      },
+      {
+        "description": "ProCat Puna",
+        "unabbreviatedDescription": "ProCat Puna",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 15.99,
+        "totalPrice": 15.99,
+        "discountAmount": 0.0,
+        "item_cat": "Books And Stationery"
+      }
+    ],
+    "vendor_cat": "Restaurants and Food Services"
+  },
+  {
+    "merchant": "ABC STORES",
+    "address": "1450 ALA MOANA BLVD",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "(808) 952-5334",
+    "receiptDate": "7/22/2023",
+    "receiptTime": "20:02:54",
+    "totalItems": 1,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "Visa",
+    "totalDiscount": 0.0,
+    "tax": 0.16,
+    "total": 3.71,
+    "ITEMS": [
+      {
+        "description": "EVIAN WATER LTR",
+        "unabbreviatedDescription": "Evian Water LTR",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 3.49,
+        "totalPrice": 3.49,
+        "discountAmount": 0.0,
+        "item_cat": "Food Products"
+      }
+    ],
+    "vendor_cat": "Grocery and Supermarkets"
+  },
+  {
+    "merchant": "How doers get more",
+    "address": "421 ALAKAWA STREET",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "(808)521-7355",
+    "receiptDate": "09/30/23",
+    "receiptTime": "01:11 PM",
+    "totalItems": 6,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "VISA",
+    "totalDiscount": 0.0,
+    "tax": 3.07,
+    "total": 68.21,
+    "ITEMS": [
+      {
+        "description": "TAPCON BIT <A>",
+        "unabbreviatedDescription": "Tapcon Bit",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 7.94,
+        "totalPrice": 7.94,
+        "discountAmount": 0.0,
+        "item_cat": "Electronics"
+      },
+      {
+        "description": "TAPCON 3/16 <A>",
+        "unabbreviatedDescription": "Tapcon 3/16x1-3/4 Star Flat",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.91,
+        "totalPrice": 5.91,
+        "discountAmount": 0.0,
+        "item_cat": "Home"
+      },
+      {
+        "description": "KDSFEPICHNGR <A>",
+        "unabbreviatedDescription": "KidSafe Epic Hanger",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 12.62,
+        "totalPrice": 12.62,
+        "discountAmount": 0.0,
+        "item_cat": "Cleaning Supplies"
+      },
+      {
+        "description": "DC TOWEL 3PK <A, U>",
+        "unabbreviatedDescription": "Detailers Microfiber QC Towels 3pk",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 5.48,
+        "totalPrice": 5.48,
+        "discountAmount": 0.0,
+        "item_cat": "Cleaning Supplies"
+      },
+      {
+        "description": "10-PIECE BRA <A>",
+        "unabbreviatedDescription": "10-Piece Brass Borefast Self Drilling",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 8.22,
+        "totalPrice": 8.22,
+        "discountAmount": 0.0,
+        "item_cat": "Clothing And Accessories"
+      },
+      {
+        "description": "DWAMI30 <A>",
+        "unabbreviatedDescription": "DW Max Impact Set 30pc",
+        "includedItems": [],
+        "quantity": 1,
+        "unitPrice": 24.97,
+        "totalPrice": 24.97,
+        "discountAmount": 0.0,
+        "item_cat": "Cleaning Supplies"
+      }
+    ],
+    "vendor_cat": "Home and Garden"
+  },
+  {
+    "merchant": "KOZO SUSHI MOILIILI",
+    "address": "2334 S KING ST",
+    "city": "HONOLULU",
+    "state": "HI",
+    "phoneNumber": "(808) 951-5698",
+    "receiptDate": "05/14/22",
+    "receiptTime": "11:50:15",
+    "totalItems": 0,
+    "diningOptions": "",
+    "paymentType": "credit",
+    "creditCardType": "CHASE VISA",
+    "totalDiscount": 0.0,
+    "tax": 0.0,
+    "total": 14.55,
+    "ITEMS": [],
+    "vendor_cat": "Restaurants and Food Services"
+  }
+]

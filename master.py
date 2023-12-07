@@ -110,6 +110,8 @@ def read_one(json_object):
                 top_product = search.query_classification(product_query, 10, "product")
                 file.write(f' {j} Item: {product_query} category: {top_product}\n')
                 items_for_receipt[j]['item_cat'] = top_product
+            with open('modified_output.json', 'w') as json_file:
+                json.dump(json_object, json_file, indent=2)
 
 # write to JSON only
 """DID NOT TEST YET"""
