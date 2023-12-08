@@ -181,3 +181,369 @@ Query: How doers get more  Tapcon Bit TAPCON BIT <A> Tapcon Bit Tapcon 3/16x1-3/
  5 Item: DW Max Impact Set 30pc DWAMI30 <A> How doers get more category: Cleaning Supplies
 - 28 Vendor Prediction Restaurants and Food Services
 Query: KOZO SUSHI MOILIILI 
+- 0 Vendor Prediction Grocery and Supermarkets
+Query: Walmart  Kettle KETTLE Popcorn POPCORN Dog Snacks DOG SNACKS Chicken Noodle Soup CHK NDL SOUP Pot Roast Soup POT RST SOUP Tuna TUNA Spam Lunch Meat SPAM LNCH MT Deluxe Bar 8 Count DL BAR 8CT Benadryl 100 BENADRYL 100 Goldbears GOLDBEARS Sour Goldbears SR GLDBRS Nori NORI
+ 0 Item: Kettle KETTLE Walmart category: Outdoor Goods
+ 1 Item: Popcorn POPCORN Walmart category: Food Products
+ 2 Item: Dog Snacks DOG SNACKS Walmart category: Pet Supplies
+ 3 Item: Chicken Noodle Soup CHK NDL SOUP Walmart category: Food Products
+ 4 Item: Pot Roast Soup POT RST SOUP Walmart category: Food Products
+ 5 Item: Tuna TUNA Walmart category: Food Products
+ 6 Item: Spam Lunch Meat SPAM LNCH MT Walmart category: Food Products
+ 7 Item: Deluxe Bar 8 Count DL BAR 8CT Walmart category: Beverages
+ 8 Item: Benadryl 100 BENADRYL 100 Walmart category: Pharmacy And Health Products
+ 9 Item: Goldbears GOLDBEARS Walmart category: Food Products
+ 10 Item: Sour Goldbears SR GLDBRS Walmart category: Food Products
+ 11 Item: Nori NORI Walmart category: Food Products
+- 1 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Spring Water CG SPRING WTR Deposit Soft drink Single DEP SFTDK SNGL FS Fee Soft drink Single FEE SFTDK SNGL FS Signature Parchment Paper SIG PARCHMENT PAPR
+ 0 Item: Spring Water CG SPRING WTR SAFEWAY category: Beverages
+ 1 Item: Deposit Soft drink Single DEP SFTDK SNGL FS SAFEWAY category: Food Products
+ 2 Item: Fee Soft drink Single FEE SFTDK SNGL FS SAFEWAY category: Beverages
+ 3 Item: Signature Parchment Paper SIG PARCHMENT PAPR SAFEWAY category: Pharmacy And Health Products
+- 2 Vendor Prediction Grocery and Supermarkets
+Query: Grain Exchange  16oz Iced Latte 16oz Iced Latte
+ 0 Item: 16oz Iced Latte 16oz Iced Latte Grain Exchange category: Beverages
+- 3 Vendor Prediction Grocery and Supermarkets
+Query: ROSS DRESS FOR LESS  750ml Pomegranate 750ML POMEGRANATE Sugar Free Hazelnut SUGAR FREE HAZELNU 50.72oz Oka Alkali 50.72oz OKA ALKALI Nike MD Valiant #NIKE MD VALIANT
+ 0 Item: 750ml Pomegranate 750ML POMEGRANATE ROSS DRESS FOR LESS category: Clothing And Accessories
+ 1 Item: Sugar Free Hazelnut SUGAR FREE HAZELNU ROSS DRESS FOR LESS category: Clothing And Accessories
+ 2 Item: 50.72oz Oka Alkali 50.72oz OKA ALKALI ROSS DRESS FOR LESS category: Clothing And Accessories
+ 3 Item: Nike MD Valiant #NIKE MD VALIANT ROSS DRESS FOR LESS category: Clothing And Accessories
+- 4 Vendor Prediction Restaurants and Food Services
+Query: Oahu Hawaii  TH Pillow TH P llow RE Pillow RE Pillow
+ 0 Item: TH Pillow TH P llow Oahu Hawaii category: Home
+ 1 Item: RE Pillow RE Pillow Oahu Hawaii category: Home
+- 5 Vendor Prediction Restaurants and Food Services
+Query: LEAHI HEALTH MANOA DINE IN Deep Green Deep Green
+ 0 Item: Deep Green Deep Green LEAHI HEALTH MANOA category: Beverages
+- 6 Vendor Prediction Grocery and Supermarkets
+Query: <UNKNOWN>  Large Skillet Pan <UNKNOWN> <UNKNOWN> PAN 12 Tongs <UNKNOWN> TONGS Corkscrew CORKSCREW
+ 0 Item: Large Skillet Pan <UNKNOWN> <UNKNOWN> PAN <UNKNOWN> category: Books And Stationery
+ 1 Item: 12 Tongs <UNKNOWN> TONGS <UNKNOWN> category: Home
+ 2 Item: Corkscrew CORKSCREW <UNKNOWN> category: Books And Stationery
+- 7 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Cheesecake Slice CHEESECAKE SLICE
+ 0 Item: Cheesecake Slice CHEESECAKE SLICE SAFEWAY category: Food Products
+- 8 Vendor Prediction Grocery and Supermarkets
+Query: Longs  CoffeeRio Peg Bag CFRIO SF PEG BAG Hallmark Everyday Card Assortment HLMRK EVERYDY CARD ASST Trolli Sour Crawlers TROLLI SOUR CRAWLR
+ 0 Item: CoffeeRio Peg Bag CFRIO SF PEG BAG Longs category: Clothing And Accessories
+ 1 Item: Hallmark Everyday Card Assortment HLMRK EVERYDY CARD ASST Longs category: Gifts And Miscellaneous
+ 2 Item: Trolli Sour Crawlers TROLLI SOUR CRAWLR Longs category: Food Products
+- 9 Vendor Prediction Grocery and Supermarkets
+Query: Sam's Club  Book BOOK Whole Milk WHL MILK Revol REVOL Gouda Havarti GOUDAHAVARTF Crest Paste CRESTPASTE Tampax Radiant TAMPAX RAD Bananas BANANAS
+ 0 Item: Book BOOK Sam's Club category: Books And Stationery
+ 1 Item: Whole Milk WHL MILK Sam's Club category: Beverages
+ 2 Item: Revol REVOL Sam's Club category: Cleaning Supplies
+ 3 Item: Gouda Havarti GOUDAHAVARTF Sam's Club category: Food Products
+ 4 Item: Crest Paste CRESTPASTE Sam's Club category: Health And Beauty
+ 5 Item: Tampax Radiant TAMPAX RAD Sam's Club category: Outdoor Goods
+ 6 Item: Bananas BANANAS Sam's Club category: Beverages
+- 10 Vendor Prediction Grocery and Supermarkets
+Query: KAHEKA STORE  JK Net Sponge JK NET SPONGE PLS Fridge Tray Wide PLS FRIDGE TRAY WIDE Refrigerator Slim REFRIGERATER SLIM Plastic Kirei Stocke PLASTIC KIREI STOCKE Avocado AVOCADO
+ 0 Item: JK Net Sponge JK NET SPONGE KAHEKA STORE category: Food Products
+ 1 Item: PLS Fridge Tray Wide PLS FRIDGE TRAY WIDE KAHEKA STORE category: Home
+ 2 Item: Refrigerator Slim REFRIGERATER SLIM KAHEKA STORE category: Electronics
+ 3 Item: Plastic Kirei Stocke PLASTIC KIREI STOCKE KAHEKA STORE category: Toys And Games
+ 4 Item: Avocado AVOCADO KAHEKA STORE category: Food Products
+- 11 Vendor Prediction Grocery and Supermarkets
+Query: Sam's Club  Easy Peel Shrimp Infused EZPEELSHRINF Diet Coke 24 Pack Cans DC 24PK CANF Hawaii Deposit Fee HI DEPOSIT F Hawaii Handling Fee HI HANDLINGF Mixed Nuts MIXED NUTS F Doritos Cool Ranch DORITOS COOF Unknown Item 150 <UNKNOWN> 150F Bashati BASHATI <UNKNOWN>
+ 0 Item: Easy Peel Shrimp Infused EZPEELSHRINF Sam's Club category: Food Products
+ 1 Item: Diet Coke 24 Pack Cans DC 24PK CANF Sam's Club category: Beverages
+ 2 Item: Hawaii Deposit Fee HI DEPOSIT F Sam's Club category: Food Products
+ 3 Item: Hawaii Handling Fee HI HANDLINGF Sam's Club category: Event Tickets
+ 4 Item: Mixed Nuts MIXED NUTS F Sam's Club category: Food Products
+ 5 Item: Doritos Cool Ranch DORITOS COOF Sam's Club category: Food Products
+ 6 Item: Unknown Item 150 <UNKNOWN> 150F Sam's Club category: Food Products
+ 7 Item: Bashati BASHATI <UNKNOWN> Sam's Club category: Clothing And Accessories
+- 12 Vendor Prediction Grocery and Supermarkets
+Query: COSTCO WHOLESALE  Slice Cheese SLICE CHEESE Slice Pepperoni SLICE PEP Cold Brew Matcha Freeze CB MCHA FRZE Frozen Mango Chunks FC MANGO
+ 0 Item: Slice Cheese SLICE CHEESE COSTCO WHOLESALE category: Food Products
+ 1 Item: Slice Pepperoni SLICE PEP COSTCO WHOLESALE category: Food Products
+ 2 Item: Cold Brew Matcha Freeze CB MCHA FRZE COSTCO WHOLESALE category: Beverages
+ 3 Item: Frozen Mango Chunks FC MANGO COSTCO WHOLESALE category: Food Products
+- 13 Vendor Prediction Grocery and Supermarkets
+Query: Foodland  Salmon Fillet SALMON FILLET Free-Range Chicken Boneless Skinless Thigh FF CHX BL SL THGH Tri-Flavor Shredded Lettuce =TF SHRED LETTUCE PC Kraft Fat-Free Mexican 4 Cheese KFT F/MEX 4-CHS PC Kroger Shredded Mozzarella =KR SHRED MOZZRLLAPC Kraft Shredded Italian 5 Cheese KFT SHRD ITAL 5CHSPC Oscar Mayer Fully Cooked Bacon OM FC BACON PC 93/7 Ground Beef Brick 93/7 GRND BF BRICKPC Chosen Foods Canola Oil CHALL CANOLA OIL PC Local Ahi Poke LCL POKE AHI PC Local Ahi California Roll LCL AHI CAL ROLL PPC Local Ahi Maui Poke LCL AHI MAUI POKE PC Local Flour Tortilla LCL FLOUR TORT PC Rosarita Refried Beans ROSARITA REFRIED BPC Bush's Black Beans =BUSH BLACK BEANS PC Apple Envy =APPLE ENVY PC
+ 0 Item: Salmon Fillet SALMON FILLET Foodland category: Food Products
+ 1 Item: Free-Range Chicken Boneless Skinless Thigh FF CHX BL SL THGH Foodland category: Food Products
+ 2 Item: Tri-Flavor Shredded Lettuce =TF SHRED LETTUCE PC Foodland category: Food Products
+ 3 Item: Kraft Fat-Free Mexican 4 Cheese KFT F/MEX 4-CHS PC Foodland category: Food Products
+ 4 Item: Kroger Shredded Mozzarella =KR SHRED MOZZRLLAPC Foodland category: Food Products
+ 5 Item: Kraft Shredded Italian 5 Cheese KFT SHRD ITAL 5CHSPC Foodland category: Food Products
+ 6 Item: Oscar Mayer Fully Cooked Bacon OM FC BACON PC Foodland category: Food Products
+ 7 Item: 93/7 Ground Beef Brick 93/7 GRND BF BRICKPC Foodland category: Food Products
+ 8 Item: Chosen Foods Canola Oil CHALL CANOLA OIL PC Foodland category: Food Products
+ 9 Item: Local Ahi Poke LCL POKE AHI PC Foodland category: Food Products
+ 10 Item: Local Ahi California Roll LCL AHI CAL ROLL PPC Foodland category: Food Products
+ 11 Item: Local Ahi Maui Poke LCL AHI MAUI POKE PC Foodland category: Food Products
+ 12 Item: Local Flour Tortilla LCL FLOUR TORT PC Foodland category: Food Products
+ 13 Item: Rosarita Refried Beans ROSARITA REFRIED BPC Foodland category: Food Products
+ 14 Item: Bush's Black Beans =BUSH BLACK BEANS PC Foodland category: Food Products
+ 15 Item: Apple Envy =APPLE ENVY PC Foodland category: Food Products
+- 14 Vendor Prediction Grocery and Supermarkets
+Query: H MART  Kabocha KABOCHA Mint MINT
+ 0 Item: Kabocha KABOCHA H MART category: Food Products
+ 1 Item: Mint MINT H MART category: Food Products
+- 15 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Petit Ecolir Milk PETIT ECOLIR MLK Meadow Gold Ice MEADOW GOLD ICE
+ 0 Item: Petit Ecolir Milk PETIT ECOLIR MLK SAFEWAY category: Food Products
+ 1 Item: Meadow Gold Ice MEADOW GOLD ICE SAFEWAY category: Beverages
+- 16 Vendor Prediction Restaurants and Food Services
+Query: SAFEWAY   BODY ARMOR  DEP SFTDK 8 PK FS  FEE SFTDK 8 PK FS
+ 0 Item:  BODY ARMOR SAFEWAY category: Sporting Goods
+ 1 Item:  DEP SFTDK 8 PK FS SAFEWAY category: Food Products
+ 2 Item:  FEE SFTDK 8 PK FS SAFEWAY category: Food Products
+- 17 Vendor Prediction Grocery and Supermarkets
+Query: Krispy Kreme Doughnuts & Coffee  Latte Iced Medium Latte Iced Medium
+ 0 Item: Latte Iced Medium Latte Iced Medium Krispy Kreme Doughnuts & Coffee category: Beverages
+- 18 Vendor Prediction Grocery and Supermarkets
+Query: Olive DINE IN Table Games Table Games Soft Drink Soft Drink Calamari Calamari Soup & Salad Soup & Salad Gnocchi Gnocchi Kids Strawberry Kids Strawberry Kid CYO Meat Sauce Spaghetti Kid CYO Meat Sauce
+Spaghetti  Add Meatball
+ 0 Item: Table Games Table Games Olive category: Toys And Games
+ 1 Item: Soft Drink Soft Drink Olive category: Beverages
+ 2 Item: Calamari Calamari Olive category: Food Products
+ 3 Item: Soup & Salad Soup & Salad Olive category: Food Products
+ 4 Item: Gnocchi Gnocchi Olive category: Food Products
+ 5 Item: Kids Strawberry Kids Strawberry Olive category: Food Products
+ 6 Item: Kid CYO Meat Sauce Spaghetti Kid CYO Meat Sauce
+Spaghetti Olive category: Food Products
+ 7 Item:  Add Meatball Olive category: Food Products
+- 19 Vendor Prediction Grocery and Supermarkets
+Query: Longs  10 Rainbow Playball Each 10RAINBOW PLAYBALL EACH CoffeeRio Peg Bag CFRIO SF PEG BAG
+ 0 Item: 10 Rainbow Playball Each 10RAINBOW PLAYBALL EACH Longs category: Sporting Goods
+ 1 Item: CoffeeRio Peg Bag CFRIO SF PEG BAG Longs category: Clothing And Accessories
+- 20 Vendor Prediction Grocery and Supermarkets
+Query: Walmart  Squeeze Buffalo Mayo SQZ BUF MAYO Mandarin 3-pound Bag MAND 3# BAG
+ 0 Item: Squeeze Buffalo Mayo SQZ BUF MAYO Walmart category: Food Products
+ 1 Item: Mandarin 3-pound Bag MAND 3# BAG Walmart category: Food Products
+- 21 Vendor Prediction Grocery and Supermarkets
+Query: <UNKNOWN> Drugs  <UNKNOWN> Sugar-Free Peg Bag <UNKNOWN> SF PEG BAG 3Z Frio Sugar-Free Peg Bag FRIO SF PEG BAG 3Z
+ 0 Item: <UNKNOWN> Sugar-Free Peg Bag <UNKNOWN> SF PEG BAG 3Z <UNKNOWN> Drugs category: Food Products
+ 1 Item: Frio Sugar-Free Peg Bag FRIO SF PEG BAG 3Z <UNKNOWN> Drugs category: Food Products
+- 22 Vendor Prediction Grocery and Supermarkets
+Query: COSTCO WHOLESALE  Chicken Taquito CHKN TAQUITO Organic Bananas ORG BANANAS Organic Blend ORG BLEND Sourdough Bread SRDOUGH BRD Kansas Blueberry KS BLUEBERRY Jack's Salsa JACKS SALSA Avocados AVOCADOS Potato Bake POTATO BAKE Cream Cheese CREAM CHEESE Organic Beef Broth ORGN BS BST Kansas Bacon KS BACON Sandwich Wrap SW WRAP Pie Pumpkins PIE PUMPKINS Whole Milk WHOLE MILK Whole <UNKNOWN> WHOLE <UNKNOWN> All in Pan ALL IN PAN
+ 0 Item: Chicken Taquito CHKN TAQUITO COSTCO WHOLESALE category: Food Products
+ 1 Item: Organic Bananas ORG BANANAS COSTCO WHOLESALE category: Food Products
+ 2 Item: Organic Blend ORG BLEND COSTCO WHOLESALE category: Food Products
+ 3 Item: Sourdough Bread SRDOUGH BRD COSTCO WHOLESALE category: Food Products
+ 4 Item: Kansas Blueberry KS BLUEBERRY COSTCO WHOLESALE category: Food Products
+ 5 Item: Jack's Salsa JACKS SALSA COSTCO WHOLESALE category: Food Products
+ 6 Item: Avocados AVOCADOS COSTCO WHOLESALE category: Food Products
+ 7 Item: Potato Bake POTATO BAKE COSTCO WHOLESALE category: Food Products
+ 8 Item: Cream Cheese CREAM CHEESE COSTCO WHOLESALE category: Food Products
+ 9 Item: Organic Beef Broth ORGN BS BST COSTCO WHOLESALE category: Food Products
+ 10 Item: Kansas Bacon KS BACON COSTCO WHOLESALE category: Food Products
+ 11 Item: Sandwich Wrap SW WRAP COSTCO WHOLESALE category: Food Products
+ 12 Item: Pie Pumpkins PIE PUMPKINS COSTCO WHOLESALE category: Food Products
+ 13 Item: Whole Milk WHOLE MILK COSTCO WHOLESALE category: Food Products
+ 14 Item: Whole <UNKNOWN> WHOLE <UNKNOWN> COSTCO WHOLESALE category: Food Products
+ 15 Item: All in Pan ALL IN PAN COSTCO WHOLESALE category: Food Products
+- 23 Vendor Prediction Clothing and Apparel
+Query: PACSUN  JG Striped Brianna Sweater JG STRIPED BRIANNA SWEATE
+ 0 Item: JG Striped Brianna Sweater JG STRIPED BRIANNA SWEATE PACSUN category: Clothing And Accessories
+- 24 Vendor Prediction Grocery and Supermarkets
+Query: Longs Drugs  Crio SF Peg Bag CFRIO SF PEG BAG Crystal Geyser Spring Water CR GYSR SPR WTR Bottle Deposit BOTTLE DEPOSIT HI Container Fee HI CONTAINER FEE
+ 0 Item: Crio SF Peg Bag CFRIO SF PEG BAG Longs Drugs category: Sporting Goods
+ 1 Item: Crystal Geyser Spring Water CR GYSR SPR WTR Longs Drugs category: Beverages
+ 2 Item: Bottle Deposit BOTTLE DEPOSIT Longs Drugs category: Baby Products
+ 3 Item: HI Container Fee HI CONTAINER FEE Longs Drugs category: Pharmacy And Health Products
+- 25 Vendor Prediction Restaurants and Food Services
+Query: Oahu Honolulu Ala Moana  ProCat ProCat ProCat Puna ProCat Puna
+ 0 Item: ProCat ProCat Oahu Honolulu Ala Moana category: Electronics
+ 1 Item: ProCat Puna ProCat Puna Oahu Honolulu Ala Moana category: Books And Stationery
+- 26 Vendor Prediction Grocery and Supermarkets
+Query: ABC STORES  Evian Water LTR EVIAN WATER LTR
+ 0 Item: Evian Water LTR EVIAN WATER LTR ABC STORES category: Food Products
+- 27 Vendor Prediction Home and Garden
+Query: How doers get more  Tapcon Bit TAPCON BIT <A> Tapcon 3/16x1-3/4 Star Flat TAPCON 3/16 <A> KidSafe Epic Hanger KDSFEPICHNGR <A> Detailers Microfiber QC Towels 3pk DC TOWEL 3PK <A, U> 10-Piece Brass Borefast Self Drilling 10-PIECE BRA <A> DW Max Impact Set 30pc DWAMI30 <A>
+ 0 Item: Tapcon Bit TAPCON BIT <A> How doers get more category: Electronics
+ 1 Item: Tapcon 3/16x1-3/4 Star Flat TAPCON 3/16 <A> How doers get more category: Home
+ 2 Item: KidSafe Epic Hanger KDSFEPICHNGR <A> How doers get more category: Cleaning Supplies
+ 3 Item: Detailers Microfiber QC Towels 3pk DC TOWEL 3PK <A, U> How doers get more category: Cleaning Supplies
+ 4 Item: 10-Piece Brass Borefast Self Drilling 10-PIECE BRA <A> How doers get more category: Clothing And Accessories
+ 5 Item: DW Max Impact Set 30pc DWAMI30 <A> How doers get more category: Cleaning Supplies
+- 28 Vendor Prediction Restaurants and Food Services
+Query: KOZO SUSHI MOILIILI 
+- 0 Vendor Prediction Grocery and Supermarkets
+Query: Walmart  Kettle KETTLE Popcorn POPCORN Dog Snacks DOG SNACKS Chicken Noodle Soup CHK NDL SOUP Pot Roast Soup POT RST SOUP Tuna TUNA Spam Lunch Meat SPAM LNCH MT Deluxe Bar 8 Count DL BAR 8CT Benadryl 100 BENADRYL 100 Goldbears GOLDBEARS Sour Goldbears SR GLDBRS Nori NORI
+ 0 Item: Kettle KETTLE Walmart category: Outdoor Goods
+ 1 Item: Popcorn POPCORN Walmart category: Food Products
+ 2 Item: Dog Snacks DOG SNACKS Walmart category: Pet Supplies
+ 3 Item: Chicken Noodle Soup CHK NDL SOUP Walmart category: Food Products
+ 4 Item: Pot Roast Soup POT RST SOUP Walmart category: Food Products
+ 5 Item: Tuna TUNA Walmart category: Food Products
+ 6 Item: Spam Lunch Meat SPAM LNCH MT Walmart category: Food Products
+ 7 Item: Deluxe Bar 8 Count DL BAR 8CT Walmart category: Beverages
+ 8 Item: Benadryl 100 BENADRYL 100 Walmart category: Pharmacy And Health Products
+ 9 Item: Goldbears GOLDBEARS Walmart category: Food Products
+ 10 Item: Sour Goldbears SR GLDBRS Walmart category: Food Products
+ 11 Item: Nori NORI Walmart category: Food Products
+- 1 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Spring Water CG SPRING WTR Deposit Soft drink Single DEP SFTDK SNGL FS Fee Soft drink Single FEE SFTDK SNGL FS Signature Parchment Paper SIG PARCHMENT PAPR
+ 0 Item: Spring Water CG SPRING WTR SAFEWAY category: Beverages
+ 1 Item: Deposit Soft drink Single DEP SFTDK SNGL FS SAFEWAY category: Food Products
+ 2 Item: Fee Soft drink Single FEE SFTDK SNGL FS SAFEWAY category: Beverages
+ 3 Item: Signature Parchment Paper SIG PARCHMENT PAPR SAFEWAY category: Pharmacy And Health Products
+- 2 Vendor Prediction Grocery and Supermarkets
+Query: Grain Exchange  16oz Iced Latte 16oz Iced Latte
+ 0 Item: 16oz Iced Latte 16oz Iced Latte Grain Exchange category: Beverages
+- 3 Vendor Prediction Grocery and Supermarkets
+Query: ROSS DRESS FOR LESS  750ml Pomegranate 750ML POMEGRANATE Sugar Free Hazelnut SUGAR FREE HAZELNU 50.72oz Oka Alkali 50.72oz OKA ALKALI Nike MD Valiant #NIKE MD VALIANT
+ 0 Item: 750ml Pomegranate 750ML POMEGRANATE ROSS DRESS FOR LESS category: Clothing And Accessories
+ 1 Item: Sugar Free Hazelnut SUGAR FREE HAZELNU ROSS DRESS FOR LESS category: Clothing And Accessories
+ 2 Item: 50.72oz Oka Alkali 50.72oz OKA ALKALI ROSS DRESS FOR LESS category: Clothing And Accessories
+ 3 Item: Nike MD Valiant #NIKE MD VALIANT ROSS DRESS FOR LESS category: Clothing And Accessories
+- 4 Vendor Prediction Restaurants and Food Services
+Query: Oahu Hawaii  TH Pillow TH P llow RE Pillow RE Pillow
+ 0 Item: TH Pillow TH P llow Oahu Hawaii category: Home
+ 1 Item: RE Pillow RE Pillow Oahu Hawaii category: Home
+- 5 Vendor Prediction Restaurants and Food Services
+Query: LEAHI HEALTH MANOA DINE IN Deep Green Deep Green
+ 0 Item: Deep Green Deep Green LEAHI HEALTH MANOA category: Beverages
+- 6 Vendor Prediction Grocery and Supermarkets
+Query: <UNKNOWN>  Large Skillet Pan <UNKNOWN> <UNKNOWN> PAN 12 Tongs <UNKNOWN> TONGS Corkscrew CORKSCREW
+ 0 Item: Large Skillet Pan <UNKNOWN> <UNKNOWN> PAN <UNKNOWN> category: Books And Stationery
+ 1 Item: 12 Tongs <UNKNOWN> TONGS <UNKNOWN> category: Home
+ 2 Item: Corkscrew CORKSCREW <UNKNOWN> category: Books And Stationery
+- 7 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Cheesecake Slice CHEESECAKE SLICE
+ 0 Item: Cheesecake Slice CHEESECAKE SLICE SAFEWAY category: Food Products
+- 8 Vendor Prediction Grocery and Supermarkets
+Query: Longs  CoffeeRio Peg Bag CFRIO SF PEG BAG Hallmark Everyday Card Assortment HLMRK EVERYDY CARD ASST Trolli Sour Crawlers TROLLI SOUR CRAWLR
+ 0 Item: CoffeeRio Peg Bag CFRIO SF PEG BAG Longs category: Clothing And Accessories
+ 1 Item: Hallmark Everyday Card Assortment HLMRK EVERYDY CARD ASST Longs category: Gifts And Miscellaneous
+ 2 Item: Trolli Sour Crawlers TROLLI SOUR CRAWLR Longs category: Food Products
+- 9 Vendor Prediction Grocery and Supermarkets
+Query: Sam's Club  Book BOOK Whole Milk WHL MILK Revol REVOL Gouda Havarti GOUDAHAVARTF Crest Paste CRESTPASTE Tampax Radiant TAMPAX RAD Bananas BANANAS
+ 0 Item: Book BOOK Sam's Club category: Books And Stationery
+ 1 Item: Whole Milk WHL MILK Sam's Club category: Beverages
+ 2 Item: Revol REVOL Sam's Club category: Cleaning Supplies
+ 3 Item: Gouda Havarti GOUDAHAVARTF Sam's Club category: Food Products
+ 4 Item: Crest Paste CRESTPASTE Sam's Club category: Health And Beauty
+ 5 Item: Tampax Radiant TAMPAX RAD Sam's Club category: Outdoor Goods
+ 6 Item: Bananas BANANAS Sam's Club category: Beverages
+- 10 Vendor Prediction Grocery and Supermarkets
+Query: KAHEKA STORE  JK Net Sponge JK NET SPONGE PLS Fridge Tray Wide PLS FRIDGE TRAY WIDE Refrigerator Slim REFRIGERATER SLIM Plastic Kirei Stocke PLASTIC KIREI STOCKE Avocado AVOCADO
+ 0 Item: JK Net Sponge JK NET SPONGE KAHEKA STORE category: Food Products
+ 1 Item: PLS Fridge Tray Wide PLS FRIDGE TRAY WIDE KAHEKA STORE category: Home
+ 2 Item: Refrigerator Slim REFRIGERATER SLIM KAHEKA STORE category: Electronics
+ 3 Item: Plastic Kirei Stocke PLASTIC KIREI STOCKE KAHEKA STORE category: Toys And Games
+ 4 Item: Avocado AVOCADO KAHEKA STORE category: Food Products
+- 11 Vendor Prediction Grocery and Supermarkets
+Query: Sam's Club  Easy Peel Shrimp Infused EZPEELSHRINF Diet Coke 24 Pack Cans DC 24PK CANF Hawaii Deposit Fee HI DEPOSIT F Hawaii Handling Fee HI HANDLINGF Mixed Nuts MIXED NUTS F Doritos Cool Ranch DORITOS COOF Unknown Item 150 <UNKNOWN> 150F Bashati BASHATI <UNKNOWN>
+ 0 Item: Easy Peel Shrimp Infused EZPEELSHRINF Sam's Club category: Food Products
+ 1 Item: Diet Coke 24 Pack Cans DC 24PK CANF Sam's Club category: Beverages
+ 2 Item: Hawaii Deposit Fee HI DEPOSIT F Sam's Club category: Food Products
+ 3 Item: Hawaii Handling Fee HI HANDLINGF Sam's Club category: Event Tickets
+ 4 Item: Mixed Nuts MIXED NUTS F Sam's Club category: Food Products
+ 5 Item: Doritos Cool Ranch DORITOS COOF Sam's Club category: Food Products
+ 6 Item: Unknown Item 150 <UNKNOWN> 150F Sam's Club category: Food Products
+ 7 Item: Bashati BASHATI <UNKNOWN> Sam's Club category: Clothing And Accessories
+- 12 Vendor Prediction Grocery and Supermarkets
+Query: COSTCO WHOLESALE  Slice Cheese SLICE CHEESE Slice Pepperoni SLICE PEP Cold Brew Matcha Freeze CB MCHA FRZE Frozen Mango Chunks FC MANGO
+ 0 Item: Slice Cheese SLICE CHEESE COSTCO WHOLESALE category: Food Products
+ 1 Item: Slice Pepperoni SLICE PEP COSTCO WHOLESALE category: Food Products
+ 2 Item: Cold Brew Matcha Freeze CB MCHA FRZE COSTCO WHOLESALE category: Beverages
+ 3 Item: Frozen Mango Chunks FC MANGO COSTCO WHOLESALE category: Food Products
+- 13 Vendor Prediction Grocery and Supermarkets
+Query: Foodland  Salmon Fillet SALMON FILLET Free-Range Chicken Boneless Skinless Thigh FF CHX BL SL THGH Tri-Flavor Shredded Lettuce =TF SHRED LETTUCE PC Kraft Fat-Free Mexican 4 Cheese KFT F/MEX 4-CHS PC Kroger Shredded Mozzarella =KR SHRED MOZZRLLAPC Kraft Shredded Italian 5 Cheese KFT SHRD ITAL 5CHSPC Oscar Mayer Fully Cooked Bacon OM FC BACON PC 93/7 Ground Beef Brick 93/7 GRND BF BRICKPC Chosen Foods Canola Oil CHALL CANOLA OIL PC Local Ahi Poke LCL POKE AHI PC Local Ahi California Roll LCL AHI CAL ROLL PPC Local Ahi Maui Poke LCL AHI MAUI POKE PC Local Flour Tortilla LCL FLOUR TORT PC Rosarita Refried Beans ROSARITA REFRIED BPC Bush's Black Beans =BUSH BLACK BEANS PC Apple Envy =APPLE ENVY PC
+ 0 Item: Salmon Fillet SALMON FILLET Foodland category: Food Products
+ 1 Item: Free-Range Chicken Boneless Skinless Thigh FF CHX BL SL THGH Foodland category: Food Products
+ 2 Item: Tri-Flavor Shredded Lettuce =TF SHRED LETTUCE PC Foodland category: Food Products
+ 3 Item: Kraft Fat-Free Mexican 4 Cheese KFT F/MEX 4-CHS PC Foodland category: Food Products
+ 4 Item: Kroger Shredded Mozzarella =KR SHRED MOZZRLLAPC Foodland category: Food Products
+ 5 Item: Kraft Shredded Italian 5 Cheese KFT SHRD ITAL 5CHSPC Foodland category: Food Products
+ 6 Item: Oscar Mayer Fully Cooked Bacon OM FC BACON PC Foodland category: Food Products
+ 7 Item: 93/7 Ground Beef Brick 93/7 GRND BF BRICKPC Foodland category: Food Products
+ 8 Item: Chosen Foods Canola Oil CHALL CANOLA OIL PC Foodland category: Food Products
+ 9 Item: Local Ahi Poke LCL POKE AHI PC Foodland category: Food Products
+ 10 Item: Local Ahi California Roll LCL AHI CAL ROLL PPC Foodland category: Food Products
+ 11 Item: Local Ahi Maui Poke LCL AHI MAUI POKE PC Foodland category: Food Products
+ 12 Item: Local Flour Tortilla LCL FLOUR TORT PC Foodland category: Food Products
+ 13 Item: Rosarita Refried Beans ROSARITA REFRIED BPC Foodland category: Food Products
+ 14 Item: Bush's Black Beans =BUSH BLACK BEANS PC Foodland category: Food Products
+ 15 Item: Apple Envy =APPLE ENVY PC Foodland category: Food Products
+- 14 Vendor Prediction Grocery and Supermarkets
+Query: H MART  Kabocha KABOCHA Mint MINT
+ 0 Item: Kabocha KABOCHA H MART category: Food Products
+ 1 Item: Mint MINT H MART category: Food Products
+- 15 Vendor Prediction Grocery and Supermarkets
+Query: SAFEWAY  Petit Ecolir Milk PETIT ECOLIR MLK Meadow Gold Ice MEADOW GOLD ICE
+ 0 Item: Petit Ecolir Milk PETIT ECOLIR MLK SAFEWAY category: Food Products
+ 1 Item: Meadow Gold Ice MEADOW GOLD ICE SAFEWAY category: Beverages
+- 16 Vendor Prediction Restaurants and Food Services
+Query: SAFEWAY   BODY ARMOR  DEP SFTDK 8 PK FS  FEE SFTDK 8 PK FS
+ 0 Item:  BODY ARMOR SAFEWAY category: Sporting Goods
+ 1 Item:  DEP SFTDK 8 PK FS SAFEWAY category: Food Products
+ 2 Item:  FEE SFTDK 8 PK FS SAFEWAY category: Food Products
+- 17 Vendor Prediction Grocery and Supermarkets
+Query: Krispy Kreme Doughnuts & Coffee  Latte Iced Medium Latte Iced Medium
+ 0 Item: Latte Iced Medium Latte Iced Medium Krispy Kreme Doughnuts & Coffee category: Beverages
+- 18 Vendor Prediction Grocery and Supermarkets
+Query: Olive DINE IN Table Games Table Games Soft Drink Soft Drink Calamari Calamari Soup & Salad Soup & Salad Gnocchi Gnocchi Kids Strawberry Kids Strawberry Kid CYO Meat Sauce Spaghetti Kid CYO Meat Sauce
+Spaghetti  Add Meatball
+ 0 Item: Table Games Table Games Olive category: Toys And Games
+ 1 Item: Soft Drink Soft Drink Olive category: Beverages
+ 2 Item: Calamari Calamari Olive category: Food Products
+ 3 Item: Soup & Salad Soup & Salad Olive category: Food Products
+ 4 Item: Gnocchi Gnocchi Olive category: Food Products
+ 5 Item: Kids Strawberry Kids Strawberry Olive category: Food Products
+ 6 Item: Kid CYO Meat Sauce Spaghetti Kid CYO Meat Sauce
+Spaghetti Olive category: Food Products
+ 7 Item:  Add Meatball Olive category: Food Products
+- 19 Vendor Prediction Grocery and Supermarkets
+Query: Longs  10 Rainbow Playball Each 10RAINBOW PLAYBALL EACH CoffeeRio Peg Bag CFRIO SF PEG BAG
+ 0 Item: 10 Rainbow Playball Each 10RAINBOW PLAYBALL EACH Longs category: Sporting Goods
+ 1 Item: CoffeeRio Peg Bag CFRIO SF PEG BAG Longs category: Clothing And Accessories
+- 20 Vendor Prediction Grocery and Supermarkets
+Query: Walmart  Squeeze Buffalo Mayo SQZ BUF MAYO Mandarin 3-pound Bag MAND 3# BAG
+ 0 Item: Squeeze Buffalo Mayo SQZ BUF MAYO Walmart category: Food Products
+ 1 Item: Mandarin 3-pound Bag MAND 3# BAG Walmart category: Food Products
+- 21 Vendor Prediction Grocery and Supermarkets
+Query: <UNKNOWN> Drugs  <UNKNOWN> Sugar-Free Peg Bag <UNKNOWN> SF PEG BAG 3Z Frio Sugar-Free Peg Bag FRIO SF PEG BAG 3Z
+ 0 Item: <UNKNOWN> Sugar-Free Peg Bag <UNKNOWN> SF PEG BAG 3Z <UNKNOWN> Drugs category: Food Products
+ 1 Item: Frio Sugar-Free Peg Bag FRIO SF PEG BAG 3Z <UNKNOWN> Drugs category: Food Products
+- 22 Vendor Prediction Grocery and Supermarkets
+Query: COSTCO WHOLESALE  Chicken Taquito CHKN TAQUITO Organic Bananas ORG BANANAS Organic Blend ORG BLEND Sourdough Bread SRDOUGH BRD Kansas Blueberry KS BLUEBERRY Jack's Salsa JACKS SALSA Avocados AVOCADOS Potato Bake POTATO BAKE Cream Cheese CREAM CHEESE Organic Beef Broth ORGN BS BST Kansas Bacon KS BACON Sandwich Wrap SW WRAP Pie Pumpkins PIE PUMPKINS Whole Milk WHOLE MILK Whole <UNKNOWN> WHOLE <UNKNOWN> All in Pan ALL IN PAN
+ 0 Item: Chicken Taquito CHKN TAQUITO COSTCO WHOLESALE category: Food Products
+ 1 Item: Organic Bananas ORG BANANAS COSTCO WHOLESALE category: Food Products
+ 2 Item: Organic Blend ORG BLEND COSTCO WHOLESALE category: Food Products
+ 3 Item: Sourdough Bread SRDOUGH BRD COSTCO WHOLESALE category: Food Products
+ 4 Item: Kansas Blueberry KS BLUEBERRY COSTCO WHOLESALE category: Food Products
+ 5 Item: Jack's Salsa JACKS SALSA COSTCO WHOLESALE category: Food Products
+ 6 Item: Avocados AVOCADOS COSTCO WHOLESALE category: Food Products
+ 7 Item: Potato Bake POTATO BAKE COSTCO WHOLESALE category: Food Products
+ 8 Item: Cream Cheese CREAM CHEESE COSTCO WHOLESALE category: Food Products
+ 9 Item: Organic Beef Broth ORGN BS BST COSTCO WHOLESALE category: Food Products
+ 10 Item: Kansas Bacon KS BACON COSTCO WHOLESALE category: Food Products
+ 11 Item: Sandwich Wrap SW WRAP COSTCO WHOLESALE category: Food Products
+ 12 Item: Pie Pumpkins PIE PUMPKINS COSTCO WHOLESALE category: Food Products
+ 13 Item: Whole Milk WHOLE MILK COSTCO WHOLESALE category: Food Products
+ 14 Item: Whole <UNKNOWN> WHOLE <UNKNOWN> COSTCO WHOLESALE category: Food Products
+ 15 Item: All in Pan ALL IN PAN COSTCO WHOLESALE category: Food Products
+- 23 Vendor Prediction Clothing and Apparel
+Query: PACSUN  JG Striped Brianna Sweater JG STRIPED BRIANNA SWEATE
+ 0 Item: JG Striped Brianna Sweater JG STRIPED BRIANNA SWEATE PACSUN category: Clothing And Accessories
+- 24 Vendor Prediction Grocery and Supermarkets
+Query: Longs Drugs  Crio SF Peg Bag CFRIO SF PEG BAG Crystal Geyser Spring Water CR GYSR SPR WTR Bottle Deposit BOTTLE DEPOSIT HI Container Fee HI CONTAINER FEE
+ 0 Item: Crio SF Peg Bag CFRIO SF PEG BAG Longs Drugs category: Sporting Goods
+ 1 Item: Crystal Geyser Spring Water CR GYSR SPR WTR Longs Drugs category: Beverages
+ 2 Item: Bottle Deposit BOTTLE DEPOSIT Longs Drugs category: Baby Products
+ 3 Item: HI Container Fee HI CONTAINER FEE Longs Drugs category: Pharmacy And Health Products
+- 25 Vendor Prediction Restaurants and Food Services
+Query: Oahu Honolulu Ala Moana  ProCat ProCat ProCat Puna ProCat Puna
+ 0 Item: ProCat ProCat Oahu Honolulu Ala Moana category: Electronics
+ 1 Item: ProCat Puna ProCat Puna Oahu Honolulu Ala Moana category: Books And Stationery
+- 26 Vendor Prediction Grocery and Supermarkets
+Query: ABC STORES  Evian Water LTR EVIAN WATER LTR
+ 0 Item: Evian Water LTR EVIAN WATER LTR ABC STORES category: Food Products
+- 27 Vendor Prediction Home and Garden
+Query: How doers get more  Tapcon Bit TAPCON BIT <A> Tapcon 3/16x1-3/4 Star Flat TAPCON 3/16 <A> KidSafe Epic Hanger KDSFEPICHNGR <A> Detailers Microfiber QC Towels 3pk DC TOWEL 3PK <A, U> 10-Piece Brass Borefast Self Drilling 10-PIECE BRA <A> DW Max Impact Set 30pc DWAMI30 <A>
+ 0 Item: Tapcon Bit TAPCON BIT <A> How doers get more category: Electronics
+ 1 Item: Tapcon 3/16x1-3/4 Star Flat TAPCON 3/16 <A> How doers get more category: Home
+ 2 Item: KidSafe Epic Hanger KDSFEPICHNGR <A> How doers get more category: Cleaning Supplies
+ 3 Item: Detailers Microfiber QC Towels 3pk DC TOWEL 3PK <A, U> How doers get more category: Cleaning Supplies
+ 4 Item: 10-Piece Brass Borefast Self Drilling 10-PIECE BRA <A> How doers get more category: Clothing And Accessories
+ 5 Item: DW Max Impact Set 30pc DWAMI30 <A> How doers get more category: Cleaning Supplies
+- 28 Vendor Prediction Restaurants and Food Services
+Query: KOZO SUSHI MOILIILI 
