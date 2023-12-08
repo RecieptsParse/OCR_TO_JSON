@@ -154,6 +154,9 @@ class TestPromptExamples(unittest.TestCase):
 
 class TestVendorDatabase(unittest.TestCase):
     # TestCase for the file: vendor_database.py
+    # NOTE: These tests were made with the version of the config.py files as of December 7, 2023.
+    #       Changing the config.py file will likely cause the "mapping file" portion of the test_make_vendor_database() to fail.
+    #       Please change the test code to align with the most recent and/or final version of the config.py file.
     
     # setUp the class attributes for the tests
     def setUp(self):
@@ -188,6 +191,9 @@ class TestVendorDatabase(unittest.TestCase):
 
 class TestProductDatabase(unittest.TestCase):
     # TestCase for the file: product_database.py
+    # NOTE: These tests were made with the version of the config.py files as of December 7, 2023.
+    #       Changing the config.py file will likely cause the "mapping file" portion of the test_make_product_database() to fail.
+    #       Please change the test code to align with the most recent and/or final version of the config.py file.
     
     # setUp the class attributes for the tests
     def setUp(self):
