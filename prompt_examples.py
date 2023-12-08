@@ -134,7 +134,7 @@ Email <UNKNOWN> quired to receive coupon
 Join the Panda team!
 PandaCareers.com'''
 
-example_2_output ='''{{"merchant":"Panda Express # 2150","address":"","city":"Honclulu","state":"HI","phoneNumber":"(808)956-7229","tax":"0.57","total":"12.67","receiptDate":"6/9/2023","receiptTime":"11:02:50 AM","totalItems":"2","paymentType":"Debit","diningOptions":"TO GO","creditCardType":"Visa","totalDiscount":"0.00","ITEMS":[{{"description":"Plate","unabbreviatedDescription":"Plate","includedItems": ["FRIED RICE-½", "FRIED","STR BN CKN BREAST","ORANGE CKN"],"quantity":"1","unitPrice":"10.60","totalPrice":"10.60","discountAmount":"0.00"}},{{"description":"XTRA ENTREE","unabbreviatedDescription":"Extra Entree","includedItems":["VEG SPRING"],"quantity":"1","unitPrice":"1.50","totalPrice":"1.50","discountAmount":"0.00"}}]}}'''
+example_2_output ='''{{"merchant":"Panda Express","address":"","city":"Honclulu","state":"HI","phoneNumber":"(808)956-7229","tax":"0.57","total":"12.67","receiptDate":"6/9/2023","receiptTime":"11:02:50 AM","totalItems":"2","paymentType":"Debit","diningOptions":"TO GO","creditCardType":"Visa","totalDiscount":"0.00","ITEMS":[{{"description":"Plate","unabbreviatedDescription":"Plate","includedItems": ["FRIED RICE-½", "FRIED","STR BN CKN BREAST","ORANGE CKN"],"quantity":"1","unitPrice":"10.60","totalPrice":"10.60","discountAmount":"0.00"}},{{"description":"XTRA ENTREE","unabbreviatedDescription":"Extra Entree","includedItems":["VEG SPRING"],"quantity":"1","unitPrice":"1.50","totalPrice":"1.50","discountAmount":"0.00"}}]}}'''
 
 example_3_input='''Longs Drugs <UNKNOWN>
 4211 WAIALAE AVE
@@ -267,7 +267,7 @@ Text MD349 To 38000
 Sign up for MyMcDonald's rewards
 to earn points on future visits'''
 
-example_4_output='''{{"merchant":"McDonald's Restaurant","address":"3549 RUSSETT GREEN E","city":"LAUREL","state":"MD","phoneNumber":"800-683-5587","tax":"0.48","total":"8.56","receiptDate":"07/04/2023","receiptTime":"04:24 PM","totalItems":"2","paymentType":"CREDIT","diningOptions":"Take-Out","creditCardType":"Visa","totalDiscount":"0.00","ITEMS":[{{"description":"Happy Meal Ch Burger","unabbreviatedDescription":"Happy Meal Cheese Burger","includedItems":["Cheeseburger","NO Pickle","Extra Kids Fry","Apple Juice","S Apl Jc Surcharge","ELEMENTAL"],"quantity":"1","unitPrice":"4.39","totalPrice":"4.39","discountAmount":"0.00"}},{{"description":"S Grimace Bday Shake","unabbreviatedDescription":"Grimace Birthday Shake","includedItems":["S Shake Surcharge"],"quantity":"1","unitPrice":"3.69","totalPrice":"3.69","discountAmount":"0.00"}}]}}'''
+example_4_output='''{{"merchant":"McDonald's","address":"3549 RUSSETT GREEN E","city":"LAUREL","state":"MD","phoneNumber":"800-683-5587","tax":"0.48","total":"8.56","receiptDate":"07/04/2023","receiptTime":"04:24 PM","totalItems":"2","paymentType":"CREDIT","diningOptions":"Take-Out","creditCardType":"Visa","totalDiscount":"0.00","ITEMS":[{{"description":"Happy Meal Ch Burger","unabbreviatedDescription":"Happy Meal Cheese Burger","includedItems":["Cheeseburger","NO Pickle","Extra Kids Fry","Apple Juice","S Apl Jc Surcharge","ELEMENTAL"],"quantity":"1","unitPrice":"4.39","totalPrice":"4.39","discountAmount":"0.00"}},{{"description":"S Grimace Bday Shake","unabbreviatedDescription":"Grimace Birthday Shake","includedItems":["S Shake Surcharge"],"quantity":"1","unitPrice":"3.69","totalPrice":"3.69","discountAmount":"0.00"}}]}}'''
 
 example_5_input='''Longs Drugs <UNKNOWN>
 91-919 FORT WEAVER RD
@@ -464,7 +464,7 @@ Access all coupons & rewards, and
 track your 2% earnings in the CVS
 Pharmacy app!'''
 
-example_7_output='''{{"merchant":"Longs","address":"2470 S KING ST","city":"HONOLULU","state":"HI","phoneNumber":"808.947.2651","tax":"0.31","total":"14.78","receiptDate":"OCTOBER 15, 2023","receiptTime":"11:34 AM","totalItems":"3","paymentType":"CASH","diningOptions":"","creditCardType":"","totalDiscount":"0.00","ITEMS":[{{"description":"CVS LINER UNSC DB","unabbreviatedDescription":"CVS Liner Unscented Double","includedItems":["135S"],"quantity":"2","unitPrice":"3.99","totalPrice":"7.98","discountAmount":"0.00"}},{{"description":"HALLS COOL BRRY CD 70CT","unabbreviatedDescription":"Halls Cool Berry Cough Drops","includedItems":[],"quantity":"1","unitPrice":"6.49","totalPrice":"6.49","discountAmount":"0.00"}}]}}'''
+example_7_output='''{{"merchant":"Longs Drugs","address":"2470 S KING ST","city":"HONOLULU","state":"HI","phoneNumber":"808.947.2651","tax":"0.31","total":"14.78","receiptDate":"OCTOBER 15, 2023","receiptTime":"11:34 AM","totalItems":"3","paymentType":"CASH","diningOptions":"","creditCardType":"","totalDiscount":"0.00","ITEMS":[{{"description":"CVS LINER UNSC DB","unabbreviatedDescription":"CVS Liner Unscented Double","includedItems":["135S"],"quantity":"2","unitPrice":"3.99","totalPrice":"7.98","discountAmount":"0.00"}},{{"description":"HALLS COOL BRRY CD 70CT","unabbreviatedDescription":"Halls Cool Berry Cough Drops","includedItems":[],"quantity":"1","unitPrice":"6.49","totalPrice":"6.49","discountAmount":"0.00"}}]}}'''
 
 def get_prompt_examples():
     return [
