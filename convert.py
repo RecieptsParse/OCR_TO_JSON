@@ -172,6 +172,8 @@ class ReceiptInfo(BaseModel):
     def validate_string_ReceiptInfo(cls, input_value: str) -> str:
         return_value = input_value.replace("<UNKNOWN>", "")
         return_value = return_value.replace("UNKNOWN", "")
+        return_value = return_value.replace("Unknown", "")
+        return_value = return_value.replace("unknown", "")
         return_value = " ".join(return_value.split())
         return return_value
              
