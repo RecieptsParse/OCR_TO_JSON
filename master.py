@@ -103,5 +103,5 @@ def classify(json_receipts):
                 file.write(f" {j} Item: {product_query} category: {top_product}\n")
 
 processed_receipts = read_json_receipts('receipts_json.json')
-classify(processed_receipts)
+#classify(processed_receipts)
 print("PROGRAM END")

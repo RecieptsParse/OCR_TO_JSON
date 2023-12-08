@@ -8,8 +8,7 @@ import pickle
 import config
 
 def make_product_database():
-    #model = SentenceTransformer(config.transformer_model)
-    model = AutoModel.from_pretrained('jinaai/jina-embeddings-v2-base-en', trust_remote_code=True) # trust_remote_code is needed to use the encode method
+    model = AutoModel.from_pretrained(config.transformer_model, trust_remote_code=True) # trust_remote_code is needed to use the encode method
 
 
     index = faiss.IndexFlatL2(config.dimensions)
@@ -26,6 +25,6 @@ def make_product_database():
             product_embeddings_mapping[current_index] = product
             current_index += 1
 
-    faiss.write_index(index, "product_embeddings.index")
-    with open('product_mapping.pk1', 'wb') as f:
+    faiss.write_index(index, "embeddings/product_embeddings.index")
+    with open('embeddings/product_mapping.pk1', 'wb') as f:
         pickle.dump(product_embeddings_mapping, f)
