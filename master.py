@@ -19,7 +19,7 @@ product_database.make_product_database()
 Convert raw receipt text to JSON objects and store the JSON objects as strings in 
 '''
 
-receipts_folder = "data/receipts/text_letters" # the folder that contains raw receipt text files to convert to JSON
+receipts_folder = "data/receipts/text" # the folder that contains raw receipt text files to convert to JSON
 
 openai_api_key="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"
 
@@ -30,24 +30,20 @@ model = convert.make_model(model="gpt-4-1106-preview", temperature=1.00, openai_
 chain = convert.make_chain(fewshot_prompt, model, receiptParser)
 
 # Iterate through receipts_folder, and convert each receipt to a JSON object
-print(os.listdir(receipts_folder)) # DELETE ME LATER
+i=1
 for filename in os.listdir(receipts_folder):
     if filename.endswith('.txt'):
         with open(os.path.join(receipts_folder, filename)) as f:
             data = f.read()
-            print()
+            print('\n',i)
             print(f'reading from {filename}')
             response = chain.invoke({"input": data})
             # with 'a' in open() it will create or append to current file
-            with open('receipts_json_gpt4.json', 'a') as fp: # Write each JSON object as it gets parsed
+            with open('receipts_json.json', 'a') as fp: # Write each JSON object as it gets parsed
                     # write each receipt JSON on a new line
                     fp.write(json.dumps({"ReceiptInfo": json.loads(response.model_dump_json())}) + "\n")
+    i+=1
     print('Done Converting Reciept Text')
-
-
-"""
-Get JSON and search for fields (Merchant, First Item, DiningOption, Second Itemm) -- Similar to Assignment 1
-"""
 
 """
 NEED TO TEST
