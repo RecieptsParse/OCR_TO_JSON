@@ -11,7 +11,7 @@ import subprocess
 
 
 try:
-    subprocess.run(['/bin/bash', 'installs.sh'], check=True)
+    subprocess.run(['/bin/bash', 'install_packages.sh'], check=True)
 except subprocess.CalledProcessError as e:
     print(f"Error running shell script: {e}")
 
