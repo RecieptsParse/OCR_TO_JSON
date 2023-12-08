@@ -7,8 +7,13 @@ import json
 import pandas as pd
 import csv
 import sys
+import subprocess
 
 
+try:
+    subprocess.run(['/bin/bash', 'installs.sh'], check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Error running shell script: {e}")
 
 '''
 saves faiss index and mapping to directory 
