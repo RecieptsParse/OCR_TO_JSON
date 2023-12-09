@@ -7,11 +7,15 @@ import pickle
 # local config module
 import config
 
+"""
+Creates vendor database
+"""
 def make_vendor_database():
 
     #model = SentenceTransformer(config.transformer_model)
     model = AutoModel.from_pretrained(config.transformer_model, trust_remote_code=True) # trust_remote_code is needed to use the encode method
 
+    # creates KNN based on the config file
     index = faiss.IndexFlatL2(config.dimensions)
 
     vendor_categories  = config.vendor_categories
@@ -19,6 +23,7 @@ def make_vendor_database():
     vendor_embeddings_mapping = {}
     current_index = 0
 
+    # creates embeddings
     for vendor, descriptions in vendor_categories.items():
         for description in descriptions:
             embedding = model.encode(description)

@@ -12,7 +12,9 @@ import config
 #model = SentenceTransformer(config.transformer_model)
 model = AutoModel.from_pretrained('jinaai/jina-embeddings-v2-base-en', trust_remote_code=True) # trust_remote_code is needed to use the encode method
 
-
+"""
+Classifier of what the embeddings relate to
+"""
 class Classifier:
     def __init__(self, index_path, mapping_path):
         self.model = model
@@ -21,6 +23,9 @@ class Classifier:
         self.index_path = index_path
         self.mapping_path = mapping_path
 
+    """ 
+    Loads the information/database to perform KNN
+    """
     def load_resources(self):
         if self.index is None:
             self.index = faiss.read_index(self.index_path)
@@ -28,6 +33,7 @@ class Classifier:
             with open(self.mapping_path, 'rb') as f:
                 self.mapping = pickle.load(f)
 
+    # searches database to find the closest matching embeddings
     def search(self, query, k):
         self.load_resources()
         embedding = self.model.encode(query)
@@ -46,6 +52,7 @@ def get_classifier(classifier_type):
     else:
         raise ValueError("Invalid classifier type")
 
+# determines the classification for vendor or product as well as popular vote on number of neighbors (k)
 def query_classification(query, k, classifier_type):
     classifier = get_classifier(classifier_type)
     return classifier.search(query, k)
