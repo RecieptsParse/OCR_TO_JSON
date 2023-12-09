@@ -19,17 +19,24 @@ This object represents a single item (good/service) that was purchased in the re
 '''
 class Item(BaseModel):
     description: str=Field(description="item name")
+    # unabbreviated to assist in classification (ORNG -> Orange)
     unabbreviatedDescription: str=Field(default="", description="unabbreviated name of field:description")
+    # some items have options (eg, Happy Meals - Cheese Burger + Fries + Apples)
     includedItems: List[str]=Field(default_factory=list)
     quantity: int=Field(default=0, description="number of items")
     unitPrice: float=Field(default=0.00, description="cost per unit")
     totalPrice: float=Field(default=0.00, description="total cost of unit(s) purchased")
+    # discounts sometimes appear on receipts
     discountAmount: float=Field(default=0.00, description="discount for item")
 
+    """
+    Ensures all price items are floats
+    """
     @field_validator('unitPrice', 'totalPrice', 'discountAmount', mode='before')
     @classmethod
     def validate_float_Item(cls, input_value: typing.Any) -> float:
         return_value = 0.00
+        # checks whether can convert to float
         if (isinstance(input_value, str)):
             try:
                 return_value = (float(input_value))
@@ -41,10 +48,14 @@ class Item(BaseModel):
             return_value = input_value
         return return_value
     
+    """
+    Ensures all item counts are ints and if not, returns 0
+    """
     @field_validator('quantity', mode='before')
     @classmethod
     def validate_quantity(cls, quantity: typing.Any) -> int:
         return_value = 0
+        # checks to ensure all instances are whole numberss/ints
         if (isinstance(quantity, str)):
             try:
                 return_value = math.ceil(float(quantity))
@@ -53,9 +64,13 @@ class Item(BaseModel):
         elif (isinstance(quantity, int)):
             return_value = quantity
         elif (isinstance(quantity, float)):
+            # if decimal, takes the upper bound
             return_value = math.ceil(quantity)
         return return_value
     
+    """
+    Checks to ensure description/ abbreviated description has a value, and if it includes the word unknown
+    """
     @field_validator('description', 'unabbreviatedDescription', mode='after')
     @classmethod
     def validate_string_Item(cls, input_value: str) -> str:
@@ -64,6 +79,7 @@ class Item(BaseModel):
         return_value = " ".join(return_value.split())
         return return_value
     
+    # removes unknowns from items
     @field_validator('includedItems', mode='after')
     @classmethod
     def validate_includedItems(cls, includedItems):
@@ -90,6 +106,7 @@ class ReceiptInfo(BaseModel):
     receiptDate: str=Field(description="purchase date")
     receiptTime: str=Field(description="time purchased")
     totalItems: int=Field(description="number of items")
+    # assists in classifying restraunts vs grocery stores
     diningOptions: str=Field(default="", description="here or to-go items for consumable items")
     paymentType: str=Field(default="cash", description="payment method")
     creditCardType: str=Field(default="", description="credit card type")
@@ -98,6 +115,9 @@ class ReceiptInfo(BaseModel):
     total: float=Field(description="total amount paid")
     ITEMS: List[Item]
     
+    """
+    Creates totalItems as a whole number
+    """
     @field_validator('totalItems', mode='before')
     @classmethod
     def validate_totalItems(cls, totalItems: typing.Any) -> int:
@@ -113,6 +133,9 @@ class ReceiptInfo(BaseModel):
             return_value = math.ceil(totalItems)
         return return_value
 
+    """
+    Ensures that the mode of payment is specified; default cash if no other indicator
+    """
     @field_validator('paymentType', mode='before')
     def validate_paymentType(cls, paymentType: str) -> str:
         return_value = 'cash'
@@ -129,6 +152,9 @@ class ReceiptInfo(BaseModel):
             pass
         return return_value
     
+    """
+    creates a diningOptions value, to allow for better differentiation
+    """
     @field_validator('diningOptions', mode='before')
     @classmethod
     def validate_diningOptions(cls, diningOptions: str) -> str:
@@ -148,7 +174,10 @@ class ReceiptInfo(BaseModel):
         except:
             pass
         return return_value
-
+    
+    """
+    Ensures that the information is a float
+    """
     @field_validator('tax', 'total', 'totalDiscount', mode='before')
     @classmethod
     def validate_float_ReceiptInfo(cls, input_value: typing.Any) -> float:
@@ -166,6 +195,9 @@ class ReceiptInfo(BaseModel):
             return_value = 0.00
         return return_value
     
+    """
+    Ensures all entries are strings
+    """
     @field_validator('merchant', 'address', 'city', 'state', 'phoneNumber', 
                      'receiptDate', 'receiptTime', 'creditCardType', mode='after')
     @classmethod
@@ -180,6 +212,10 @@ class ReceiptInfo(BaseModel):
 def make_receiptParser():
     return PydanticOutputParser(pydantic_object=ReceiptInfo)
 
+"""
+Prompt prefix to send to the model to generate the JSON; and creates requirements so that it is generated as expected
+
+"""
 def get_prompt_prefix():
     return '''You are a capable large language model. 
     Your task is to extract data from a given receipt and format it into the JSON schema below. 
