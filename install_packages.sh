@@ -2,7 +2,7 @@
 
 pip install pydantic
 pip install typing 
-pip install enum
+pip install enum34
 pip install openai
 pip install typing
 pip install langchain
@@ -13,7 +13,6 @@ pip install numpy
 pip install faiss-cpu
 pip install pickle5
 
-pip install jsonlib-python3
 pip install pandas
 
 
