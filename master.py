@@ -1,6 +1,6 @@
 import vendor_database
 import product_database
-import search
+import classification
 import convert
 import os
 import json
@@ -59,49 +59,8 @@ for filename in os.listdir(receipts_folder):
                         # write each receipt JSON on a new line
                         fp.write(json.dumps({"ReceiptInfo": json.loads(response.model_dump_json())}) + "\n")
         print(f'Done converting {filename}, JSON located at line {i}')    
-    
-"""
-NEED TO TEST
-"""
-def read_json_receipts(file_path):
-    with open(file_path, 'r') as f:
-         lines = f.readlines()
-    json_objects = []
-    for line in lines:
-         json_object = json.loads(line)
-         json_objects.append(json_object)
-    return json_objects
 
-def classify(json_receipts):
-    with open('output.txt', 'a') as file:
+# receipts = classification.read_json_receipts("receipts_json.json")
+# classification.classify(receipts)
 
-        #loops thru receipt objects 
-        for i, receipt in enumerate(json_receipts):
-            merchant_name = receipt['merchant']
-            dining_option = receipt['diningOptions']
-            vendor_query = [f"{merchant_name} {dining_option}"]
-
-            #loops thru items in receipt
-            for item in receipt['ITEMS']:
-                items_unabbr = item['unabbreviatedDescription']
-                item_description = item['description']
-                vendor_query.append(f"{items_unabbr} {item_description}")
-            
-            #processes query string, then classifies vendor, writes to file
-            query_string = " ".join(vendor_query)
-            top_vendor = search.query_classification(query_string, 5, "vendor")
-            print(query_string)
-            print(top_vendor)
-            file.write(f"- {i} Vendor Prediction {top_vendor}\nQuery: {query_string}\n")
-
-            #process query string, then classifies product, write to file
-            for j, item in enumerate(receipt['ITEMS']):
-                product_query = f"{item['unabbreviatedDescription']} {item['description']} {merchant_name}"
-                top_product = search.query_classification(product_query, 10, "product")
-                print(product_query)
-                print(top_product)
-                file.write(f" {j} Item: {product_query} category: {top_product}\n")
-
-processed_receipts = read_json_receipts('receipts_json.json')
-#classify(processed_receipts)
 print("PROGRAM END")

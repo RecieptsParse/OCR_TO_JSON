@@ -34,15 +34,15 @@ class Classifier:
         _, indices = self.index.search(np.array([embedding]), k)
         results = [self.mapping[idx] for idx in indices[0]]
         most_common_result = Counter(results).most_common(1)[0][0]
-        print(results)
+        #print(results)
         return most_common_result
 
 # Function to get the classifier
 def get_classifier(classifier_type):
     if classifier_type == "vendor":
-        return Classifier("vendor_embeddings.index", "vendor_mapping.pk1")
+        return Classifier("embeddings/vendor_embeddings.index", "embeddings/vendor_mapping.pk1")
     elif classifier_type == "product":
-        return Classifier("product_embeddings.index", "product_mapping.pk1")
+        return Classifier("embeddings/product_embeddings.index", "embeddings/product_mapping.pk1")
     else:
         raise ValueError("Invalid classifier type")
 
