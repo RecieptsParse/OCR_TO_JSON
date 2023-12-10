@@ -7,7 +7,7 @@ import pandas as pd
 import sys
 import subprocess
 
-openai_api_key="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"
+openai_api_key= "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"
 
 # Check if the required number of arguments is provided
 if len(sys.argv) < 3:
