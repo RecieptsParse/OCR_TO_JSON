@@ -11,19 +11,21 @@ import config
 Creates product database based on config
 """
 def make_product_database():
-    # creates embeddings based on model
+
+    # Model used for embeddings
     model = AutoModel.from_pretrained(config.transformer_model, trust_remote_code=True) # trust_remote_code is needed to use the encode method
 
-    # performs knn on embeddings
+    # Creates FAISS index, dimensions can be configured based on model used for embeddings
     index = faiss.IndexFlatL2(config.dimensions)
 
-    # gets categories
+    # Pulls key:value for embeddings, may be updated/adjusted in config file
     product_categories  = config.product_categories
 
+    # Mapping for embeddings in the index to original key:value pairs from categories
     product_embeddings_mapping = {}
     current_index = 0
 
-    # creates embeddings for all descroptions/ products
+    # Creates embeddings
     for product, descriptions in product_categories.items():
         for description in descriptions:
             embedding = model.encode(description)
@@ -31,7 +33,7 @@ def make_product_database():
             product_embeddings_mapping[current_index] = product
             current_index += 1
 
-    # saves embeddings
+    # Saves FAISS index of embeddings to directory 
     faiss.write_index(index, "embeddings/product_embeddings.index")
     with open('embeddings/product_mapping.pk1', 'wb') as f:
         pickle.dump(product_embeddings_mapping, f)

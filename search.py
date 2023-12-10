@@ -33,14 +33,14 @@ class Classifier:
             with open(self.mapping_path, 'rb') as f:
                 self.mapping = pickle.load(f)
 
-    # searches database to find the closest matching embeddings
+    # Performs KNN with FAISS index, returns most common result
     def search(self, query, k):
         self.load_resources()
         embedding = self.model.encode(query)
         _, indices = self.index.search(np.array([embedding]), k)
         results = [self.mapping[idx] for idx in indices[0]]
         most_common_result = Counter(results).most_common(1)[0][0]
-        #print(results)
+
         return most_common_result
 
 # Function to get the classifier
@@ -52,7 +52,7 @@ def get_classifier(classifier_type):
     else:
         raise ValueError("Invalid classifier type")
 
-# determines the classification for vendor or product as well as popular vote on number of neighbors (k)
+# Used to call the classifier class on specified classifier type
 def query_classification(query, k, classifier_type):
     classifier = get_classifier(classifier_type)
     return classifier.search(query, k)
