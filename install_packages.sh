@@ -14,5 +14,4 @@ pip install faiss-cpu
 pip install pickle5
 
 pip install pandas
-
-
+pip install nervaluate
