@@ -1,6 +1,14 @@
-# Development Setup
+# Reciept Parse
+> Welcome to the final project visulization of ICS 438. Our group is made up of 4 members: Jeremiah Dy, Kylie Higashionna, Grayson Levy, Amanda Nitta.
 
-## Initial Setup
+## About
+
+We created a parser to convert receipt data into structured JSON documents adhering to a specified schema utilizing ChatGPT4. We classified each receipt's vendor and products into predefined categories using a classification method from the FAISS library which employed K-Nearest Neighbors.
+
+
+## Development Setup
+
+### Initial Setup
 1. **Clone the Repository**: 
    - Clone the repository to your local machine.
 2. **Add Text Data**: 
@@ -9,7 +17,7 @@
 3. **Add openai api key**
    - Include your OpenAI API key on line 17 of master.py
 
-## Generating JSON Receipts from Text Files
+### Generating JSON Receipts from Text Files
 To convert text receipt files to JSON format, follow these steps:
 
 1. **Navigate to the Repository Directory**:
@@ -23,7 +31,7 @@ To convert text receipt files to JSON format, follow these steps:
    - `desired_path_of_output`: Path where you want to save the output JSON file. If the specified file exists, new data will be appended to it. This path must end with `.json`.
    - The output JSON file at `desired_path_of_output` will have JSON objects stored by line. This means that every line in the file will have a unique JSON object associated with it. JSON objects will not extend past a single line.
 
-## Adding Classifications to JSON Receipts
+### Adding Classifications to JSON Receipts
 To add classifications to your JSON receipts, follow these steps:
 
 1. **Run the Classification Script**:
@@ -35,7 +43,7 @@ To add classifications to your JSON receipts, follow these steps:
    - `new_output_path`: Path for the new JSON file which will include classifications. This file will be created at this path, must end with `.json`
    - Contrary to the prior output file, the output JSON file at `new_output_path` will have the JSON objects indented for easier readability. JSON objects will now span multiple lines and will include indents based on the hierarchical level. 
 
-## Workflow Example
+### Workflow Example
 Here's an example of the entire workflow:
 
 1. Convert text receipts to JSON:
