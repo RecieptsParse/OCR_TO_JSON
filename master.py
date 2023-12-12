@@ -14,7 +14,7 @@ import os
 import json
 import pandas as pd
 
-openai_api_key= "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"
+#openai_api_key= "api key"
 
 # Check if the required number of arguments is provided
 if len(sys.argv) < 3:
