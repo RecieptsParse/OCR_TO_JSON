@@ -1,11 +1,18 @@
+import sys
+import subprocess
+
+# Install necessary packages
+try:
+    subprocess.run(['/bin/bash', 'install_packages.sh'], check=True)
+except subprocess.CalledProcessError as e:
+    print(f"Error running shell script: {e}")
+
 import vendor_database
 import product_database
 import convert
 import os
 import json
 import pandas as pd
-import sys
-import subprocess
 
 openai_api_key= "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"
 
@@ -17,10 +24,6 @@ if len(sys.argv) < 3:
 input_path = sys.argv[1]  # The path to the folder containing .txt files
 output_path = sys.argv[2]  # The path to the output file
 
-try:
-    subprocess.run(['/bin/bash', 'install_packages.sh'], check=True)
-except subprocess.CalledProcessError as e:
-    print(f"Error running shell script: {e}")
 
 print(f"Processing receipts from {input_path} and saving to {output_path}")
 
