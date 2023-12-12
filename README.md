@@ -4,7 +4,8 @@
 1. **Clone the Repository**: 
    - Clone the repository to your local machine.
 2. **Add Text Data**: 
-   - Place your `.txt` receipt data files in a designated **folder** within the cloned repository.
+   - Place your `.txt` receipt data files in a **folder** within the cloned repository. 
+   - For example you can place the `.txt` files in the data/txt_data folder 
 3. **Add openai api key**
    - Include your OpenAI API key on line 10 of master.py
 
@@ -37,7 +38,7 @@ Here's an example of the entire workflow:
 
 1. Convert text receipts to JSON:
    ```bash
-   python master.py receipts.txt json_receipts.json
+   python master.py data/txt_data json_receipts.json
    ```
 2. Create new JSON file with classifications added:
    ```bash
