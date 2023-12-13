@@ -57,11 +57,10 @@ Here's an example of the entire workflow:
    python classification.py json_receipts.json classified_json_receipts.json
    ``` 
 
-
-Acknowledgement: Fall 2023 Big Data Analytics Course with Dr. Mahdi Belcaid
-
 ### Team
 - Jeremiah Dy
 - Kylie Higashionna
 - Grayson Levy
 - Amanda Nitta
+
+Acknowledgement: Fall 2023 Big Data Analytics Course with Dr. Mahdi Belcaid
