@@ -1,9 +1,11 @@
 # Reciept Parse
-> Welcome to the final project visulization of ICS 438. Our group is made up of 4 members: Jeremiah Dy, Kylie Higashionna, Grayson Levy, Amanda Nitta.
+> People are contionusly purchasing things from stores. This aids in assists in uncovering the nuances of the types of items that people buy, and the types of stores that people frequent through examining receiepts.
 
 ## About
 
-We created a parser to convert receipt data into structured JSON documents adhering to a specified schema utilizing ChatGPT4. We classified each receipt's vendor and products into predefined categories using a classification method from the FAISS library which employed K-Nearest Neighbors.
+Converts receipts that are in Optical Character Recognition (OCR) format into JSON objects that are representative of the way humans may classify receipts with the assistance of ChatGPT4. Upon creation of JSONs, K-Nearest Neighbors was used to assist in classifcation of vendor and product categories. 
+
+The findings are displayed through visualizations on a Dashbaord, that can be found in this [repository](https://github.com/RecieptsParse/visualization)
 
 
 ## Development Setup
@@ -54,3 +56,12 @@ Here's an example of the entire workflow:
    ```bash
    python classification.py json_receipts.json classified_json_receipts.json
    ``` 
+
+
+Acknowledgement: Fall 2023 Big Data Analytics Course with Dr. Mahdi Belcaid
+
+### Team
+- Jeremiah Dy
+- Kylie Higashionna
+- Grayson Levy
+- Amanda Nitta
